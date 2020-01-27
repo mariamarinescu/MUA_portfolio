@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Patrick+Hand|Sacramento')
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400')
+@import "../../sass/aspect-mixin.sass"
+@import "../../sass/sizing-mixin.sass"
+@import "../../sass/positioning-mixin.sass"
+
+
+$transition : all 0.3s ease-in-out
+$lato : 'Lato', sans-serif
+$abs : absolute
+$light-grey : #aca49c
+$medium-grey : #bbb5af
+$lighter-grey : #e2dedb
+$darker-grey : #cbc6c1
+$input-fsize : 0.875em
+$darkest-grey : #726659
+$grey : #b3aca7
+$input-pad : 0px 15px 0px 15px
+$border-style : 1px solid #888
+$input-bder: solid 1px #b3aca7
+$modalBack : rgba(0,0,0,0.4)
+$white : #fefefe
+$black: #000000
+$yes-yes-flex: 1 1 100%
+$lato: 'Lato', sans-serif
+
+
+
+input::placeholder, textarea::placeholder
+  @include aspectCombo($c: $light-grey, $size: $input-fsize)
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder 
+  @include aspectCombo($c: $light-grey, $size: $input-fsize)
+input::-moz-placeholder, textarea::-moz-placeholder 
+  @include aspectCombo($c: $light-grey, $size: $input-fsize)
+input::-ms-placeholder, textarea::-ms-placeholder 
+  @include aspectCombo($c: $light-grey, $size: $input-fsize)
+input:focus::placeholder, textarea::focus:placeholder 
+  color: $medium-grey
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder
+  color: $medium-grey
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder 
+  color: $medium-grey
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder 
+  color: $medium-grey
+input:hover::placeholder, textarea:hover::placeholder
+  @include aspectCombo($c: $lighter-grey, $size: $input-fsize) 
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder 
+  @include aspectCombo($c: $lighter-grey, $size: $input-fsize) 
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder 
+  @include aspectCombo($c: $lighter-grey, $size: $input-fsize) 
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder 
+  color: $darker-grey
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder 
+  color: $darker-grey
+input:hover:focus::placeholder, textarea:hover:focus::placeholder 
+  color: $darker-grey
+input:hover::placeholder, textarea:hover::placeholder 
+  @include aspectCombo($c: $lighter-grey, $size: $input-fsize) 
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder 
+  color: $darker-grey
+
+.containerX
+  @include sizingCombo($m: 100px white, $pad: 0, $h: 750px)
+  .container
+    @include sizingCombo($m: 0, $pad: 0)
+    form
+      @include positioningCombo($pos: $abs, $t: 100px, $flex: $yes-yes-flex)
+      @include sizingCombo($m: 0, $pad: 0, $w: 500px)
+      .message
+        font-family: 'Sacramento', cursive
+      input
+        @include aspectCombo($family: $lato, $size: $input-fsize, $back: transparent, $o-line: none, $c:  $darkest-grey, $trans: $transition)
+        @include sizingCombo($w: 470px, $h: 50px, $pad: $input-pad, $border: $input-bder, $border-bttm: none)
+        &:hover
+          @include aspectCombo($back: $grey, $c: $lighter-grey)
+      textarea
+        @include sizingCombo($w: 470px, $h: 110px, $max-w: 470px, $max-h: 110px, $pad: 15px, $border: $input-bder)
+        @include aspectCombo($back: transparent, $o-line: none, $c: $darkest-grey, $family: $lato, $size: $input-fsize, $trans: $transition)
+        &:hover
+          @include aspectCombo($back: $grey, $c:  $lighter-grey)
+      #modal-success
+        @include aspectCombo($dis: none, $back-c: rgba(0,0,0,0.4))
+        @include sizingCombo($pad-t: 100px, $w: 100%, $h: 100%)
+        @include positioningCombo($pos: $abs, $index: 1, $l: 0, $t: 0, $oflow: auto)
+        #modal-success-content
+          background-color: #fefefe
+          @include sizingCombo($m: auto, $pad: 20px, $border: $border-style)
+          width: 80%
+        #close-modal
+          @include aspectCombo($c: #aaaaaa, $size: 28px, $f-weight: bold)
+          float: right
+          &:hover,
+          &:focus
+            @include aspectCombo($c: #000, $t-dec: none, $crsr: pointer)
+      #modal-failure
+        @include aspectCombo($dis: none, $back-c: rgba(0,0,0,0.4))
+        @include positioningCombo($pos: fixed, $index: 1, $l: 0, $t: 0, $oflow: auto)
+        @include sizingCombo($pad-t: 100px, $w: 100%, $h: 100%)
+        #modal-failure-content 
+          @include sizingCombo($m: auto, $pad: 20px, $border: $border-style, $w: 80%)
+          background-color: #fefefe
+          #close-modal
+            @include aspectCombo($c: #aaaaaa, $size: 28px, $f-weight: bold)
+            float: right
+            &:hover,
+            &:focus
+              @include aspectCombo($c: #000, $t-dec: none, $crsr: pointer)
+
+
+
+// @mixin mgAndPad($m, $pad)
+//   margin: $m
+//   padding: $pad
+
+// @mixin wAndH($width, $height : null)
+//   width: $width
+//   height: $height
+
+// @mixin colorAndFontSize($color, $fSize)
+//   color: $color
+//   font-size: $fSize
+
+// @mixin fontCombo($family : null, $size : null, $weight : null)
+//   font-family: $family
+//   font-size: $size
+//   font-weight: $weight
+
+// @mixin backAndColor($back, $color)
+//   background: $back
+//   color: $color
+
+// @mixin transitionBrowsersCombo($trans)
+//   transition: $trans
+//   -webkit-transition: $trans
+//   -moz-transition: $trans
+//   -ms-transition: $trans
+
+// @mixin leftAndTop($left, $top)
+//   left: $left
+//   top: $top
+
+// @mixin modalCombo()
+//   display: none
+//   position: fixed
+//   z-index: 1 
+//   padding-top: 100px
+//   overflow: auto
+
+// @mixin secondComboModal()
+//   background-color: $white
+//   border: $borderStyle
+//   width: 80%
+
+
+
+// .containerX
+//   @include mgAndPad(0,0)
+//   .container
+//     @include mgAndPad(0,0)
+//     .form
+//       position: $abs
+//       width: 500px
+//       flex: 1 1 100%
+//       top: 12%
+//       input
+//         @include fontCombo($lato, $inputFSize)
+//         @include wAndH(470px, 50px)
+//         @include mgAndPad(0, $inputPad)
+//         @include backAndColor(transparent, $darkest)
+//         @include transitionBrowsersCombo($transition)
+//         // padding: 0px 15px 0px 15px
+//         outline: none
+//         border: solid 1px $grey
+//         border-bottom: none
+//       input:hover
+//         background: $grey
+//         color: $lighterGrey
+//       input::placeholder, textarea::placeholder 
+//         @include colorAndFontSize($lightGrey, $inputFSize)
+//       input::-webkit-input-placeholder, textarea::-webkit-input-placeholder 
+//         @include colorAndFontSize($lightGrey, $inputFSize)
+//       input::-moz-placeholder, textarea::-moz-placeholder 
+//         @include colorAndFontSize($lightGrey, $inputFSize)
+//       input::-ms-placeholder, textarea::-ms-placeholder 
+//         @include colorAndFontSize($lightGrey, $inputFSize)
+//       input:focus::placeholder, textarea::focus:placeholder 
+//         color: $mGrey
+//       input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder 
+//         color: $mGrey
+//       input:focus::-moz-placeholder, textarea:focus::-moz-placeholder 
+//         color: $mGrey
+//       input:focus::-ms-placeholder, textarea:focus::-ms-placeholder
+//         color: $mGrey
+//       input:hover::placeholder, textarea:hover::placeholder 
+//         @include colorAndFontSize($lighterGrey, $inputFSize)
+//       input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder 
+//         @include colorAndFontSize($lighterGrey, $inputFSize)
+//       input:hover::-moz-placeholder, textarea:hover::-moz-placeholder 
+//         @include colorAndFontSize($lighterGrey, $inputFSize)
+//       input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder 
+//         color: $darkerGrey
+//       input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder 
+//         color: $darkerGrey
+//       input:hover:focus::placeholder, textarea:hover:focus::placeholder 
+//         color: $darkerGrey
+//       input:hover::placeholder, textarea:hover::placeholder 
+//         @include colorAndFontSize($lighterGrey, $inputFSize)
+//       input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder 
+//         color: $darkerGrey
+//       textarea
+//         @include wAndH(470px, 110px)
+//         @include backAndColor(transparent, $darkest)
+//         @include fontCombo($lato, $inputFSize)
+//         max-width: 470px
+//         max-height: 110px
+//         padding: 15px
+//         outline: none
+//         border: solid 1px $grey
+//         @include transitionBrowsersCombo($transition)
+//       textarea:hover
+//         @include backAndColor($grey, $lighterGrey)
+//       .message
+//         font-family: 'Sacramento', cursive
+//     #modal-success
+//       @include wAndH(100%, 100%)
+//       @include backAndColor($modalBack, $black)
+//       @include leftAndTop(0, 0)
+//       @include modalCombo()
+//       #modal-sccess-content 
+//         @include secondComboModal()
+//         @include mgAndPad(auto, 20px)  
+//     #modal-failure
+//       @include wAndH(100%, 100%)
+//       @include backAndColor($modalBack, $black)
+//       @include leftAndTop(0, 0)
+//       @include modalCombo()
+//       #modal-failure-content
+//         @include secondComboModal()
+//         @include mgAndPad(auto, 20px)
+//     #modal-success,
+//     #modal-failure
+//       #close-modal
+//         color: #aaaaaa
+//         float: right
+//         @include fontCombo(null, 28px, bold)
+//         #close-modal:hover,
+//         #close-modal:focus
+//           color: #000
+//           text-decoration: none
+//           cursor: pointer
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
+
+
+// input::placeholder, textarea::placeholder {
+//   color: #aca49c;
+//   font-size: 0.875em;
+// }
+// input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+//   color: #aca49c;
+//   font-size: 0.875em;
+// }
+// input::-moz-placeholder, textarea::-moz-placeholder {
+//   color: #aca49c;
+//   font-size: 0.875em;
+// }
+// input::-ms-placeholder, textarea::-ms-placeholder {
+//   color: #aca49c;
+//   font-size: 0.875em;
+// }
+// input:focus::placeholder, textarea::focus:placeholder {
+//   color: #bbb5af;
+// }
+// input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+//   color: #bbb5af;
+// }
+// input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+//   color: #bbb5af;
+// }
+// input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+//   color: #bbb5af;
+// }
+// input:hover::placeholder, textarea:hover::placeholder {
+//   color: #e2dedb;
+//   font-size: 0.875em;
+// }
+// input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+//   color: #e2dedb;
+//   font-size: 0.875em;
+// }
+// input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+//   color: #e2dedb;
+//   font-size: 0.875em;
+// }
+// input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+//   color: #cbc6c1;
+// }
+
+
+
+// input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+//   color: #cbc6c1;
+// }
+
+
+
+// input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+//   color: #cbc6c1;
+// }
+
+// input:hover::placeholder, textarea:hover::placeholder {
+//   color: #e2dedb;
+//   font-size: 0.875em;
+// }
+
+// input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+//   color: #cbc6c1;
+// }
+
+// #form {
+//   position: absolute;
+//   width: 500px;
+//   flex: 1 1 100%;
+//   top: 12%
+// }
+
+// input {
+//   font-family: 'Lato', sans-serif;
+//   font-size: 0.875em;
+//   width: 470px;
+//   height: 50px;
+//   padding: 0px 15px 0px 15px;
+  
+//   background: transparent;
+//   outline: none;
+//   color: #726659;
+  
+//   border: solid 1px #b3aca7;
+//   border-bottom: none;
+  
+//   transition: all 0.3s ease-in-out;
+//   -webkit-transition: all 0.3s ease-in-out;
+//   -moz-transition: all 0.3s ease-in-out;
+//   -ms-transition: all 0.3s ease-in-out;
+// }
+
+// input:hover {
+//   background: #b3aca7;
+//   color: #e2dedb;
+// }
+
+// textarea {
+//   width: 470px;
+//   max-width: 470px;
+//   height: 110px;
+//   max-height: 110px;
+//   padding: 15px;
+  
+//   background: transparent;
+//   outline: none;
+  
+//   color: #726659;
+//   font-family: 'Lato', sans-serif;
+//   font-size: 0.875em;
+  
+//   border: solid 1px #b3aca7;
+  
+//   transition: all 0.3s ease-in-out;
+//   -webkit-transition: all 0.3s ease-in-out;
+//   -moz-transition: all 0.3s ease-in-out;
+//   -ms-transition: all 0.3s ease-in-out;
+
+// textarea:hover {
+//   background: #b3aca7;
+//   color: #e2dedb;
+
+// .message {
+//   font-family: 'Sacramento', cursive;
+
+// #modal-success {
+//   display: none;
+//   position: fixed;
+//   z-index: 1; 
+//   padding-top: 100px; 
+//   left: 0;
+//   top: 0;
+//   width: 100%;
+//   height: 100%; 
+//   overflow: auto; 
+//   background-color: rgb(0,0,0); 
+//   background-color: rgba(0,0,0,0.4); 
+
+// #modal-success-content {
+//   background-color: #fefefe;
+//   margin: auto;
+//   padding: 20px;
+//   border: 1px solid #888;
+//   width: 80%;
+
+// #close-success-modal {
+//   color: #aaaaaa;
+//   float: right;
+//   font-size: 28px;
+//   font-weight: bold;
+// #close-success-modal:hover,
+// #close-success-modal:focus {
+//   color: #000;
+//   text-decoration: none;
+//   cursor: pointer;
+// }
+
+// /* The Modal (background) */
+// #modal-failure {
+//   display: none; /* Hidden by default */
+//   position: fixed; /* Stay in place */
+//   z-index: 1; /* Sit on top */
+//   padding-top: 100px; /* Location of the box */
+//   left: 0;
+//   top: 0;
+//   width: 100%; /* Full width */
+//   height: 100%; /* Full height */
+//   overflow: auto; /* Enable scroll if needed */
+//   background-color: rgb(0,0,0); /* Fallback color */
+//   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+// }
+
+// /* Modal Content */
+// #modal-failure-content {
+//   background-color: #fefefe;
+//   margin: auto;
+//   padding: 20px;
+//   border: 1px solid #888;
+//   width: 80%;
+// }
+
+// /* The Close Button */
+// #close-modal {
+//   color: #aaaaaa;
+//   float: right;
+//   font-size: 28px;
+//   font-weight: bold;
+// }
+
+// #close-modal:hover,
+// #close-modal:focus {
+//   color: #000;
+//   text-decoration: none;
+//   cursor: pointer;
+// }
+
+
+
+//         // body {
+// //   font-family: 'Lato', sans-serif;
+// //   background: #e2dedb;
+// //   color: #b3aca7;
+// // }
+
+// // header {
+// //   position: relative;
+// //   margin: 100px 0 25px 0;
+// //   font-size: 2.3em;
+// //   text-align: center;
+// //   letter-spacing: 7px;
+// // }
+// // #submit {
+// //   width: 470px;
+  
+// //   padding: 0;
+// //   margin: -5px 0px 0px 0px;
+  
+// //   font-family: 'Lato', sans-serif;
+// //   font-size: 0.875em;
+// //   color: #b3aca7;
+  
+// //   outline:none;
+// //   cursor: pointer;
+  
+// //   border: solid 1px #b3aca7;
+// //   border-top: none;
+// // }
+
+// // #submit:hover {
+// //   color: #e2dedb;
+// // }
+
+// // .container { 
+// //   width: 1920px;
+// //   height: 1080px;
+// //   background-image: url('Untitled-6.png');
+// //   background-position: center;
+// // }
+
+// // .background { 
+// //   width:  100%;
+// //   height: 100%;
+// //   z-index: 1;
+// //   position: relative;
+
+// // }

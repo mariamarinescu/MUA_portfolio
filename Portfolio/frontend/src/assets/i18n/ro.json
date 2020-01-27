@@ -1,0 +1,215 @@
+{   "shared":{
+    "imageAltMsg": "Eroare incarcare imagine..."
+},
+    "forgotPassword": {
+        "title":"Reseteaza parola",
+        "message": "Te rog, introdu adresa de e-mail.",
+        "placeholderInput": "Adresa de e-mail",
+        "buttonReset":"Reseteaza parola acum",
+        "takeMeBackButton":"Inapoi la meniu", 
+        "loginButton": "Logare admin"
+    },
+    "contact": {
+        "title": "Contacteaza-ma!",
+        "nameInput": "Nume si prenume",
+        "emailInput" : "Email",
+        "phNumberInput" : "Nr. de telefon",
+        "messageInput": "Mesaj",
+        "sendEmailButton": "Trimite!",
+        "successModalMessage": "Email-ul dvs. a fost trimis! Va voi contacta in cel mai scurt timp.",
+        "failureModalMessage": "Eroare! Va rog, mai incercati odata sau contactati-ma la nr. de telefon. Va multumesc!"
+    },
+    "home":{
+        "proverb": "„Dragostea de frumusete este Gust. Crearea de frumusete este Arta.”         – Ralph Waldo Emerson",
+        "firstDescription": "In zilele obisnuite in care porti machiaj de zi discret, natural, in serile speciale cand alegi un machiaj de seara sau un machiaj pentru evenimente speciale- machiaj fashion care sa iti puna in valoare trasaturile sau in cea mai importanta seara a vietii tale, nunta, cand, desigur, porti un machiaj de mireasa care te transforma intr-o veritabila printesa, demna de admiratia celor din jur, valorificarea trasaturilor tale la cote maxime depinde de alegerea celui mai bun make-up artist, abil in a transforma frumusetea ta in elementul central al alegerilor cromatice si stilurilor pe care le realizeaza.",
+        "introductionMsg": "Numele meu este {{name}}",
+        "descriptionOne": "Sunt makeup artist profesionist, cu locatia în Bucuresti si sunt specializata pe domeniul makeup utilizand diferite tehnici, incluzand tehnica creionului si tehnica acuarelei.",
+        "descriptionTwo": "Folosesc produse profesionale care garanteaza rezistenta indelungata si tehnici pe care le-am acumulat prin experienta si cursuri de specializare. Pentru mine, machiajul nu înseamna neaparat sa fie evident vizibil, ci înseamna efectul pe care il ofera purtatoarei fara sa strige „uitati-va la machiajul meu”. In schimb, efectul pe care caut sa il ating este unul in care arati atat de bine, atat de increzatoare in tine incat atunci cand intri intr-o incapere toata lumea care se uita la tine incearca sa isi dea seama ce e diferit la tine. Acesta este rezultatul pe care vreau sa il ating pentru clientele mele: prin aplicare de machiaj profesionala, intelegerea stilurilor diferite si tehnica de aplicare de lunga durata.",
+        "motto": "Ma ghidez dupa propriul motto: „Acolo unde exista pasiune, va exista mereu perfectiune”.",
+        "mapTitle": "Te astept la o sesiune de machiaj.",
+        "mapTitleP2": "Ma gasesti aici :)",
+        "phoneNumber": "0729681302",
+        "goToTopButton": "Inapoi sus"
+    },
+    "makeupGallery": {
+        "title": "{{title}}",
+        "caption":"{{caption}}",
+        "day":{
+            "title": "Machiaj de zi",
+            "caption": "Machiaj realizat la cererea clientei"
+        },
+        "night":{
+            "title": "Machiaj de seara",
+            "caption": "Machiaj realizat la cererea mea"
+        },
+        "bridal":{
+            "title": "Machiaj de mireasa",
+            "caption": "Machiaj realizat la, cererea mirelui"
+        },
+        "special":{
+            "title": "Machiaj special",
+            "caption": "Machiaj realizat la cererea platitorului"
+        }
+    },
+    "header": {
+        "logoAltMsg": "Eroare incarcare AC-MUA-logo...",
+        "homeButton": "Pagina principala",
+        "portfolioButton": "Portofoliu",
+        "dayCategButton": "Machiaj de zi",
+        "nightCategButton": "Machiaj de seara",
+        "bridalCategButton": "Machiaj de mireasa",
+        "specialCategButton": "Machiaj special",
+        "servicesButton": "Servicii",
+        "contactButton": "Contact",
+        "changeLang": "Limba"
+    }, 
+    "footer": {
+        "message": "Pentru programari: 0729681302",
+        "artist": "|Alexandra Ciausu MUA (C) 2019|",
+        "privacyPolicyButton": "Politica de confidentialitate",
+        "insideMessage": "Designed by Maria Marinescu  ",
+        "adminLoginButton": " |Admin Log-In|"
+    },
+    "login": {
+        "title": "Admin Log-In",
+        "message": "Daca nu esti tu admin, ar trebui sa te intorci pe pagina principala. :)",
+        "emailInput": "Email",
+        "passwordInput": "Parola",
+        "loginButton": "Loghează-te!",
+        "forgotPassButton": "Ai uitat parola?"
+    },
+    "adminMenu": {
+        "gretting": "Bine ai venit,",
+        "message": "Alege ce vrei  să  faci astazi:",
+        "insideMenuMsg": "Vezi / sterge poze pe categorii:",
+        "uploadButton": "Incarca poze",
+        "firstCategButton": "Machiaj de zi",
+        "secondCategButton": "Machiaj de seara",
+        "thirdCategButton": "Machiaj de mireasa",
+        "fourthCategButton": "Machiaj special",
+        "logoutButton": "Delogheaza-te!"
+    },
+ 
+    "adminGallery": {
+        "title": "{{title}}",
+        "deleteButton": "Sterge",
+        "backToMenuButton": "Inapoi la meniu",
+        "logoutButton": "Delogheaza-te!",
+        "successModelMsg": "Fotografia a fost stearsa!",
+        "failureModalMsg": "Eroare! Mai incearca odata.",
+        "day": {
+            "title": "Machiaj de zi",
+            "caption": "Machiaj realizat la cererea mea"
+        },
+        "night": {
+            "title": "Machiaj de zseara",
+            "caption": "Machiaj realizat la cererea clientei"
+        },
+        "bridal": {
+            "title": "Machiaj de mireasa",
+            "caption": "Machiaj realizat la cererea mirelui"
+        },
+        "special": {
+            "title": "Machiaj special",
+            "caption": "Machiaj realizat la cererea platitorului"
+        }
+    },
+    "adminUpload": {
+        "message": "Incarca poze in portofoliu",
+        "secondMsg": "Alege categoria in care doresti sa faci upload :)",
+        "labelMsg": "Alege-o de aici de jos ↓",
+        "firstSelectOption": "Machiaj de zi",
+        "secondSelectOption": "Machiaj de seara",
+        "thirdSelectOption": "Machiaj de mireasa",
+        "fourthSelectOption": "Machiaj special",
+        "backToMenuButton": "Inapoi la meniu",
+        "logoutButton": "Log-Out"
+    },
+"adminUploader": {
+    "message": "Ai ales categoria „{{category}}” : ",
+    "dropzoneTitle": "Drop Zone",
+    "dropzoneMsg": "Trage pozele dorite si plaseaza-le aici sau apasa pe buton si selecteaza-le.",
+    "successMsg": "Ai facut upload la urmatoarele poze:"
+},
+"adminUploadTask": {
+    "downloadMeButton": "Descarca-ma!",
+    "snapValue": "{{ snap.bytesTransferred }} of {{ snap.totalBytes }}",
+    "results": "Urmatoarele poze sunt cele incarcate de tine:",
+    "pauseButton": "Pauza",
+    "cancelButton": "Anuleaza",
+    "resumeButton": "Continua",
+    "progressValue": "{{ pct | number }}%"
+},
+"services": {
+    "firstCardTitle": "Machiaj de zi",
+    "firstCardFirstChoice": "Machiaj de zi (45 min.) - 150 LEI",
+    "firstCardSecondChoice": "Machiaj de zi cu gene banda/smocuri (60 min.) - 180 LEI",
+    "firstCardThirdChoice": "Machiaj de zi express (20 min.) - 80 LEI",
+    "secondCardTitle": "Machiaj de seara",
+    "secondCardFirstChoice": "Machiaj de seara (45 min.) - 180 LEI",
+    "secondCardSecondChoice": "Machiaj de seara cu gene banda/smocuri (60 min.) - 200 LEI",
+    "secondCardThirdChoice": "Machiaj de seara express (20 min.) - 85 LEI",
+    "thirdCardTitle": "Machiaj de mireasa",
+    "thirdCardFirstChoice": " Machiaj de mireasa fara gene (90 min.) / cu gene (100 min.) - 300/ 350 LEI",
+    "thirdCardSecondChoice": "Proba machiaj de mireasa (60 min.) - 180 LEI",
+    "thirdCardThirdChoice": "Proba machiaj pt. mire (30 min.) - 80 LEI",
+    "thirdCardFourthChoice": "Machiaj pt. mire (40 min.) - 130 LEI",
+    "fourthCardTitle": "Machiaj de special",
+    "fourthCardFirstChoice": "Machiaj complexitate ridicata VFX (90 min.) - 300-350 LEI",
+    "fourthCardSecondChoice": "Machiaj complexitate medie VFX (60 min.) - 200 LEI<",
+    "fourthCardThirdChoice": "Machiaj complexitate scazuta VFX (40 min.) - 120 LEI",
+    "message": "Pentru mai multe detalii, nu ezita sa ma contactezi folosind pagina de contact sau numarul de telefon."
+},
+"privacyPolicy": {
+    "title": "Politica de confidențialitate - Alexandraciausu.com",
+    "firstReadingTitle": "1.Colectarea datelor personale",
+    "firstReadingContent": "1.1 Solicit datele dvs. personale doar in cazul in care doriti sa ma contactati in scopul contractarii serviciilor pe care le ofer prin  utilizarea paginii mele de contact.",
+    "secondReadingTitle": "2.Ce fel de date colectez si in ce scop:",
+    "secondReadingContent": "<strong>Nume si prenume</strong> - Colectez aceste informatii pentru a va contacta ulterior, doar la cererea dumneavoastra.",
+    "secondReadingContentPartTwo": " <strong>Telefon</strong> - Colectez aceste informatii pentru a va contacta ulterior si pentru a discuta detalii referitor la serviciile pe care le ofer.",
+    "thirdReadingTitle": "3.De la cine colectez datele personale:",
+    "thirdReadingContent": "3.1 Direct de la dumneavoastra atunci cand ma contactati telefonic",
+    "thirdReadingContentPartTwo": "3.2 Electronic, folosing formularul de contact de pe pagina mea.",
+    "fourthReadingTitle": "4.Furnizarea datelor personale este:",
+    "fourthReadingContent": "4.1 Voluntara, fara a avea in vedere incheierea ulterioara a unei relatii comerciale.",
+    "fourthReadingContentPartTwo": "4.2 Obligatorie, in vederea achizitionarii serviciilor mele si implicit, pentru incheierea unei relatii comerciale si a inregistrarii fiscale a acesteia, inclusiv a facturarii.",
+    "fifthReadingTitle": "5. Prelucrarea datelor personale are loc in urmatoarele situatii:",
+    "fifthReadingContent": "5.1 Atunci cand exista o cerere din partea clientilor/potentialilor clienti (cerere verbala sau scrisa).",
+    "fifthReadingContentPartTwo": "5.2 Cand este necesara incheierea unei relatii comerciale, respectiv incheierea unui contract de prestari servicii pentru achizitionarea serviciilor mele.",
+    "sixthReadingTitle": "6.Scopul prelucrarii datelor personale",
+    "sixthReadingContent": "6.1 Datele dvs. vor fi prelucrate numai in scopurile mentionate la punctul 2. din prezenta informare.",
+    "sixthReadingContentPartTwo": "6.2 In cazul in care datele dvs vor trebui prelucrate in alte scopuri decat cele prezentate la punctul 2, va vom informa inainte de a le prelucra, iar acestea vor fi prelucrate numai cu acordul dumneavoastra.",
+    "seventhReadingTitle": "Cookie-uri:",
+    "seventhReadingContent": "7.1 Cookie-urile sunt fragmente de informatie pe care site-ul le transfera utilizatorilor pentru a putea tine evidenta. In timp ce va aflati pe un site, cookie-urile salveaza preferintele dumneavoastra si astfel fac navigarea pe web mai usoara. Majoritatea website-urilor folosesc cookie-uri. Acestea nu sunt folosite pentru stocarea informatiilor personale, ele ne arata cum si cand vizitatorii folosesc site-ul, si ne ajuta sa vedem care sunt zonele populare si care nu sunt.",
+    "seventhReadingContentPartTwo": "7.2 Folosesc cookie-uri (texte speciale) pentru o buna evaluare a comportamentului utilizatorilor pe website-urile noastre in scopul oferirii serviciilor de marketing in mod corect si pentru ca utilizatorul sa poata beneficia de toate facilitatile site-ului pe care il viziteaza (formular de cumparaturi, magazin online, etc, in functie de specificul website-ului). informatiile pe care le colectam prin cookies si gif-uri transparente pentru a crea un “profil” al preferintelor dumneavoastra.",
+    "seventhReadingContentPartThree": "7.3 Puteti dezactiva cookie-urile folosind preferintele browserului. Astfel, puteti seta browser-ul sa refuze toate cookie-urile sau sa indice atunci cand un cookie este trimis. Insa, va aducem la cunostinta faptul ca, atunci cand cookie-urile sunt dezactivate, este foarte posibil ca anumite functionalitati ale website-ului sa nu poata fi folosite ori sa aiba o viteza de incarcare foarte lenta.",
+    "eighthReadingTitle": "8.Dezvaluirea datelor personale",
+    "eighthReadingContent": "8.1 Datele dvs. nu sunt dezvaluite nimanui, sub nici o conditie.",
+    "ninthReadingTitle": "9.Perioada de stocare a datelor",
+    "ninthReadingContent": "9.1. Datele dvs vor fi stocate pe o perioada de timp limitata, respectiv pe toata perioada contractarii serviciilor si pana la expirarea duratei de contractare a acestora. Datele de facturare vor fi sterse conform obligatiilor impuse de lege in acest sens.",
+    "tenthReadingTitle": "10.Transferul datelor personale in afara UE sau SEE",
+    "tenthReadingContent": "10.1.Acest site nu transfera datele dvs. personale, catre tari din afara UE sau SEE.",
+    "eleventhReadingTitle": "11.Securitatea datelor personale",
+    "eleventhReadingContent": "11.1 Securitatea informatiilor primite din partea vizitatorilor sau a clientilor, este foarte importanta pentru noi. Serverele pe care datele sunt stocate, au implementate masuri de siguranta, precum:",
+    "eleventhReadingContentPartTwo": "recuperarea datelor personale",
+    "eleventhReadingContentPartThree": "descoperirea breselor de securitate",
+    "eleventhReadingContentPartFour": "descoperirea cauzelor breselor de Securitate",
+    "eleventhReadingContentPartFive": "limitarea incalcarii securitatii",
+    "eleventhReadingContentPartSix": "In cazul in care descoperim faptul ca s-a produs o incalcare a securitatii datelor dvs personale, vom informa imediat managementul companiei titulare a serverelor, aceasta urmand a lua toate masurile pentru restabilirea securitatii datelor, va depune toate eforturile pentru atenuarea riscului imediat de producere a unui prejudiciu si va notifica Autoritatea de Supraveghere cu privire la incidentul de securitate, daca încălcarea este susceptibilă să ducă la un risc ridicat pentru drepturile și libertatile persoanelor carora le-a fost afectata securitatea datelor personale.",
+    "twelfthReadingTitle": "12.Drepturile utilizatorilor",
+    "twelfthReadingContent": "<strong>12.1 Conform noului Regulament GDPR, va prezentam in cele de mai jos, care sunt drepturile pe care le aveti in calitate de utilizatori/clienti:</strong>",
+    "twelfthReadingContentPartTwo": "<strong>Dreptul la informare</strong> – se refera la dreptul de a fi informati asupra tuturor aspectelor prezentate anterior.",
+    "twelfthReadingContentPartThree": "<strong>Dreptul de acces</strong> – aveti dreptul de a obtine confirmarea din partea noastra ca prelucram sau nu datele cu caracter personal care va privesc si, in caz afirmativ, acces la datele respective si la informatii privind modalitatea in care sunt prelucrate datele.",
+    "twelfthReadingContentPartFour": "<strong>Dreptul la opozitie</strong> – dreptul de a va opune prelucrarii datelor personale daca prelucrarea este necesara pentru indeplinirea unei sarcini care serveste unui interes public. Deasemenea, daca prelucrarea datelor cu caracter personal are drept scop marketingul direct, aveti dreptul de a va opune prelucrarii oricand",
+    "twelfthReadingContentPartFive": "<strong>Dreptul la portabilitatea datelor</strong> –aveti dreptul de a primi datele personale intr-un format care sa poata fi citit automat si care sa permita ca datele sa fie transmise direct altui operator.",
+    "twelfthReadingContentPartSix": "<strong>Dreptul la stergerea datelor (“dreptul de a fi uitat”)</strong> – puteti solicita ca datele sa fie sterse, fara intarzieri nejustificate, in cazul in care apar urmatoarele situatii: datele nu mai sunt necesare pentru indeplinirea scopurilor pentru care au fost colectate sau prelucrate; iti retragi consimtamantul si nu exista niciun alt temei juridic pentru prelucrare; te opui prelucrarii si nu exista motive legitime care sa prevaleze; datele cu caracter personal au fost prelucrate ilegal; datele cu caracter personal trebuie sterse pentru respectarea unei obligatii legale; datele cu caracter personal au fost colectate in legatura cu oferirea de servicii ale societatii informationale.",
+    "twelfthReadingContentPartSeven": "<strong>Dreptul la restrictionarea datelor</strong> – aveti dreptul de a cere restrictionarea datelor pe o perioada de timp, de exemplu, in situatia in care s-a luat decizia stergerii datelor dumneavoastra iar dumneavoastra considerati ca va sunt utile in diferite situatii, precum exercitarea unui drept in instanta. Deasemenea, in cazul in care contestati acuratetea datelor ori prelucrarea este ilegala, puteti solicita restrictionarea datelor. Astfel, in urma primirii unei cereri din partea dumneavoastra si in urma verificarii acesteia, vom stopa prelucrarea datelor personale pe o perioada de timp.",
+    "twelfthReadingContentPartEight": "<strong>Dreptul la rectificarea datelor</strong> – puteti solicita rectificarea anumitor date personale, in cazul in care acestea sunt incomplete sau inexacte. Astfel, in functie de scopul prelucrarii, puteti completa si apoi transmite datele personale care lipsesc sau nu sunt corecte, fiind posibila chiar completarea unei declaratii pentru conformitate.",
+    "twelfthReadingContentPartNine": "<strong>Dreptul de a depune o plangere</strong>  la Autoritatea Nationala de Supraveghere a Prelucrarii Datelor cu Caracter Personal, atunci cand constatati ca v-au fost incalcate drepturile cu privire la prelucrarea datelor personale.",
+    "thirteenthReadingTitle": "13.Cum ma puteti contacta:",
+    "thirteenthReadingContent": "<strong>Pentru orice intrebari si orice solicitari cu privire la prelucrarea datelor personale, ma puteti contacta astfel:</strong>",
+    "thirteenthReadingContentPartTwo": "pe email la adresa: mariafmarinescu@outlook.com;",
+    "thirteenthReadingContentPartThree": "la numarul de telefon : +40722.868.038",
+    "thirteenthReadingContentPartFour": "Indiferent de modalitatea pe care o alegeti pentru transmiterea cererii catre mine, voi face tot posibilul sa rezolv toate cererile si/sau plangerile intr-un timp cat mai scurt. In cazul in care raspunsul meu nu v-a multumit, va puteti adresa Autorității Naționale de Supraveghere a Prelucrării Datelor cu Caracter Personal (sediul in B-dul G-ral. Gheorghe Magheru 28-30, Sector 1, Bucuresti)."
+}
+ }

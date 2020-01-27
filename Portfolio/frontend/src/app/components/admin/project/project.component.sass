@@ -1,0 +1,87 @@
+@import "../../../sass/aspect-mixin.sass"
+@import "../../../sass/sizing-mixin.sass"
+@import "../../../sass/positioning-mixin.sass"
+
+
+$abs: absolute
+$rel: relative
+
+
+html,body
+  @include sizingCombo($w: 100%, $h: 100%)
+  position: $rel
+
+.containerX
+  @include sizingCombo($m: 0, $pad: 0)
+  .container
+    @include sizingCombo($m: 0, $pad: 0)
+    .signout
+      @include positioningCombo($pos: $abs, $index: 100)
+      cursor: pointer
+    #admin-menu
+      position: $abs
+      .display-4
+        text-align: center
+      .email-greeting
+        text-align: center
+      .admin-menu-message
+        position: $abs
+        margin: 50px white
+      nav 
+        .hamburger-buttom
+          .navbar-toggler-icon
+              background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg?color=00FBD8')
+
+  // html,
+// body {
+//     width: 100%;
+//     height: 100%;
+//     position: relative;
+// }
+
+// // h2 {
+// //     color: white;
+// //     background-color: black;
+// // }
+
+// // #logOut {
+// //     position: absolute;
+// //     z-index: 10;
+// //     top: 130px;
+// //     bottom: -130px;
+// //     right: 20px;
+// //     width: 150px;
+// //     height: 30px;
+// //     color: white;
+// //     background-color: black;
+// //     text-align: center;
+// // }
+// // .upload,
+// // .inside,
+// // .firstChoice,
+// // .secondChoice, 
+// // .thirdChoice,
+// // .fourthChoice {
+// //   position: absolute;
+// // }
+
+// .navbar-toggler-icon {
+//     background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg?color=00FBD8');
+// }
+//  .signout {
+//    position: absolute;
+//    cursor: pointer;
+//    z-index: 100;
+//  }
+// #admin-menu{
+//   position: absolute;
+// }
+// .hand-img {
+//   position: relative;
+//   z-index: -1;
+//   top:100px;
+//   right: 5px;
+//   // left: -20px;
+//   bottom:-100px;
+
+// }

@@ -1,0 +1,114 @@
+<div class="containerX" fxFlex fxLayout="column" style="margin:0;padding:0;">
+  <div
+    class="container"
+    fxFlex
+    fxLayout="column"
+    style="margin:0;padding:0;"
+  >
+  <form id="form" class="dynamic-form wrapper centered  gform topBefore"
+  ngStyle.xs="left : 7%; width : 80%;"
+  ngStyle.sm="left : 17%; width : 80%;"
+  ngStyle.md="left : 29%; width : 80%;"
+  ngStyle.lg="left : 36%; width : 100%;"
+  ngStyle.xl="left : 40%; width : 100%;"
+  >
+        <h1 class="message" [translate]="'contact.title'"></h1>
+        <label [translate]="'contact.nameInput'"></label>
+        <input
+          class="form-control"
+          id="name"
+          type="text"
+          [formControl]="name"
+          name="{{ 'contact.nameInput' | translate }}"
+        />
+        <label [translate]="'contact.emailInput'"></label>
+        <input
+          class="form-control"
+          id="email"
+          type="text"
+          [formControl]="email"
+          name="{{ 'contact.emailInput' | translate }}"
+        />
+        <label [translate]="'contact.phNumberInput'"></label>
+        <input
+          [formControl]="mobile"
+          id="number"
+          type="text"
+          name="{{ 'contact.phNumberInput' | translate }}"
+          class="form-control"
+        />
+        <label [translate]="'contact.messageInput'"></label>
+        <textarea
+          class="form-control"
+          id="message"
+          type="text"
+          [formControl]="message"
+          name="{{ 'contact.messageInput' | translate }}"
+        ></textarea>
+        <button
+          id="submit"
+          type="button" class="btn btn-dark send-bttn "
+          (click)="onSubmit()"
+          [translate]="'contact.sendEmailButton'"
+        ></button>
+        <div id="modal-success">
+          <div id="modal-success-content">
+            <span id="close-modal">&times;</span>
+            <p [translate]="'contact.successModalMessage'"></p>
+          </div>
+        </div>
+    
+        <div id="modal-failure">
+          <div id="modal-failure-content">
+            <span id="close-modal">&times;</span>
+            <p [translate]="'contact.failureModalMessage'"></p>
+          </div>
+        </div>
+      </form>
+</div>
+</div>
+
+
+
+<!-- <p class="result-message centered">Thank you for your message</p> -->
+
+<!-- <div class="container contact-form gform">
+  <form #form [formGroup]="contactForm"  
+  class="gform" 
+  method="POST" 
+  action="https://script.google.com/macros/s/AKfycbz9RUgjLP_S8DqQDuC59zjeyYu3LIYYaFXug5Ir/exec">
+      <h3>Contacteaza-ma!</h3>
+     <div class="row">
+          <div class="col-md-6">
+              <div class="gform-group">
+                  <input type="text" name="txtName" class="gform-control" placeholder="Numele dvs. *" formControlName="name" />
+                 
+              </div>
+              <div class="gform-group">
+                  <input type="text" name="txtPhone" class="gform-control" placeholder="Numar de telefon *" formControlName="mobile" />
+                 
+              </div>
+              <div class="gform-group">
+                <input type="text" name="txtEmail" class="gform-control" placeholder="Adresa e-mail *" formControlName="email" />
+            </div>
+              <div class="gform-group">
+                  <button 
+                  type="submit" class="btn btn-success" (click)="form.submit()" routerLink="/home">Trimite!</button>
+                  <button type="reset" (click)="revert()">Reset</button>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="gform-group">
+                  <textarea name="txtMsg" class="gform-control" placeholder="Mesajul dvs *" style="width: 100%; height: 150px;" formControlName="message"></textarea>
+                   
+              </div>
+          </div>
+      </div>
+  </form>
+</div> -->
+<!-- 
+<span *ngIf="(name.touched) && name.invalid && name.errors.required">Numele dvs. este obligatoriu.</span>
+<span *ngIf="(name.dirty) && name.invalid && name.errors.invalidName">Valoarea introdusa trebuie sa fie formata doar din litere.</span>
+<span *ngIf="(mobile.touched) && mobile.invalid && mobile.errors.required">Numarul de telefon este obligatoriu.</span>
+<span *ngIf="(mobile.dirty) && mobile.invalid && mobile.errors.invalidNumber">Valoarea introdusa trebuie sa fie formata din exact 10 cifre.</span>
+<span *ngIf="(message.dirty || message.touched) && message.invalid && message.errors.required">Mesajul este obligatoriu.</span> -->

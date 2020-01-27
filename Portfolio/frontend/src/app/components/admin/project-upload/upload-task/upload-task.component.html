@@ -1,0 +1,20 @@
+
+<div *ngIf="percentage | async as pct" [translate]='"adminUploadTask."'>
+  <progress [value]="pct" max="100"></progress>
+</div>
+
+
+
+<div *ngIf="snapshot | async as snap" [translate]='"adminUploadTask.snapValue"'>
+  <div *ngIf="downloadURL as url ">
+    <h3 [translate]='"adminUploadTask.results"'></h3>
+    <img class="uploaded-imgs" [src]="url" alt='{{ "shared.imageAltMsg" | translate }}'><br>
+    <a [href]="url" target="_blank" rel="noopener" [translate]='"adminUploadTask.downloadMeButton"'></a>
+  </div> 
+
+  <button (click)="task.pause()" [disabled]="!isActive(snap)" [translate]='"adminUploadTask.pauseButton"'></button>
+  <button (click)="task.cancel()" [disabled]="!isActive(snap)" [translate]='"adminUploadTask.cancelButton"'></button>
+  <button (click)="task.resume()" [disabled]="!(snap?.state === 'paused')" [translate]='"adminUploadTask.resumeButton"'></button>
+</div>
+
+

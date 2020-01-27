@@ -1,0 +1,147 @@
+<!-- <div
+  class="container"
+  fxLayoutWrap
+  gdAlignRows="row wrap"
+  ngStyle=" height: 100%;"
+>
+  <div class="nav" fxLayoutGap="0px">
+    <div class="nav-header" fxLayout="row wrap">
+      <div class="nav-title"  
+      fxFlex="22"
+      fxFlex.md="30"
+      fxFlex.sm="40"
+      fxFlex.xs="44">
+        <span
+          ><a
+          
+            routerLink="pagina-principala"
+            class="logo"
+            >Alexandra Ciausu
+          </a>
+        </span>
+      </div>
+    </div>
+    <div
+      class="nav-links"
+      fxFlex="40"
+      fxFlex.md="80"
+      fxFlex.sm="25"
+      fxFlex.xs="20"
+      dir="ltr"
+      flex-offset="10px"
+      flex-offset.sm="1px"
+      flex-offset-xs = "1px"
+    >
+      <a routerLink="pagina-principala"
+        >Pagina principala<span class="sr-only">(current)</span></a
+      >
+      <span class="dropdown">
+        <button class="dropbtn">Portofoliu</button>
+        <div class="dropdown-content">
+          <a
+            class="dropdown-item firstItem"
+            [routerLink]="['/galerie', 'machiaj-de-zi']"
+            [translate]="'header.dayCategButton'"
+          ></a>
+          <div class="dropdown-divider"></div>
+          <a
+            class="dropdown-item secondItem"
+            [routerLink]="['/galerie', 'machiaj-de-seara']"
+            [translate]="'header.nightCategButton'"
+          ></a>
+          <div class="dropdown-divider"></div>
+          <a
+            class="dropdown-item thirdItem"
+            [routerLink]="['/galerie', 'machiaj-de-mireasa']"
+            [translate]="'header.bridalCategButton'"
+          ></a>
+          <div class="dropdown-divider"></div>
+          <a
+            class="dropdown-item fourthItem"
+            [routerLink]="['/galerie', 'machiaj-special']"
+            [translate]="'header.specialCategButton'"
+          ></a>
+        </div>
+      </span>
+      <a
+        class="nav-link services"
+        routerLink="servicii"
+        [translate]="'header.servicesButton'"
+      ></a>
+      <a
+        class="nav-link contact"
+        routerLink="contact"
+        [translate]="'header.contactButton'"
+      ></a>
+    </div>
+  </div>
+</div> -->
+<div class="containerX">
+<div class="container"
+  fxFlex
+  fxLayout="row">
+<div class="nav"
+>
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title"><span><a class="logo" routerLink = "pagina-principala" >Alexandra Ciausu </a>
+    </span>
+<!-- <img 
+src="https://firebasestorage.googleapis.com/v0/b/alexandraciausu-a6df7.appspot.com/o/assets%2Flogo.png?alt=media" 
+class="logo"
+/> -->
+<!-- <img src="https://firebasestorage.googleapis.com/v0/b/alexandraciausu-a6df7.appspot.com/o/assets%2Fmobile-logo.png?alt=media"  class="mobile-logo"/> -->
+</div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  <div class="nav-links">
+    <a routerLink="pagina-principala"
+    >Pagina principala<span class="sr-only">(current)</span></a>
+    <span class="dropdown">
+      <button class="dropbtn">Portofoliu</button>
+      <div class="dropdown-content">
+        <a
+            class="dropdown-item firstItem"
+            [routerLink]="['/galerie', 'machiaj-de-zi']"
+            [translate]='"header.dayCategButton"'
+            ></a
+          >
+          <div class="dropdown-divider"></div>
+          <a
+            class="dropdown-item secondItem"
+            [routerLink]="['/galerie', 'machiaj-de-seara']"
+            [translate]='"header.nightCategButton"'
+            ></a
+          >
+          <div class="dropdown-divider"></div>
+          <a
+            class="dropdown-item thirdItem"
+            [routerLink]="['/galerie', 'machiaj-de-mireasa']"
+            [translate]='"header.bridalCategButton"'
+            ></a
+          >
+          <div class="dropdown-divider"></div>
+          <a
+          class="dropdown-item fourthItem"
+          [routerLink]="['/galerie', 'machiaj-special']"
+          [translate]='"header.specialCategButton"'
+          ></a
+        >
+      </div>
+    </span>
+    <a class= "nav-link services" routerLink="servicii" [translate]='"header.servicesButton"'></a>
+    <a class="nav-link contact" routerLink="contact" [translate]='"header.contactButton"'></a>
+    
+  </div>
+  <button class="nav-lang-ro" (click)="changeLanguage('ro')"><span><img src="../../../assets/romania.png" ></span></button>
+  <button class="nav-lang-en" (click)="changeLanguage('en')"><span><img src="../../../assets/united-states-of-america.png" ></span></button>
+</div>
+</div>
+</div>
+

@@ -1,0 +1,35 @@
+@import "../../../sass/aspect-mixin.sass"
+@import "../../../sass/sizing-mixin.sass"
+@import "../../../sass/positioning-mixin.sass"
+@import url("https://fonts.googleapis.com/css?family=Handlee")
+// $zero : 0;
+$Handlee: "Handlee", cursive
+$abs: absolute
+$rel: relative
+$imgs-around: 15px white 
+
+.containerX
+    .container
+        .backToMenu
+            @include positioningCombo($pos:  $abs, $l: 7%, $t:85%)
+            @include sizingCombo($w: 175px, $h: 45px)
+        .logout
+            @include positioningCombo($pos: $abs, $t: 85%, $l: 7%)
+            @include sizingCombo($w: 100px, $h: 45px)
+    .title
+        @include aspectCombo($t-align: center, $family: $Handlee,)
+        @include positioningCombo($t: 11%, $pos: $abs, $l: 100px)
+        @include sizingCombo($w: 100%, $h: 100%)
+    .card-group
+        @include positioningCombo($pos:$abs, $t: 15%, $oflow-y: scroll)
+        @include sizingCombo($w: 90%, $h: 650px, $pad: 0,$m: 0,)
+        .main
+            margin-top: 50px white!important
+            .card
+                position: $abs
+                @include sizingCombo($m: 50px, $pad: 1px)
+                .card-img-top
+                    @include sizingCombo($pad: $imgs-around, $m: $imgs-around, $w: 300px, $h: 300px)
+                .delete
+                    margin-bottom: 50px white
+

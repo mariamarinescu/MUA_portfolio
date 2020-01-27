@@ -1,0 +1,24 @@
+<div class = "container" fxLayout="row"
+     fxLayout.lt-md="column"
+     fxLayoutAlign="center">
+  <mat-card fxFlex="80">
+    <mat-card-title-group>
+      <mat-card-title [translate]='"makeupGallery.title"'>{{title}}</mat-card-title>
+      <mat-card-subtitle>{{caption}}</mat-card-subtitle>
+    </mat-card-title-group>
+    <mat-card-content>
+        <ngx-image-gallery
+          #ngxImageGallery
+          [images]="images"
+          [conf]="conf"
+          (onOpen)="galleryOpened($event)"
+          (onImageClicked)="galleryImageClicked($event)"
+          (onImageChange)="galleryImageChanged($event)">
+        </ngx-image-gallery>
+  
+        <mat-list *ngFor="let entry of ngxImageGallery.activeImage | keys">
+        </mat-list>
+      </mat-card-content>
+    </mat-card>
+    </div>
+  

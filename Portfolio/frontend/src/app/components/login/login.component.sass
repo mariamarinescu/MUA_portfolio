@@ -1,0 +1,349 @@
+@import "../../sass/aspect-mixin.sass"
+@import "../../sass/sizing-mixin.sass"
+@import "../../sass/positioning-mixin.sass"
+@import url('https://rsms.me/inter/inter-ui.css')
+  
+$abs: absolute
+$rel: relative
+$s-dsharr: 240 1386
+$strk: url(#linearGradient)
+$o-imp: none!important
+$submit-trans: color 300ms 
+$auto: 0 auto
+$left-calc: calc(100% - 40px)
+$b-shdow: 0px 0px 40px 16px rgba(0,0,0,0.22)
+$black: #000000
+$white: #ffffff
+
+
+::selection 
+  background: #2D2F36
+::-webkit-selection 
+  background: #2D2F36
+::-moz-selection 
+  background: #2D2F36
+input::-moz-focus-inner 
+  border: 0
+
+.containerX
+  .container 
+    @include positioningCombo($pos: $abs, $t: 18%)
+    display: flex
+    @include sizingCombo($h: 320px, $w: 640px, $m: 0 auto)
+    .left 
+      @include aspectCombo($back: black, $c: white)
+      @include positioningCombo($pos: $rel, $t: 20px)
+      @include sizingCombo($h: calc(100% - 40px), $w: 50% )
+      .login 
+        @include aspectCombo($size: 33px, $f-weight: 900)
+        margin: 50px 40px 40px
+      .eula 
+        @include aspectCombo($c: white, $size: 14px)
+        @include sizingCombo($line-h: 1.5, $m: 40px)
+    .right 
+      @include aspectCombo($c: #F1F1F2, $back: #474A59, $b-shadow: $b-shdow)
+      position: relative
+      width: 50%
+      svg 
+        position: absolute
+        width: 320px
+        path 
+          @include aspectCombo($fill: none, $stroke: url(#linearGradient), $stroke-w: 4, $stroke-dsharr: 240 1386)
+      .form 
+        margin: 40px
+        position: absolute
+        label 
+          @include aspectCombo($c: #c2c2c5, $dis: block, $size: 14px)
+          @include sizingCombo($h: 16px, $m-top: 20px, $m-bttm: 5px)
+        input 
+          @include aspectCombo($back: transparent, $c: #f2f2f2, $size: 20px, $o-line: none!important)
+          @include sizingCombo($border: 0, $h: 30px, $w: 100%, $line-h: 30px)
+        #submit 
+          @include aspectCombo($c: #707075, $trans: color 300ms)
+          margin-top: 40px
+          &:focus 
+              color: #f2f2f2
+          &:active 
+              color: #d0d0d2
+      
+@media (max-width: 767px) 
+  .containerX
+    .container 
+      @include sizingCombo($h: 790px, $w: 320px)
+      flex-direction: column
+      .left 
+        @include sizingCombo($h: 100%, $w: calc(100% - 40px), $max-h: 270px)
+        left: 20px
+      .right 
+        @include sizingCombo($h: 100%, $w: 100%, $max-h: 350px)
+        flex-shrink: 0
+    
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+// @mixin firstCombo($pos: null, $w: null, $m: null, $dis: null, $h: null, $bder: null, $l-h: null, $t: null, $flex-dir: null, $flex-shrk: null, $l: null, $max-h: null)
+// position: $pos
+// width: $w
+// margin: $m
+// display:  $dis
+// height: $h
+// border: $bder
+// line-height: $l-h
+// top: $t
+// flex-direction: $flex-dir
+// flex-shrink: $flex-shrk
+// left: $l
+// max-height: $max-h
+
+// @mixin mAndPadAndPos($m: null, $pad: null, $pos: null)
+//   margin: $auto
+//   padding: $auto
+//   position: $pos
+
+
+
+// @mixin secondCombo($fill: null, $strke: null, $strke-w: null, $strke-dsharr: null)
+// fill:  $fill
+// stroke:  $strke
+// stroke-width: $strke-w
+// stroke-dasharray: $strke-dsharr
+
+
+// @mixin thirdCombo($size: null, $c: null, $fw: null, $back: null, $oline: null, $m-top: null, $m-bott: null, $pad-bott: null, $trans: null, $b-shadow: null)
+// font-size: $size
+// font-weight: $fw
+// color: $c
+// background: $back
+// outline: $oline
+// margin-top: $m-top
+// margin-bottom: $m-bott
+// padding-bottom: $pad-bott
+// transition: $trans
+// box-shadow: $b-shadow
+// $dark-blue: #2D2F36
+// $grey: #c2c2c5
+// $light-grey: #f2f2f2
+// $blue-ish-grey: #d0d0d2
+// $shade-of-grey: #707075
+// $dark-shade-of-grey: #474A59
+// $lighter-grey: #F1F1F2
+
+  
+// .containerX
+//   @include mAndPadAndPos(0, 0)
+//   .container
+//     @include mAndPadAndPos(0, 0)
+//     .right
+//       ::selection 
+//         background: $dark-blue
+//       ::-webkit-selection 
+//         background: $dark-blue
+//       ::-moz-selection 
+//         background: $dark-blue
+//       svg 
+//         @include firtCombo($pos: $abs, $w: 320px)
+//         path 
+//           @include secondCombo($fill: none, $strke: $strk, $strke-w: 4, $strke-dsharr: $s-dsharr)
+//       form 
+//         @include mAndPadAndPos($m: 40px, $pos: $abs)
+//         label 
+//           @include firstCombo($dis: block, $h: 16px)
+//           @include thirdCombo($c: $grey. $size: 14px, $m-top: 20px, $m-bott: 5px)
+//         input 
+//           @include firstCombo($bder: 0, $h: 30px, $l-h: 30px, $w: 30px, $w: 100%)
+//           @include thirdCombo($back: transparent, $c: $light-grey, $size: 20px, $oline: $o-imp )
+//         input::-moz-focus-inner  
+//           border: 0
+//         #submit 
+//           @include thirdCombo($c: $shade-of-grey, $m-top: 40px,$trans: $submit-trans)
+//         #submit:focus 
+//           color: $light-grey
+//         #submit:active 
+//           color: $blue-ish-grey
+
+// @media (max-width: 767px)
+//   .container
+//     @include firstCombo($pos: $abs, $dis: flex, $h: 320px, $w: 640px, $t: 18%, $m: $auto )
+//     .page
+//       height: auto
+//       @include thirdCombo($m-bott: 20px, $pad-bott: 20px)
+
+
+// @media (max-width: 767px)
+//   .container 
+//     @include firstCombo($flex-dir: column, $h: 630px, $w: 320px)
+//     .left 
+//       @include thirdCombo($back: $black, $c: $white)
+//       @include firstCombo($h: $left-calc, $t: 20px,, $w: 50%, $pos: $rel)
+
+// @media (max-width: 767px) 
+//   .left 
+//     @include firstCombo($h: 100%, $l: 20px, $w: $left-calc, $max-h: 270px)
+//     .login 
+//       @include thirdCombo($size: 33px, $fw: 900)
+//       margin: 50px 40px 40px
+//     .eula 
+//       @include thirdCombo($c: $white, $size: 14px)
+//       -height: 1.5
+//       margin: 40px
+//   .right 
+//     @include firstCombo($pos: $rel, $flex-shrk: 0, $h: 100%, $w: 100%, $max-h: 350px)
+//     @include thirdCombo($back: $dShade-of-grey, $b-shadow: $b-shdow, $c: $lighter-grey)
+    // width: 50%
+  
+
+
+
+
+// @import url('https://rsms.me/inter/inter-ui.css');
+// ::selection {
+//   background: #2D2F36;
+// }
+// ::-webkit-selection {
+//   background: #2D2F36;
+// }
+// ::-moz-selection {
+//   background: #2D2F36;
+// }
+// /* .page {
+//   background: #e2e2e5;
+//   display: flex;
+//   flex-direction: column;
+//   height: calc(100% - 40px);
+//   position: absolute;
+//   place-content: center;
+//   width: calc(100% - 40px);
+// } */
+// @media (max-width: 767px) {
+//   .page {
+//     height: auto;
+//     margin-bottom: 20px;
+//     padding-bottom: 20px;
+//   }
+// }
+// .container {
+//   position: absolute;
+//   display: flex;
+//   height: 320px;
+//   margin: 0 auto;
+//   width: 640px;
+//   top: 18%;
+// }
+// @media (max-width: 767px) {
+//   .container {
+//     flex-direction: column;
+//     height: 630px;
+//     width: 320px;
+//   }
+// }
+// .left {
+//   background: black;
+//   height: calc(100% - 40px);
+//   top: 20px;
+//   position: relative;
+//   width: 50%;
+//   color: white;
+
+// }
+// @media (max-width: 767px) {
+//   .left {
+//     height: 100%;
+//     left: 20px;
+//     width: calc(100% - 40px);
+//     max-height: 270px;
+//   }
+// }
+// .login {
+//   font-size: 33px;
+//   font-weight: 900;
+//   margin: 50px 40px 40px;
+// }
+// .eula {
+//   color: white;
+//   font-size: 14px;
+//   line-height: 1.5;
+//   margin: 40px;
+// }
+// .right {
+//   background: #474A59;
+//   box-shadow: 0px 0px 40px 16px rgba(0,0,0,0.22);
+//   color: #F1F1F2;
+//   position: relative;
+//   width: 50%;
+// }
+// @media (max-width: 767px) {
+//   .right {
+//     flex-shrink: 0;
+//     height: 100%;
+//     width: 100%;
+//     max-height: 350px;
+//   }
+// }
+// svg {
+//   position: absolute;
+//   width: 320px;
+// }
+// path {
+//   fill: none;
+//   stroke: url(#linearGradient);;
+//   stroke-width: 4;
+//   stroke-dasharray: 240 1386;
+// }
+// .form {
+//   margin: 40px;
+//   position: absolute;
+// }
+// label {
+//   color:  #c2c2c5;
+//   display: block;
+//   font-size: 14px;
+//   height: 16px;
+//   margin-top: 20px;
+//   margin-bottom: 5px;
+// }
+// input {
+//   background: transparent;
+//   border: 0;
+//   color: #f2f2f2;
+//   font-size: 20px;
+//   height: 30px;
+//   line-height: 30px;
+//   outline: none !important;
+//   width: 100%;
+// }
+// input::-moz-focus-inner { 
+//   border: 0; 
+// }
+// #submit {
+//   color: #707075;
+//   margin-top: 40px;
+//   transition: color 300ms;
+// }
+// #submit:focus {
+//   color: #f2f2f2;
+// }
+// #submit:active {
+//   color: #d0d0d2;
+// }
+

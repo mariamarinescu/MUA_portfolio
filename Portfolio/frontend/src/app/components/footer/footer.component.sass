@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Kalam|Poiret+One|Sacramento&display=swap')
+@import "../../sass/aspect-mixin.sass"
+@import "../../sass/sizing-mixin.sass"
+@import "../../sass/positioning-mixin.sass"
+
+$abs: absolute
+$rel: relative
+$Poiret: 'Poiret One', cursive
+$dark-grey: #4d4d4d
+$black: #000000
+$white: #ffffff
+
+
+.container
+    @include sizingCombo($pad: 0, $m: 0, $min-h: 100%, $pad-bttm: 60px)
+    @include positioningCombo($index: 1000)
+    footer 
+        @include positioningCombo($bttm: 0px, $pos: fixed, $index: 1000)
+        @include aspectCombo($back-c: $dark-grey, $c: $white, $dis: flex, $justify-c: center, $align-i: center, $t-dec: none, $family: $Poiret, $size: 20px, $b-shadow: #4d4d4d)
+        @include sizingCombo($w: 100%, $h: 40px)
+        clear: both
+        .f-ph
+            @include positioningCombo($pos: $abs, $l: 2%)
+        .p-policy
+            @include aspectCombo($c: $white, $t-dec: none, $crsr: pointer)
+            @include positioningCombo($pos: $abs, $r: 140px)
+        .love
+            @include aspectCombo($c: $black, $b-shadow: $white)
+        .admin-login
+            @include aspectCombo($c: $white, $t-dec: none, $crsr: pointer)
+            @include positioningCombo($pos: $abs, $r: 6px, $t: 7px)
+
+@media (max-width:600px)
+    .container
+        @include sizingCombo($pad: 0, $m: 0)
+        footer 
+            @include sizingCombo($pad: 0, $m: 0)
+            
+            width: 100%
+            .p-policy
+                @include positioningCombo($pos: $abs, $l: 5px)
+                font-size: 15px
+            .admin-login
+                @include positioningCombo($pos: $abs, $r: 5px, $t: 7%)
+            .love
+                display: none
+    
+@media (max-width:800px)
+    .container
+        @include sizingCombo($pad: 0, $m: 0)
+        footer 
+            background-color: #4d4d4d
+            @include positioningCombo($bttm: 0px, $pos: fixed)
+            .allRightsReserved
+                display: none
+           
+@media (max-width:900px)
+    .container
+        footer 
+            .love
+                display: none
+            .admin-login
+                right: 3px
+            .p-policy
+                left: 3px
+            .allRightsReserved
+                @include positioningCombo($pos: $abs, $l: 40%)
+                
+            
+@media (max-width: 1080px)
+    .container
+        .footer
+            .love
+                display: none
+            .allRightsReserved
+                @include positioningCombo($pos: $abs, $l: 40%)
+
+@media (max-width:1360px)
+    .container
+        footer 
+            .f-ph
+                display: none
+            .admin-login
+                right: 3px
+            .p-policy
+                left: 3px
+

@@ -1,0 +1,69 @@
+<div class="containerX">
+  <div class="container">
+<h2 [translate]='"adminUploader.message"' class = "chosen-category"
+ngStyle.xs= " left: 90px; "
+ngStyle.sm= " left: 220px;"
+ngStyle.md= " left: 340px;"
+ngStyle.lg= " left: 590px; top: 120px;"
+ngStyle.xl= " left: 880px; top: 120px;"
+>Ai ales categoria „{{categories}}” : </h2>
+  <div class="dropzone"
+  dropzone
+  (hovered)="toggleHover($event)"
+  (dropped)="onDrop($event)"
+  [class.hovering]= "isHovering"
+  ngStyle.xs= "width: 400px; top: 120px; left: 90px;"
+  ngStyle.sm= "width: 400px; top: 120px; left: 220px;"
+  ngStyle.md= "width: 500px; top: 120px; left: 290px;"
+  ngStyle.lg= "width: 700px; top: 190px; left: 480px;"
+  ngStyle.xl= "width: 700px; top: 200px; left: 670px;"
+>
+<h3 [translate]='"adminUploader.dropzoneTitle"'
+fxHide
+fxHide.xs = "true"
+fxHide.sm = "true"
+fxHide.md = "false"
+fxHide.lg = "false"
+fxHide.xl = "false"
+class = "dropzone-title"
+>Drop Zone</h3>
+<p [translate]='"adminUploader.dropzoneMsg"' class = "dropzone-message"
+  ngStyle.xs= " top: 20px; left: 35px; width: 75%; "
+  ngStyle.sm= " top: 40px; left: 35px; width: 85%;"
+  ngStyle.md= " top: 60px; left: 30px; width: 92%;"
+  ngStyle.lg= " top: 70px; left: 100px;"
+  ngStyle.xl= " top: 70px; left: 100px;"
+></p>
+<div class="file">
+  <label class="file-label"
+  ngStyle.xs= " top: 130px; left: 60px;"
+  ngStyle.sm= " top: 130px; left: 60px;"
+  ngStyle.md= " top: 130px; left: 85px;"
+  ngStyle.lg= " top: 150px; left: 120px;"
+  ngStyle.xl= " top: 150px; left: 120px;"
+  >
+    <input type="file" class="file-input" (change)="onDrop($event.target.files)" multiple>
+  </label>
+</div>
+</div>
+</div>
+<div class="container">
+<h3 [translate]='"adminUploader.successMsg"'
+class = "success-message"
+ngStyle.xs= " top: 490px; left: 20px;"
+ngStyle.sm= " top: 490px; left: 50px"
+ngStyle.md= " top: 520px; left: 180px;"
+ngStyle.lg= " top: 600px; left: 200px;"
+ngStyle.xl= " top: 600px; left: 200px;"
+>Ai facut upload la urmatoarele poze:</h3>
+<div *ngFor='let file of files' class="files">
+  <app-upload-task [file]="file" [files]="files"
+  id="task"
+  ngStyle.xs = "top: 510px"
+  ngStyle.sm = "top: 510px"
+  ngStyle.md = "top: 530px"
+  ngStyle.lg = "top: 630px"
+  ngStyle.xl = "top: 630px"></app-upload-task>
+</div>
+</div>
+</div>
