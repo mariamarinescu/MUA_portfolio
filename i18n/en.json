@@ -1,0 +1,215 @@
+{
+    "forgotPassword": {
+        "title":"Reset your password",
+        "message": "Please, write your e-mail adress",
+        "placeholderInput": "E-mail adress",
+        "buttonReset":"Reset your password right now",
+        "takeMeBackButton":"Back to menu",
+        "loginButton": "Admin Log-in"
+    },
+    "contact": {
+        "title": "Contact me!",
+        "name": "Name and surname",
+        "nameInput": "",
+        "emailInput" : "",
+        "phNumberInput" : "",
+        "messageInput": "",
+        "sendEmailButton": "",
+        "successModalMessage": "",
+        "failureModalMessage": ""
+    },
+    "home":{
+        "firstImgAltMsg": "",
+        "proverb": "",
+        "firstDescription": "",
+        "signAltMsg": "",
+        "secondImgAltMsg": "",
+        "introductionMsg": "",
+        "descriptionOne": "",
+        "descriptionTwo": "",
+        "motto": "",
+        "mapImgAltMessage": "",
+        "mapTitle": "",
+        "phoneNumber": ""
+    },
+    "makeupGallery": {
+        "day":{
+            "title": "Machiaj de zi",
+            "caption": "Machiaj realizat la cererea clientei"
+        },
+        "night":{
+            "title": "Machiaj de seara",
+            "caption": "Machiaj realizat la cererea mea"
+        },
+        "bridal":{
+            "title": "Machiaj de mireasa",
+            "caption": "Machiaj realizat la, cererea mirelui"
+        },
+        "special":{
+            "title": "Machiaj special",
+            "caption": "Machiaj realizat la cererea platitorului"
+        }
+    },
+    "header": {
+        "logoAltMsg": "Eroare incarcare AC-MUA-logo...",
+        "homeButton": "Pagina principala",
+        "portfolioButton": "Portofoliu",
+        "dayCategButton": "Machiaj de zi",
+        "nightCategButton": "Machiaj de seara",
+        "bridalCategButton": "Machiaj de mireasa",
+        "specialCategButton": "Machiaj special",
+        "servicesButton": "Servicii",
+        "contactButton": "Contact"
+    }, 
+    "footer": {
+        "message": "",
+        "artist": "",
+        "confidentiality": "",
+        "insideMessage": "",
+        "adminLoginButton": ""
+    },
+    "login": {
+        "title": "",
+        "message": "",
+        "emailInput": "",
+        "passwordInput": "",
+        "loginButton": "",
+        "forgotPassButton": ""
+    },
+    "adminMenu": {
+        "gretting": "",
+        "message": "",
+        "menuMsg": "",
+        "uploadButton": "",
+        "insideMenuMsg": "",
+        "firstCategButton": "",
+        "secondCategButton": "",
+        "thirdCategButton": "",
+        "fourthCategButton": "",
+        "logoutButton": ""
+    },
+    "adminGallery": {
+        "imageAltMsg": "",
+        "deleteButton": "",
+        "backToMenuButton": "",
+        "logoutButton": "",
+        "successModelMsg": "",
+        "failureModalMsg": "",
+        "day": {
+            "title": "Machiaj de zi",
+            "caption": "Machiaj realizat la cererea mea"
+        },
+        "night": {
+            "title": "Machiaj de zseara",
+            "caption": "Machiaj realizat la cererea clientei"
+        },
+        "bridal": {
+            "title": "Machiaj de mireasa",
+            "caption": "Machiaj realizat la cererea mirelui"
+        },
+        "special": {
+            "title": "Machiaj special",
+            "caption": "Machiaj realizat la cererea platitorului"
+        }
+    },
+    "adminUpload": {
+        "message": "",
+        "secondMsg": "",
+        "labelMsg": "",
+        "firstSelectOption": "",
+        "secondSelectOption": "",
+        "thirdSelectOption": "",
+        "fourthSelectOption": "",
+        "backToMenuButton": "",
+        "logoutButton": ""
+    },
+"adminUploader": {
+    "message": "",
+    "dropzoneTitle": "",
+    "dropzoneMsg": "",
+    "successMsg": ""
+},
+"adminUploadTask": {
+    "downloadMeButton": "",
+    "pauseButton": "",
+    "cancelButton": "",
+    "ResumeButton": ""
+},
+"services": {
+    "firstCardTitle": "",
+    "firstCardFirstChoice": "",
+    "firstCardSecondChoice": "",
+    "firstCardThirdChoice": "",
+    "firstCardFourthChoice": "",
+    "secondCardTitle": "",
+    "secondCardFirstChoice": "",
+    "secondCardSecondChoice": "",
+    "secondCardThirdChoice": "",
+    "secondCardFourthChoice": "",
+    "thirdCardTitle": "",
+    "thirdCardFirstChoice": "",
+    "thirdCardSecondChoice": "",
+    "thirdCardThirdChoice": "",
+    "thirdCardFourthChoice": "",
+    "fourthCardTitle": "",
+    "fourthCardFirstChoice": "",
+    "fourthCardSecondChoice": "",
+    "fourthCardThirdChoice": "",
+    "fourthCardFourthChoice": "",
+    "message": ""
+},
+"privacyPolicy": {
+    "title": "",
+    "firstReadingTitle": "",
+    "firstReadingContent": "",
+    "secondReadingTitle": "",
+    "secondReadingContent": "",
+    "secondReadingContentPartTwo": "",
+    "thirdReadingTitle": "",
+    "thirdReadingContent": "",
+    "thirdReadingContentPartTwo": "",
+    "fourthReadingTitle": "",
+    "fourthReadingContent": "",
+    "fourthReadingContentPartTwo": "",
+    "fifthReadingTitle": "",
+    "fifthReadingContent": "",
+    "fifthReadingContentPartTwo": "",
+    "sixthReadingTitle": "",
+    "sixthReadingContentPartThree": "",
+    "sixthReadingContentPart": "",
+    "seventhReadingTitle": "",
+    "seventhReadingContent": "",
+    "seventhReadingContentPartTwo": "",
+    "seventhReadingContentPart": "",
+    "eighthReadingTitle": "",
+    "eighthReadingContent": "",
+    "ninthReadingTitle": "",
+    "ninthReadingContent": "",
+    "tenthReadingTitle": "",
+    "tenthReadingContent": "",
+    "tenthReadingContentPartTwo": "",
+    "eleventhReadingTitle": "",
+    "eleventhReadingContent": "",
+    "eleventhReadingContentPartTwo": "",
+    "eleventhReadingContentPartThree": "",
+    "eleventhReadingContentPartFour": "",
+    "eleventhReadingContentPartFive": "",
+    "eleventhReadingContentPart": "",
+    "twelfthReadingTitle": "",
+    "twelfthReadingContent": "",
+    "twelfthReadingContentPartTwo": "",
+    "twelfthReadingContentPartThree": "",
+    "twelfthReadingContentPartFour": "",
+    "twelfthReadingContentPartFive": "",
+    "twelfthReadingContentPartSix": "",
+    "twelfthReadingContentPartSeven": "",
+    "twelfthReadingContentPartEight": "",
+    "twelfthReadingContentPartNine": "",
+    "twelfthReadingContentPartTen": "",
+    "thirteenthReadingTitle": "",
+    "thirteenthReadingContent": "",
+    "thirteenthReadingContentPartTwo": "",
+    "thirteenthReadingContentPartThree": "",
+    "thirteenthReadingContentPart": ""
+}
+}

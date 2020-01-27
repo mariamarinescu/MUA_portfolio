@@ -1,0 +1,19 @@
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { IImages } from './images';
+import { Observable } from 'rxjs';
+
+
+@Injectable()
+
+export class ImageService {
+private _url: string = "../../../../assets/img/Day-Make-Up/Day-Make-Up.json";
+
+constructor( private http: HttpClient) { }
+getImages(): Observable<IImages[]> {
+    return this.http.get<IImages[]>(this._url);
+}
+}
+const IMAGES = [
+    
+]
