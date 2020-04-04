@@ -1,0 +1,67 @@
+
+<div class="container" fxFlex>
+        <div class="card"
+        ngStyle.xs="top:7%; left: 14%;"
+        ngStyle.sm="top:7%; left: 17%; width:500px;"
+        ngStyle.md="top:7%; left: 17%;width:700px;"
+        ngStyle.lg="top:7%; left: 30%;width:700px;"
+        ngStyle.xl="top:7%; left: 30%;width:700px;">
+          <div class="card-header" [translate]='"adminUpload.message"'></div>
+          
+          <div class="card-body">
+            <h5 class="card-title" [translate]='"adminUpload.secondMsg"'></h5>
+            <div class="form-group">
+              <label for="exampleFormControlSelect2 mainMessage" [translate]='"adminUpload.labelMsg"'></label>
+              <select multiple class="form-control" id="exampleFormControlSelect2" (change)="selectChangeHandler($event)"
+             ngStyle.xs="height: 170px;font-size:22px;" 
+             ngStyle.sm="height: 170px;font-size:22px;"
+             ngStyle.md="height: 170px;font-size:22px;">
+                <option [routerLink]="['/admin/upload', 'machiaj-de-zi']" class="one" value='Machiaj-de-zi' [translate]='"adminUpload.firstSelectOption"'></option>
+                <option [routerLink]="['/admin/upload', 'machiaj-de-seara']" class="two" value='Machiaj-de-seara' [translate]='"adminUpload.secondSelectOption"'></option>
+                <option [routerLink]="['/admin/upload', 'machiaj-de-mireasa']" class="three" value='Machiaj-de-mireasa' [translate]='"adminUpload.thirdSelectOption"'></option>
+                <option [routerLink]="['/admin/upload', 'machiaj-special']" class="four" value='Machiaj-special' [translate]='"adminUpload.fourthSelectOption"'></option>
+              </select>
+              <!-- <p><span class="category">Ai selectat categoria:</span><b>&nbsp;{{selectedCategory}}</b></p>
+
+
+
+            <input *ngIf="selectedCategory === 'Machiaj-de-zi'" class="file-input" type="file" (change)="startUpload($event.target.files)" accept=".png,.jpg" />
+            <input *ngIf="selectedCategory === 'Machiaj-de-seara'" class="file-input" type="file" (change)="startUpload($event.target.files)" accept=".png,.jpg" />
+            <input *ngIf="selectedCategory === 'Machiaj-de-mireasa'" class="file-input" type="file" (change)="startUpload($event.target.files)" accept=".png,.jpg" />
+            <input *ngIf="selectedCategory === 'Machiaj-special'" class="file-input" type="file" (change)="startUpload($event.target.files)" accept=".png,.jpg" /> -->
+            
+          </div>
+          <!-- <div *ngIf="percentage | async as pct">
+          
+            <progress class="progress is-info" [value]="pct" max="100">
+            </progress>
+          
+            {{ pct | number }}%
+          
+          </div>
+          <div *ngIf="(snapshot | async) as snap">
+            {{ snap.bytesTransferred | fileSize }} of {{ snap.totalBytes | fileSize }}
+          
+          
+            <div *ngIf="downloadURL | async as url">
+              <h3 class="results">Results!</h3>
+              <img class="current" [src]="url">
+              <br>
+              <a class="current-download-link"[href]="url" target="_blank" rel="noopener">Download Me!</a>
+            </div>
+            <hr>
+            <button (click)="task.pause()" class="button is-warning" [disabled]="!isActive(snap)">Pause</button>
+            <button (click)="task.cancel()" class="button is-danger" [disabled]="!isActive(snap)">Cancel</button>
+            <button (click)="task.resume()" class="button is-info" [disabled]="!(snap?.state === 'paused')">Resume</button> 
+          </div> -->
+          </div>
+            <hr>
+            <button type="button" (click)="takeMeBack()" class="btn btn-outline-secondary takeMeBack" [translate]='"adminGallery.backToMenuButton"'></button>
+            <br><button type="button"  class="btn btn-outline-secondary " (click)="authService.SignOut()" role="button" [translate]='"adminGallery.logoutButton"'></button>
+
+        </div>
+     
+     
+   
+
+      

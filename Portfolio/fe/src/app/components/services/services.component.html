@@ -1,0 +1,329 @@
+<div
+  class="containerX"
+  fxFlex
+  fxLayout="column"
+  ngStyle.xs="height: 1900px;"
+  ngStyle.sm="height: 1900px;"
+  ngStyle.md="height: 1900px;"
+  ngStyle.lg="height: 940px;"
+  ngStyle.xl="height: 100%;"
+>
+  <div class="container" fxLayout="row" style="margin:0; padding:0;">
+    <div
+      class="flip-card day"
+      fxFlex
+      ngStyle.xs="top: 150px; left: 24%;"
+      ngStyle.sm="top: 150px; left: 30%;"
+      ngStyle.md="top: 150px; left: 36%;"
+      ngStyle.lg="top: 130px; left: 15%;"
+      ngStyle.xl="top: 150px; left: 13%;"
+    >
+      <div class="flip-card-inner">
+        <div class="flip-card-front day-front">
+          <h5
+            class="card-title day-front-title"
+            [translate]="'services.firstCardTitle'"
+          ></h5>
+          <img
+            class="card-front-day-img"
+            src="https://firebasestorage.googleapis.com/v0/b/alexandraciausu-a6df7.appspot.com/o/machiaj-de-zi%2F12.jpg?alt=media"
+            alt="{{ 'shared.imageAltMsg' | translate }}"
+            style="width:300px;height:300px;"
+          />
+        </div>
+        <div class="flip-card-back day-back">
+          <h5
+            class="card-title day-back-title"
+            [translate]="'services.firstCardTitle'"
+          ></h5>
+          <ul class="card-text day-back-text">
+            <li
+              class="day-back-first-choice"
+              [translate]="'services.firstCardFirstChoice'"
+            ></li>
+            <li
+              class="day-back-second-choice"
+              [translate]="'services.firstCardSecondChoice'"
+            ></li>
+            <li
+              class="day-back-third-choice"
+              [translate]="'services.firstCardThirdChoice'"
+            ></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" fxLayout="column" style="margin:0; padding:0;">
+    <div
+      class="flip-card night"
+      xFlex
+      ngStyle.xs="top: 530px; left: 24%;"
+      ngStyle.sm="top: 530px; left: 30%;"
+      ngStyle.md="top: 530px; left: 36%;"
+      ngStyle.lg="top: 130px; left: 64%;"
+      ngStyle.xl="top: 150px; left: 33%;"
+    >
+      <div class="flip-card-inner">
+        <div class="flip-card-front night-front">
+          <h5
+            class="card-title night-front-title"
+            [translate]="'services.secondCardTitle'"
+          ></h5>
+          <img
+            class="card-front-night-img"
+            src="https://firebasestorage.googleapis.com/v0/b/alexandraciausu-a6df7.appspot.com/o/machiaj-de-seara%2F11.jpg?alt=media"
+            alt="{{ 'shared.imageAltMsg' | translate }}"
+            style="width:300px;height:300px;"
+          />
+        </div>
+        <div class="flip-card-back night-back">
+          <h5
+            class="card-title night-back-title"
+            [translate]="'services.secondCardTitle'"
+          ></h5>
+          <ul class="card-text night-back-text">
+            <li
+              class="night-back-first-choice"
+              [translate]="'services.secondCardFirstChoice'"
+            ></li>
+            <li
+              class="night-back-second-choice"
+              [translate]="'services.secondCardSecondChoice'"
+            ></li>
+            <li
+              class="night-back-third-choice"
+              [translate]="'services.secondCardThirdChoice'"
+            ></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" fxLayout="column" style="margin:0; padding:0;">
+    <div
+      class="flip-card bridal"
+      xFlex
+      ngStyle.xs="top: 910px; left:24%;"
+      ngStyle.sm="top: 910px; left:30%;"
+      ngStyle.md="top: 910px; left:36%;"
+      ngStyle.lg="top: 550px; left:15%;"
+      ngStyle.xl="top: 150px; left:52%;"
+    >
+      <div class="flip-card-inner">
+        <div class="flip-card-front bridal-front">
+          <h5
+            class="card-title bridal-front-title"
+            [translate]="'services.thirdCardTitle'"
+          ></h5>
+          <img
+            class="card-front-bridal-img"
+            src="https://firebasestorage.googleapis.com/v0/b/alexandraciausu-a6df7.appspot.com/o/machiaj-de-mireasa%2F3.jpg?alt=media"
+            alt="{{ 'shared.imageAltMsg' | translate }}"
+            style="width:300px;height:300px;"
+          />
+        </div>
+        <div class="flip-card-back bridal-back">
+          <h5
+            class="card-title bridal-back-title"
+            [translate]="'services.thirdCardTitle'"
+          ></h5>
+          <ul class="card-text bridal-back-text">
+            <li
+              class="bridal-back-first-choice"
+              [translate]="'services.thirdCardTitle'"
+            ></li>
+            <h5
+              class="card-title bridal-back-title"
+              [translate]="'services.thirdCardFirstChoice'"
+            ></h5>
+            <li
+              class="bridal-back-second-choice"
+              [translate]="'services.thirdCardSecondChoice'"
+            ></li>
+            <li
+              class="bridal-back-third-choice"
+              [translate]="'services.thirdCardThirdChoice'"
+            ></li>
+            <li
+              class="bridal-back-fourth-choice"
+              [translate]="'services.thirdCardFourthChoice'"
+            ></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" fxLayout="column" style="margin:0; padding:0;">
+    <div
+      class="flip-card special"
+      xFlex
+      ngStyle.xs="top: 1290px; left:24%;"
+      ngStyle.sm="top: 1290px; left:30%;"
+      ngStyle.md="top: 1290px; left:36%;"
+      ngStyle.lg="top: 550px; left:64%;"
+      ngStyle.xl="top: 150px; left:71%;"
+    >
+      <div class="flip-card-inner">
+        <div class="flip-card-front special-front">
+          <h5
+            class="card-title special-front-title"
+            [translate]="'services.fourthCardTitle'"
+          ></h5>
+          <img
+            class="card-front-special-img"
+            src="https://firebasestorage.googleapis.com/v0/b/alexandraciausu-a6df7.appspot.com/o/machiaj-special%2F14.jpg?alt=media"
+            alt="{{ 'shared.imageAltMsg' | translate }}"
+            style="width:300px;height:300px;"
+          />
+        </div>
+        <div class="flip-card-back special-back">
+          <h5
+            class="card-title special-back-title"
+            [translate]="'services.fourthCardTitle'"
+          ></h5>
+          <ul class="card-text special-back-text">
+            <li
+              class="special-back-first-choice"
+              [translate]="'services.fourthCardFirstChoice'"
+            ></li>
+            <li
+              class="special-back-second-choice"
+              [translate]="'services.fourthCardSecondChoice'"
+            ></li>
+            <li
+              class="special-back-third-choice"
+              [translate]="'services.fourthCardThirdChoice'"
+            ></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" fxLayout="column" style="margin:0; padding:0;">
+    <h5
+      class="last-message"
+      [translate]="'services.message'"
+      ngStyle.xs="top: 1698px;left: 10%; width: 88%;;text-align: left; -moz-text-align-last: left; text-align-last: left;"
+      ngStyle.sm="top: 1698px;left: 12%; width: 86%; text-align: center;
+      -moz-text-align-center: left; text-align-last: center;"
+      ngStyle.md="top: 1698px; left: 7%; width: 100%; text-align: center;
+      -moz-text-align-last: center; text-align-last: center;"
+      ngStyle.lg="top: 900px;left: 19%; margin: 10px white;"
+      ngStyle.xl="top: 900px; left: 78%"
+    ></h5>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container">
+  <div class="my-elements">
+    <div class="flip-card day">
+      <div class="flip-card-inner">
+        <div class="flip-card-front day-front">
+          <h5 class="card-title day-front-title" [translate]='"services.firstCardTitle"'>Machiaj de zi</h5>
+          <img
+            class="card-front-day-img"
+            src="https://firebasestorage.googleapis.com/v0/b/alexandraciausu-a6df7.appspot.com/o/machiaj-de-zi%2F12.jpg?alt=media"
+            alt='{{ "shared.imageAltMsg" | translate }}'
+            style="width:300px;height:300px;"
+          />
+        </div>
+        <div class="flip-card-back day-back">
+          <h5 class="card-title day-back-title" [translate]='"services.firstCardTitle"'>Machiaj de zi</h5>
+          <ul class="card-text day-back-text">
+            <li class="day-back-first-choice" [translate]='"services.firstCardFirstChoice"'>Machiaj de zi (45 min.) - 150 LEI</li>
+            <li class="day-back-second-choice" [translate]='"services.firstCardSecondChoice"'>Machiaj de zi cu gene banda/smocuri (60 min.) - 180 LEI</li>
+            <li class="day-back-third-choice" [translate]='"services.firstCardThirdChoice"'>Machiaj de zi express (20 min.) - 80 LEI</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card night">
+      <div class="flip-card-inner">
+        <div class="flip-card-front night-front">
+          <h5 class="card-title night-front-title" [translate]='"services.secondCardTitle"'>Machiaj de seara</h5>
+          <img
+            class="card-front-night-img"
+            src="https://firebasestorage.googleapis.com/v0/b/alexandraciausu-a6df7.appspot.com/o/machiaj-de-seara%2F11.jpg?alt=media"
+            alt='{{ "shared.imageAltMsg" | translate }}'
+            style="width:300px;height:300px;"
+          />
+        </div>
+        <div class="flip-card-back night-back">
+          <h5 class="card-title night-back-title" [translate]='"services.secondCardTitle"'>Machiaj de seara</h5>
+          <ul class="card-text night-back-text">
+            <li class="night-back-first-choice" [translate]='"services.secondCardFirstChoice"'>Machiaj de zi (45 min.) - 150 LEI</li>
+            <li class="night-back-second-choice" [translate]='"services.secondCardSecondChoice"'>Machiaj de zi cu gene banda/smocuri (60 min.) - 180 LEI</li>
+            <li class="night-back-third-choice" [translate]='"services.secondCardThirdChoice"'>Machiaj de zi express (20 min.) - 80 LEI</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card bridal">
+      <div class="flip-card-inner">
+        <div class="flip-card-front bridal-front">
+          <h5 class="card-title bridal-front-title" [translate]='"services.thirdCardTitle"'>Machiaj de mireasa</h5>
+          <img
+            class="card-front-bridal-img"
+            src="https://firebasestorage.googleapis.com/v0/b/alexandraciausu-a6df7.appspot.com/o/machiaj-de-mireasa%2F3.jpg?alt=media"
+            alt='{{ "shared.imageAltMsg" | translate }}'
+            style="width:300px;height:300px;"
+          />
+        </div>
+        <div class="flip-card-back bridal-back">
+          <h5 class="card-title bridal-back-title" [translate]='"services.thirdCardTitle"'>Machiaj de mireasa</h5>
+          <ul class="card-text bridal-back-text">
+            <li class="bridal-back-first-choice" [translate]='"services."'>
+              Machiaj de mireasa fara gene (90 min.) / cu gene (100 min.) - 300/ 350 LEI
+            </li>
+          <h5 class="card-title bridal-back-title" [translate]='"services.thirdCardFirstChoice"'>Machiaj de mireasa</h5>
+          <li class="bridal-back-second-choice" [translate]='"services.thirdCardSecondChoice"'>Proba machiaj de mireasa (60 min.) - 180 LEI</li>
+            <li class="bridal-back-third-choice" [translate]='"services.thirdCardThirdChoice"'>Machiaj pt. mire (40 min.) - 130 LEI</li>
+            <li class="bridal-back-fourth-choice" [translate]='"services.thirdCardFourthChoice"'>Proba machiaj pt. mire (30 min.) - 80 LEI</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card special">
+      <div class="flip-card-inner">
+        <div class="flip-card-front special-front">
+          <h5 class="card-title special-front-title" [translate]='"services.fourthCardTitle"'>Machiaj special</h5>
+          <img
+            class="card-front-special-img"
+            src="https://firebasestorage.googleapis.com/v0/b/alexandraciausu-a6df7.appspot.com/o/machiaj-special%2F14.jpg?alt=media"
+            alt='{{ "shared.imageAltMsg" | translate }}'
+            style="width:300px;height:300px;"
+          />
+        </div>
+        <div class="flip-card-back special-back">
+          <h5 class="card-title special-back-title" [translate]='"services."'>Machiaj special</h5>
+          <ul class="card-text special-back-text">
+            <li class="special-back-first-choice" [translate]='"services.fourthCardFirstChoice"'>Machiaj complexitate ridicata VFX (90 min.) - 300-350 LEI</li>
+            <li class="special-back-second-choice" [translate]='"services.fourthCardSecondChoice"'>Machiaj complexitate medie VFX (60 min.) - 200 LEI</li>
+            <li class="special-back-third-choice" [translate]='"services.fourthCardThirdChoice"'>Machiaj complexitate scazuta VFX (40 min.) - 120 LEI</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<h5 class="last-message" [translate]='"services.message"'>
+  Pentru mai multe detalii, nu ezita sa ma contactezi folosind pagina de contact sau numarul de telefon.
+</h5> -->

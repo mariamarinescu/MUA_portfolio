@@ -1,0 +1,210 @@
+{   "shared": {
+    "imageAltMsg": "This is a portfolio website"
+},
+    "forgotPassword": {
+        "title":"Reset your password",
+        "message": "Please, write your e-mail adress",
+        "placeholderInput": "E-mail adress",
+        "buttonReset":"Reset!",
+        "takeMeBackButton":"Back to menu",
+        "loginButton": "Admin Log-in"
+    },
+    "contact": {
+        "title": "Contact me!",
+        "nameInput": "Name and surname",
+        "emailInput" : "Email",
+        "phNumberInput" : "Phone Number",
+        "messageInput": "Message",
+        "sendEmailButton": "Send!",
+        "successModalMessage": "Your email has been sent! I will contact you as soon as possible.",
+        "failureModalMessage": "Error! Please try again or contact me by telephone. Thank you!"
+    },
+    "home":{
+        "proverb": "\"Love of beauty is Taste. The creation of beauty is Art.\"- Ralph Waldo Emerson",
+        "firstDescription": "In the ordinary days when you wear discreet natural daytime makeup, in special evenings when choosing a night make-up or a make-up for special events - fashion makeup that puts your hands on the features or the most important evening of your life, the wedding, when, of course, you wear a bridal makeup that turns you into a true princess, worthy of the admiration of those around you, capitalizing your features at maximum odds depends on choosing the best make-up artist, able to transform your beauty into the element central to the chromatic choices and styles they make.",
+        "introductionMsg": "My name is {{name}}",
+        "descriptionOne": "I'm a professional makeup artist with location in Bucharest, and I'm specialized in makeup using various techniques, including pencil technique and watercolor technique, and I graduated from an international school.",
+        "descriptionTwo": "I use professional products that guarantee lasting resistance and techniques that we have accumulated through experience and specialization courses. For me, makeup does not necessarily mean it is clearly visible, but it means the effect it offers to the wearer without shouting \"look at my makeup.\" Instead, the effect I'm looking for is one you look so good, so confident in yourself that when you enter a room everyone who looks at you tries to figure out what's different about you. This is the result I want to achieve for my clients: by applying professional makeup, understanding different styles and long-lasting application technique.",
+        "motto": "\"Where there is passion, there will always be perfection\" - These are the words I live by.",
+        "mapTitle": "Let's make your day better! You can find me here:",
+        "phoneNumber": "0729681302",
+        "goToTopButton": "Back up in the page"
+    },
+    "makeupGallery": {
+        "title": "{{title}}",
+        "caption":"{{caption}}",
+        "day":{
+            "title": "Day Make-Up",
+            "caption": "Make-up realised at client request"
+        },
+        "night":{
+            "title": "Night Make-Up",
+            "caption": "Make-up realised at my desire"
+        },
+        "bridal":{
+            "title": "Bridal Make-up",
+            "caption": "Make-up realised at groom's request"
+        },
+        "special":{
+            "title": "Special Make-up",
+            "caption": "Make-up realised at payers request"
+        }
+    },
+    "header": {
+        "logoAltMsg": "Error loading AC-MUA-logo...",
+        "homeButton": "Home",
+        "portfolioButton": "Portfolio",
+        "dayCategButton": "Day make-up",
+        "nightCategButton": "Evening make-up",
+        "bridalCategButton": "Bridal make-up",
+        "specialCategButton": "Special make-up",
+        "servicesButton": "Services",
+        "contactButton": "Contact",
+        "changeLang": "Language"
+    }, 
+    "footer": {
+        "message": "For appointments: 0729681302  ",
+        "artist": "|Alexandra Ciausu MUA (C) 2019|",
+        "confidentiality": "Privacy policy",
+        "insideMessage": "|Designed by Maria Marinescu|",
+        "adminLoginButton": " |Admin Log-In|"
+    },
+    "login": {
+        "title": "Admin Log-In",
+        "message": "If you are not admin, you should go back to the main page. :)",
+        "emailInput": "Email",
+        "passwordInput": "Password",
+        "loginButton": "Log-In!",
+        "forgotPassButton": "Have you forgotten the password?"
+    },
+    "adminMenu": {
+        "gretting": "Welcome,",
+        "message": "Choose what you want to do today:",
+        "insideMenuMsg": "See or delete photos by category:",
+        "uploadButton": "Upload photos",
+        "firstCategButton": "{{imageCategories}}",
+        "secondCategButton": "{{imageCategories}}",
+        "thirdCategButton": "{{imageCategories}}",
+        "fourthCategButton": "{{imageCategories}}",
+        "logoutButton": "Log-Out!"
+    },
+    "adminGallery": {
+        "title": "{{title}}",
+        "deleteButton": "Delete",
+        "backToMenuButton": "Back to menu",
+        "logoutButton": "Log-Out!",
+        "successModelMsg": "The photo has been deleted!",
+        "failureModalMsg": "Error! Please try again.",
+        "day":{
+            "title": "Day Make-Up",
+            "caption": "Make-up realised at client request"
+        },
+        "night":{
+            "title": "Night Make-Up",
+            "caption": "Make-up realised at my desire"
+        },
+        "bridal":{
+            "title": "Bridal Make-up",
+            "caption": "Make-up realised at groom's request"
+        },
+        "special":{
+            "title": "Special Make-up",
+            "caption": "Make-up realised at payers request"
+        }    },
+    "adminUpload": {
+        "message": "Upload photos to your portfolio",
+        "secondMsg": "Select the category where you want to upload your photos :):",
+        "labelMsg": "Pick it from down here ↓ ",
+        "firstSelectOption": "Day make-up",
+        "secondSelectOption": "Evening make-up",
+        "thirdSelectOption": "Bridal make-up",
+        "fourthSelectOption": "Special make-up",
+        "backToMenuButton": "Back to menu",
+        "logoutButton": "Log-Out"
+    },
+"adminUploader": {
+    "message": "You have chosen \"{{ category }}\"",
+    "dropzoneTitle": "Drop Zone",
+    "dropzoneMsg": "Select your photos and drop them here",
+    "successMsg": "You uploaded to the following pictures:"
+},
+"adminUploadTask": {
+    "downloadMeButton": "Download me!",
+    "pauseButton": "Pause",
+    "cancelButton": "Cancel",
+    "ResumeButton": "Continue",
+    "progressValue": "{{ pct | number }}%"
+},
+"services": {
+    "firstCardTitle": "Day Make-up",
+    "firstCardFirstChoice": "Day Makeup (45 min.) - 150 LEI",
+    "firstCardSecondChoice": "Daily makeup with tape / clusters (60 min.) - 180 LEI",
+    "firstCardThirdChoice": "Daily Express Makeup (20 min.) - 80 LEI",
+    "secondCardTitle": "Evening Make-up",
+    "secondCardFirstChoice": "Evening Makeup (45 min.) - 180 LEI",
+    "secondCardSecondChoice": "Evening makeup with band / tens (60 min.) - 200 LEI",
+    "secondCardThirdChoice": "Express evening makeup (20 min.) - 85 LEI",
+    "thirdCardTitle": "Bridal Make-up",
+    "thirdCardFirstChoice": "Bridal makeup without band (90 min.) / with band (100 min.)- 300/ 350 LEI",
+    "thirdCardSecondChoice": "Bridal makeup test(60 min.) - 180 LEI",
+    "thirdCardThirdChoice": "Grooms makeup test (30 min.) - 80 LEI",
+    "thirdCardFourthChoice": "Makeup for grooms (30 min.) - 80 LEI",
+    "fourthCardTitle": "Special Make-up",
+    "fourthCardFirstChoice": "High complexity make-up VFX (90 min.) - 300-350 LEI",
+    "fourthCardSecondChoice": "Medium complexity make-up VFX (90 min.) -  200 LEI",
+    "fourthCardThirdChoice": "Low complexity make-up VFX (90 min.) -  120 LEI",
+    "message": "For more details, do not hesitate to contact me using my contact page or by cell."
+},
+"privacyPolicy": {
+    "title": "Privacy Policy - Alexandraciausu.com",
+    "firstReadingTitle": "1. Collection of personal data",
+    "firstReadingContent": "1.1 I request your personal data only if you would like to contact me for the purpose of contracting the services I offer by using my contact page.",
+    "secondReadingTitle": "2. What kind of data do I collect and for what purpose:",
+    "secondReadingContent": "<strong> Surname and surname </ strong> - I collect this information to contact you later only at your request.",
+    "secondReadingContentPartTwo": "<strong> Phone </ strong> - I collect this information to contact you later and to discuss details of the services I offer.",
+    "thirdReadingTitle": "3.From whom i collect personal data:",
+    "thirdReadingContent": "3.1 Directly from you when you contact me by phone ",
+    "thirdReadingContentPartTwo": "3.2 Electronic, using the contact form on my page.",
+    "fourthReadingTitle": "4.The provision of personal data is:",
+    "fourthReadingContent": "4.1 Voluntary, without considering the subsequent conclusion of a commercial relationship.",
+    "fourthReadingContentPartTwo": "4.2 Obligatory, in order to acquire my services and implicitly, for the conclusion of a commercial relationship and its fiscal registration, including invoicing.",
+    "fifthReadingTitle": "5. The processing of personal data takes place in the following situations:",
+    "fifthReadingContent": "5.1 When there is a request from clients / potential clients (verbal or written request).",
+    "fifthReadingContentPartTwo": "5.2 When it is necessary to enter into a commercial relationship, ie to conclude a service contract for the purchase of my services",
+    "sixthReadingTitle": "6. The purpose of processing personal data",
+    "sixthReadingContentPartThree": "6.1 Your data will be processed only for the purposes mentioned in point 2. of this information",
+    "sixthReadingContentPart": "6.2 If your data will need to be processed for purposes other than those listed in point 2, we will inform you before processing it and will only be processed with your consent.",
+    "seventhReadingTitle": "7. Cookies:",
+    "seventhReadingContent": "7.1 Cookies are fragments of information the site transfers to users to keep track of. While you are on a site, cookies save your preferences and make web browsing easier. Most websites use cookies. They are not used to store personal information, they show us how and when visitors use the site, and help us see what are popular areas and who are not.",
+    "seventhReadingContentPartTwo": "7.2 Use Cookies (Special Texts) for a good evaluation of user behavior on our websites in order to offer marketing services correctly and for the user to benefit from all the facilities of the site they visit (form shopping, online store, etc., depending on the specificity of the website). information we collect through cookies and transparent gifs to create a \"profile\" of your preferences.",
+    "seventhReadingContentPart": "7.3 You can disable cookies using browser preferences. Thus, you can set your browser to refuse all cookies or to indicate when a cookie is being sent. However, we inform you that when cookies are disabled, it is possible that some website features may not be used or have a very slow loading speed.",
+    "eighthReadingTitle": "8.Declaration of personal data",
+    "eighthReadingContent": "8.1 Your data is not disclosed to anyone under any circumstances.",
+    "ninthReadingTitle": "9.The data storage period",
+    "ninthReadingContent": "9.1. Your data will be stored for a limited time period, that is, for the entire duration of the service contract and until the expiration of the contract period. Billing data will be deleted in accordance with the law's obligations in this respect",
+    "tenthReadingTitle": "10.Transfer of personal data outside the EU or EEA",
+    "tenthReadingContent": "10.1.This site does not transfer your personal data to countries outside the EU or the EEA.",
+    "eleventhReadingTitle": "11.Security of personal data",
+    "eleventhReadingContent": "11.1 The security of the information received from visitors or customers is very important to us. Servers where data is stored have implemented security measures such as:",
+    "eleventhReadingContentPartTwo": "recovery of personal data",
+    "eleventhReadingContentPartThree": "discovering security breaches",
+    "eleventhReadingContentPartFour": "discovering the causes of the security breaches",
+    "eleventhReadingContentPartFive": "limit security breach",
+    "eleventhReadingContentPartSix": "Should we discover that a personal data security breach has occurred, we will immediately notify the server management of the server, taking all the necessary steps to restore the data security, will make every effort to mitigate the immediate risk of injury and notify the Surveillance Authority of the security incident if the breach is likely to lead to a high risk for the rights and freedoms of persons to whom the security of personal data has been compromised.",
+    "twelfthReadingTitle": "12. User Rights",
+    "twelfthReadingContent": "<strong> 12.1 According to the new GDPR Guidelines, we present to you below what are your rights as users / clients: </ strong>",
+    "twelfthReadingContentPartTwo": "<strong> Right to information </ strong> - refers to the right to be informed about all of the above issues.",
+    "twelfthReadingContentPartThree": "<strong> Right of access </ strong> - You have the right to obtain confirmation from us that we process or not the personal data that you are looking at and, if so, access to that data and information on how it is processed data.",
+    "twelfthReadingContentPartFour": "<strong> Right to Opposition </ strong> - The right to oppose processing of personal data if processing is necessary to perform a task that serves a public interest. Also, if processing your personal data is for direct marketing purposes, you have the right to oppose your processing at any time",
+    "twelfthReadingContentPartFive": "<strong> Data portability </ strong> - You have the right to receive personal data in a format that can be read automatically and allowing data to be transmitted directly to another operator.",
+    "twelfthReadingContentPartSix": "<strong> Right to delete data (\"right to be forgotten\") </ strong> - You can request data to be erased without undue delay if the following situations occur: data is no longer required for the purposes of which have been collected or processed; You withdraw your consent and there is no other legal basis for processing. you oppose the processing and there are no legitimate reasons to prevail; personal data has been processed illegally; personal data must be deleted for compliance with a legal obligation; personal data has been collected in connection with the provision of information society services.",
+    "twelfthReadingContentPartEight": "<strong> Right to Restrict Data </ ​​strong> - You have the right to request data restraint over a period of time, for example, when it was decided to delete your data and you think it is useful in different situations, such as exercising a right in court. Also, if you challenge data accuracy or processing is illegal, you may request data restraint. As a result of receiving a request from you and following verification, we will stop processing your personal data for a while.",
+    "twelfthReadingContentPartNine": "<strong> Right to Data Correction </ strong> - You may request the rectification of certain personal data if it is incomplete or inaccurate. Thus, depending on the purpose of the processing, you can fill in and then transmit personal data that are missing or incorrect, even completing a statement of compliance.",
+    "twelfthReadingContentPartTen": "<strong> The Right to Submit a Complaint </ strong> to the National Supervisory Authority for Personal Data Processing when you find that your personal data processing rights have been violated.",
+    "thirteenthReadingTitle": "13.How do you contact me:",
+    "thirteenthReadingContent": "<strong> For any questions and requests regarding the processing of personal data, you can contact me as follows: </ strong>",
+    "thirteenthReadingContentPartTwo": "by email at mariatheartist@artist.art",
+    "thirteenthReadingContentPartThree": "at the phone number: +40722.222.test",
+    "thirteenthReadingContentPart": "Regardless of the way you choose to submit your application to me, I will do my best to resolve all my claims and / or complaints in a short time. If your answer did not please you, you can contact the National Supervisory Authority for Personal Data Processing (headquarters 28- 30 Gheorghe Magheru Blvd., Sector 1, Bucharest)."
+}
+}

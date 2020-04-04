@@ -1,0 +1,501 @@
+@import url("https://fonts.googleapis.com/css?family=Handlee")
+@import "../../sass/aspect-mixin.sass"
+@import "../../sass/sizing-mixin.sass"
+@import "../../sass/positioning-mixin.sass"
+    
+$abs: absolute
+$rel: relative
+$Handlee: "Handlee", cursive
+$yes-yes-flex: 1 1 100%
+$map-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
+$map-hover-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)
+$map-trans: all 0.3s cubic-bezier(.25, .8, .25, 1)
+$map-transf: translate(-50%, -50%)
+$black: #000000
+$white: #ffffff
+$grey: #808080    
+    
+.containerX
+    .container
+        @include sizingCombo($pad: 0, $m: 0)
+        .home-proverb
+            @include positioningCombo($pos: $abs, $t: 10%) 
+            @include aspectCombo($dis: flex, $family: $Handlee, $size: 22px, $f-weight: bold)
+        .home-desc
+            position: $abs
+            @include aspectCombo($c: $black, $t-align: center, $t-align-last: center, $family: $Handlee)
+        .map-img
+            @incluse positioningCombo($pos: $abs, $index:-20 )
+            @include sizingCombo($h: 1000px, $w: 100%, $m: 0, $pad: 0)
+            opacity: 0.1
+        .invite
+            @include aspectCombo($size: 25px, $family: $Handlee, $align-c: center)
+            @include positioningCombo($pos: $abs, $flex: $yes-yes-flex)
+            position: $abs
+        .inviteP2
+            @include aspectCombo($size: 25px, $family: $Handlee, $align-c: center)
+            @include positioningCombo($pos: $abs, $flex: $yes-yes-flex)
+        .map-img
+            position: $abs
+        #map
+            @include positioningCombo($l: 50%, $flex: $yes-yes-flex)
+            @include sizingCombo($w: 750px, $h: 400px, $m-right: -50%)
+            @include aspectCombo($transf: $map-transf, $b-shadow: $map-shadow, $trans: $map-trans)
+            position: $abs
+            &:hover
+                box-shadow: $map-hover-shadow
+        .secondImg
+            position: $abs
+        .desc1p
+            @include positioningCombo($pos: $abs, $flex: $yes-yes-flex)
+            @include aspectCombo($family: $Handlee, $c: #ffffff, $t-align: center, $t-align-last: center) 
+            margin-right: -2%
+        .desc2p
+            position: $abs
+            margin-right: -2%
+            @include aspectCombo($family: $Handlee, $t-align: center, $t-align-last: center)
+        .firstb
+            position: $abs
+            margin-right: -3%
+            font-family: $Handlee
+        .ph-number
+            position: $abs
+            width: 100%
+            @include aspectCombo($size: 70px, $c: $black)
+        .material-icons 
+            @include aspectCombo($family: 'Material Icons', $f-weight: normal, $f-style:  normal, $size: 70px, $dis: inline-block, $t-transf: none, $l-spacing: normal, $w-wrap: normal, $dir:  ltr, $wbkit-f-smoothing:  antialiased, $c: $grey, $w-space: nowrap, $moz-os-f-smoothing: grayscale, $t-rendering: optimizeLegibility)
+            line-height: 1
+            position: $abs
+    .space
+        @incluse sizingCombo($w: 200px, $h: 300px)
+        bottom: 0px
+        position: $abs
+
+
+
+// @media (min-width: 409px) and (max-width: 600px) and (max-height: 900px) and (min-height: 647px)
+//     .containerX
+//         .container
+//             .home-proverb
+//                 top: 130px!important
+//             .home-desc
+//                 top: 340px!important
+//             .invite
+//                 top: 1000px!important
+//             .secondImg
+//                 top: 1650px!important
+//             .desc1p
+//                 color: white!important
+//                 left: 21%!important
+//                 top: 1720px!important
+//             .desc2p
+//                 top: 1974px!important
+//             .firstb
+//                 top: 2220px!important
+//             .material-icons
+//                 top: 2720px!important
+//                 left: 5%!important
+//             .ph-number
+//                 top: 2700px!important
+//                 margin-bottom: 50px!important
+
+// @media (min-width: 439px) and (max-width: 600px) and (max-height: 648px) and (min-height: 430px)
+//     .containerX
+//         .container
+//             .home-desc
+//                 top: 320px!important
+//             .home-proverb
+//                 top: 130px!important
+//             .invite
+//                 top: 1040px!important
+//             #map
+//                 top: 1280px!important
+//             .secondImg
+//                 top: 1550px!important
+//             .desc1p
+//                 color: white!important
+//                 left: 21%!important
+//                 top: 1620px!important
+//             .desc2p
+//                 top: 1850px!important
+//             .firstb
+//                 top: 2100px!important
+//             .material-icons
+//                 top: 2550px!important
+//                 left: 5%!important
+//             .ph-number
+//                 top: 2528px!important
+//                 margin-bottom: 50px!important
+  
+
+
+// @media (min-width: 439px) and (max-width: 600px) and (max-height: 429px) and (min-height: 211px)
+//     .containerX
+//         .container
+//             .home-proverb
+//                 top: 120px!important
+//             .home-desc
+//                 top: 330px!important
+//             .invite
+//                 left: 20%!important
+//                 top: 1100px!important
+//             #map
+//                 height: 300px!important
+//                 top: 1290px!important
+//             .secondImg
+//                 top: 1550px!important
+//             .desc1p
+//                 color: white!important
+//                 left: 21%!important
+//                 top: 1594px!important
+//             .desc2p
+//                 top: 1840px!important
+//             .firstb
+//                 top: 2100px!important
+//             .material-icons
+//                 top: 2600px!important
+//                 left: 5%!important
+//             .ph-number
+//                 top: 2578px!important
+//                 margin-bottom: 50px!important
+
+// @media (min-width: 452px) and (max-width: 600px) and (max-height: 210px) and (min-height: 145px)
+//     .containerX
+//         .container
+//             .home-proverb
+//                 top: 100px!important
+//             .home-desc
+//                 top: 330px!important
+//                 font-size: 50%!important 
+//             .secondImg
+//                 top: 1550px!important
+//             .desc1p
+//                 color: white!important
+//                 left: 21%!important
+//                 top: 480%!important
+//             .desc2p
+//                 top: 550%!important
+//             .firstb
+//                 top: 622%!important
+//             .material-icons
+//                 top: 767%!important
+//                 left: 5%!important
+//             .ph-number
+//                 top: 760.8%!important
+//                 margin-bottom: 50px!important
+
+// @media (min-width: 601px) and (max-width: 863px) and (max-height: 900px) and (min-height: 647px)
+//     .containerX
+//         .container
+//             .home-proverb
+//                 top: 130px!important
+//             .home-desc
+//                 top: 270px!important
+//                 left: 5%!important
+//             .invite
+//                 top: 730px!important
+//             .secondImg
+//                 top: 1240px!important
+//             .desc1p
+//                 color: white!important
+//                 top: 1260px!important
+//             .desc2p
+//                 top: 1390px!important
+//             .firstb
+//                 top: 1530px!important
+//             .material-icons
+//                 top: 1995px!important
+//             .ph-number
+//                 top: 1978px!important
+//                 margin-bottom: 50px!important
+
+// @media (min-width: 601px) and (max-width: 863px) and (max-height: 646px) and (min-height: 430px)
+//     .containerX
+//         .container
+//             .home-proverb
+//                 top: 130px!important
+//             .home-desc
+//                 top: 250px!important
+//                 left: 6%!important
+//             .invite
+//                 top: 730px!important
+//             .secondImg
+//                 top: 1240px!important
+//             .desc1p
+//                 color: white!important
+//                 top: 1260px!important
+//             .desc2p
+//                 top: 1390px!important
+//             .firstb
+//                 top: 1530px!important
+//             .material-icons
+//                 top: 1995px!important
+//             .ph-number
+//                 top: 1978px!important
+//                 margin-bottom: 50px!important
+
+// @media (min-width: 601px) and (max-width: 863px) and (max-height: 429px) and (min-height: 211px)
+//     .containerX
+//         .container
+//             .home-proverb
+//                 top: 120px!important
+//             .home-desc
+//                 top: 250px!important
+//             .invite
+//                 left: 20%!important
+//                 top: 720px!important
+//             #map
+//                 height: 300px!important
+//                 top: 940px!important
+//             .secondImg
+//                 top: 1150px!important
+//             .desc1p
+//                 color: white!important
+//                 left: 29%!important
+//                 top: 1180px!important
+//             .desc2p
+//                 top: 1300px!important
+//             .firstb
+//                 top: 1450px!important
+//             .material-icons
+//                 top: 1800px!important
+//             .ph-number
+//                 top: 1775px!important
+//                 margin-bottom: 100px!important 
+
+
+// @media  (min-width: 601px) and (max-width: 863px) and (max-height: 429px) and (min-height: 50px)
+//     .containerX
+//         .container
+//             .home-proverb
+//                 top: 120px!important
+//             .home-desc
+//                 top: 230px!important
+//             .invite
+//                 left: 20%!important
+//                 top: 720px!important
+//             #map
+//                 height: 300px!important
+//                 top: 940px!important
+//             .secondImg
+//                 top: 1150px!important
+//             .desc1p
+//                 color: white!important
+//                 left: 21%!important
+//                 top: 1180px!important
+//             .desc2p
+//                 top: 1300px!important
+//             .firstb
+//                 top: 1450px!important
+//             .material-icons
+//                 top: 1800px!important
+//                 left: 5%!important
+//             .ph-number
+//                 top: 1775px!important
+//                 margin-bottom: 50px!important
+
+
+// @media (min-width: 864px) and (max-width: 909px) and (max-height: 950px) and (min-height: 647px)
+//     .containerX
+//         .container
+//             .home-proverb
+//                 top: 120px!important
+//             .home-desc
+//                 top: 230px!important
+//             .invite
+//                 left: 35%!important
+//                 top: 680px!important
+//             .map-img
+//                 top: 440px!important
+//             .secondImg
+//                 top: 1150px!important
+//             .desc1p
+//                 color: white!important
+//                 left: 21%!important
+//                 top: 1180px!important
+//             .desc2p
+//                 top: 1300px!important
+//             .firstb
+//                 top: 1390px!important
+//             .material-icons
+//                 top: 1800px!important
+//                 left: 25%!important
+//             .ph-number
+//                 top: 1775px!important
+//                 margin-bottom: 50px!important
+
+// @media (min-width: 864px) and (max-width: 909px) and (max-height: 646px) and (min-height: 430px)
+//     .containerX
+//         .container
+//             .home-proverb
+//                 top: 120px!important
+//             .home-desc
+//                 top: 230px!important
+//             .invite
+//                 left: 35%!important
+//                 top: 680px!important
+//             .map-img
+//                 top: 440px!important
+//             .secondImg
+//                 top: 1150px!important
+//             .desc1p
+//                 color: white!important
+//                 left: 21%!important
+//                 top: 1180px!important
+//             .desc2p
+//                 top: 1300px!important
+//             .firstb
+//                 top: 1390px!important
+//             .material-icons
+//                 top: 1800px!important
+//                 left: 25%!important
+//             .ph-number
+//                 top: 1775px!important
+//                 margin-bottom: 100px!important
+                
+// @media (min-width: 864px) and (max-width: 909px) and (max-height: 429px) and (min-height: 211px)
+//     .containerX
+//         .container
+//             .home-proverb
+//                 top: 120px!important
+//             .home-desc
+//                 top: 230px!important
+//             .invite
+//                 left: 35%!important
+//                 top: 680px!important
+//             .map-img
+//                 top: 440px!important
+//             .secondImg
+//                 top: 1150px!important
+//             .desc1p
+//                 color: white!important
+//                 left: 21%!important
+//                 top: 1180px!important
+//             .desc2p
+//                 top: 1300px!important
+//             .firstb
+//                 top: 1390px!important
+//             .material-icons
+//                 top: 1800px!important
+//                 left: 25%!important
+//             .ph-number
+//                 top: 1775px!important
+//                 margin-bottom: 100px!important
+
+// @media (min-width: 864px) and (max-width: 909px) and (max-height: 429px) and (min-height: 50px)
+//     .containerX
+//         .container
+//             .home-proverb
+//                 top: 120px!important
+//             .home-desc
+//                 top: 230px!important
+//             .invite
+//                 left: 35%!important
+//                 top: 680px!important
+//             .map-img
+//                 top: 440px!important
+//             .secondImg
+//                 top: 1150px!important
+//             .desc1p
+//                 color: white!important
+//                 left: 21%!important
+//                 top: 1180px!important
+//             .desc2p
+//                 top: 1300px!important
+//             .firstb
+//                 top: 1390px!important
+//             .material-icons
+//                 top: 1800px!important
+//                 left: 25%!important
+//             .ph-number
+//                 top: 1775px!important
+//                 margin-bottom: 130px!important
+
+
+// @media (min-width: 910px) and (max-width: 1152px) and (max-height: 950px) and (min-height: 647px)
+//     .containerX
+//         .container
+//             .home-proverb
+//                 top: 120px!important
+//             .home-desc
+//                 top: 220px!important
+//             .invite
+//                 left: 35%!important
+//                 top: 680px!important
+//             .map-img
+//                 top: 450px!important
+//             .secondImg
+//                 top: 1150px!important
+//             .desc1p
+//                 color: white!important
+//                 left: 21%!important
+//                 top: 1180px!important
+//             .desc2p
+//                 top: 1300px!important
+//             .firstb
+//                 top: 1390px!important
+//             .material-icons
+//                 top: 1800px!important
+//                 left: 25%!important
+//             .ph-number
+//                 top: 1775px!important
+//                 margin-bottom: 130px!important
+    
+// @media (min-width: 910px) and (max-width: 1152px) and (max-height: 646px) and (min-height: 430px)
+//     .containerX
+//         .container
+//             .home-proverb
+//                 top: 120px!important
+//             .home-desc
+//                 top: 220px!important
+//             .invite
+//                 left: 35%!important
+//                 top: 680px!important
+//             .map-img
+//                 top: 450px!important
+//             .secondImg
+//                 top: 1150px!important
+//             .desc1p
+//                 color: white!important
+//                 left: 21%!important
+//                 top: 1180px!important
+//             .desc2p
+//                 top: 1300px!important
+//             .firstb
+//                 top: 1390px!important
+//             .material-icons
+//                 top: 1800px!important
+//                 left: 25%!important
+//             .ph-number
+//                 top: 1775px!important
+//                 margin-bottom: 130px!important
+
+// @media (min-width: 910px) and (max-width: 1152px) and (max-height: 429px) and (min-height: 211px)
+//     .containerX
+//         .container
+//             .home-proverb
+//                 top: 120px!important
+//             .home-desc
+//                 top: 220px!important
+//             .invite
+//                 left: 35%!important
+//                 top: 680px!important
+//             .map-img
+//                 top: 450px!important
+//             .secondImg
+//                 top: 1150px!important
+//             .desc1p
+//                 color: white!important
+//                 left: 21%!important
+//                 top: 1180px!important
+//             .desc2p
+//                 top: 1300px!important
+//             .firstb
+//                 top: 1390px!important
+//             .material-icons
+//                 top: 1800px!important
+//                 left: 25%!important
+//             .ph-number
+//                 top: 1775px!important
+//                 margin-bottom: 130px!important
+// @media (min-width: 1036px) and (max-width: 1036px) and (max-height: 429px) and (min-height: 50px)

@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="14" errors="0" failures="12" tests="34" time="90.237">
+ <testsuite name="HomePage" timestamp="2019-06-10T21:35:47" hostname="localhost" time="43.375" errors="0" tests="7" skipped="0" disabled="0" failures="2">
+  <testcase classname="HomePage" name="should have homePage path clicking on logo" time="3.554">
+   <failure type="exception" message="Failed: Cannot read property &apos;then&apos; of undefined"><![CDATA[TypeError: Cannot read property 'then' of undefined
+    at UserContext.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:71:21)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2974:25)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process.internalTickCallback (internal/process/next_tick.js:77:7)
+From: Task: Run it("should have homePage path clicking on logo") in control flow
+    at UserContext.<anonymous> (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4264:13
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4172:9
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:64:48
+    at ControlFlow.emit (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\events.js:62:21)
+    at ControlFlow.shutdown_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2674:10)
+    at shutdownTask_.MicroTask (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2599:53)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:69:3)
+    at addSpecsToSuite (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:63:1)
+    at Module._compile (internal/modules/cjs/loader.js:722:30)
+    at Module.m._compile (D:\AlexandraCiausu\Portfolio\frontend\node_modules\ts-node\src\index.ts:413:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:733:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (D:\AlexandraCiausu\Portfolio\frontend\node_modules\ts-node\src\index.ts:416:12)]]>
+   </failure>
+  </testcase>
+  <testcase classname="HomePage" name="should have navBar working properly" time="19.96" />
+  <testcase classname="HomePage" name="should display the banner &amp; quote &amp; first description &amp; signature" time="1.669" />
+  <testcase classname="HomePage" name="should display GoogleMap &amp; invitation message &amp; background image" time="1.603" />
+  <testcase classname="HomePage" name="should go up clicking &quot;Inapoi sus&quot; button" time="1.583">
+   <failure type="exception" message="Failed: &lt;toHaveBeenCalled&gt; : Expected a spy, but got ElementFinder({ browser_: ProtractorBrowser({ controlFlow: Function, schedule: Function, setFileDetector: Function, getExecutor: Function, getSession: Function, getCapabilities: Function, quit: Function, actions: Function, touchActions: Function, executeScript: Function, executeAsyncScript: Function, call: Function, wait: Function, sleep: Function, getWindowHandle: Function, getAllWindowHandles: Function, getPageSource: Function, close: Function, getCurrentUrl: Function, getTitle: Function, findElementInternal_: Function, findElementsInternal_: Function, takeScreenshot: Function, manage: Function, switchTo: Function, driver: Driver({ flow_: ControlFlow::2533
+| TaskQueue::2474
+| | (pending) Task::2473&lt;Run it(&quot;should go up clicking &quot;Inapoi sus&quot; button&quot;) in control flow&gt;
+| | | (active) TaskQueue::2477
+| | | | Task::2480&lt;Ignore Synchronization Protractor.waitForAngular()&gt;
+| | | | Task::2482&lt;then&gt;
+| | | | Task::2484&lt;then&gt;
+| | | | Task::2486&lt;then&gt;
+| | | | Task::2488&lt;then&gt;
+| | | | Task::2490&lt;then&gt;
+| | | | Task::2492&lt;then&gt;
+| | | | Task::2494&lt;Ignore Synchronization Protractor.waitForAngular()&gt;
+| | | | Task::2496&lt;then&gt;
+| | | | Task::2498&lt;then&gt;
+| | | | Task::2500&lt;then&gt;
+| | | | Task::2502&lt;then&gt;
+| | | | Task::2504&lt;then&gt;
+| | | | Task::2506&lt;ActionSequence.perform&gt;
+| | | | Task::2508&lt;Ignore Synchronization Protractor.waitForAngular()&gt;
+| | | | Task::2510&lt;then&gt;
+| | | | Task::2512&lt;then&gt;
+| | | | Task::2514&lt;then&gt;
+| | | | Task::2516&lt;then&gt;
+| | | | Task::2518&lt;then&gt;
+| | | | Task::2520&lt;then&gt;
+| | | | Task::2522&lt;Ignore Synchronization Protractor.waitForAngular()&gt;
+| | | | Task::2524&lt;then&gt;
+| | | | Task::2526&lt;then&gt;
+| | | | Task::2528&lt;then&gt;
+| | | | Task::2530&lt;then&gt;
+| | | | Task::2532&lt;then&gt;
+| | Task::2476&lt;then&gt;, session_: ManagedPromise::4 {[[PromiseStatus]]: &quot;fulfilled&quot;}, executor_: Executor({ w3c: false, customCommands_: Map( [ &apos;launchApp&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/chromium/launch_app&apos; }) ], [ &apos;getNetworkConditions&apos;, Object({ method: &apos;GET&apos;, path: &apos;/session/:sessionId/chromium/network_conditions&apos; }) ], [ &apos;setNetworkConditions&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/chromium/network_conditions&apos; }) ], [ &apos;getNetworkConnection&apos;, Object({ method: &apos;GET&apos;, path: &apos;/session/:sessionId/network_connection&apos; }) ], [ &apos;setNetworkConnection&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/network_connection&apos; }) ], [ &apos;toggleAirplaneMode&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/toggle_airplane_mode&apos; }) ], [ &apos;toggleWiFi&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/toggle_wifi&apos; }) ], [ &apos;toggleData&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/toggle_data&apos; }) ], [ &apos;toggleLocationServices&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/toggle_location_services&apos; }) ], [ &apos;getGeolocation&apos;, Object({ method: &apos;GET&apos;, path: &apos;/session/:sessionId/location&apos; }) ], [ &apos;setGeolocation&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/location&apos; }) ], [ &apos;getCurrentDeviceActivity&apos;, Object({ method: &apos;GET&apos;, path: &apos;/session/:sessionId/appium/device/current_activity&apos; }) ], [ &apos;startDeviceActivity&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/start_activity&apos; }) ], [ &apos;getAppiumSettings&apos;, Object({ method: &apos;GET&apos;, path: &apos;/session/:sessionId/appium/settings&apos; }) ], [ &apos;setAppiumSettings&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/settings&apos; }) ], [ &apos;getCurrentContext&apos;, Object({ method: &apos;GET&apos;, path: &apos;/session/:sessionId/context&apos; }) ], [ &apos;selectContext&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/context&apos; }) ], [ &apos;getScreenOrientation&apos;, Object({ method: &apos;GET&apos;, path: &apos;/session/:sessionId/orientation&apos; }) ], [ &apos;setScreenOrientation&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/orientation&apos; }) ], [ &apos;isDeviceLocked&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/is_locked&apos; }) ], [ &apos;lockDevice&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/lock&apos; }) ], [ &apos;unlockDevice&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/unlock&apos; }) ], [ &apos;installApp&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/install_app&apos; }) ], [ &apos;isAppInstalled&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/app_installed&apos; }) ], [ &apos;removeApp&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/remove_app&apos; }) ], [ &apos;pullFileFromDevice&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/pull_file&apos; }) ], [ &apos;pullFolderFromDevice&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/pull_folder&apos; }) ], [ &apos;pushFileToDevice&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/push_file&apos; }) ], [ &apos;listContexts&apos;, Object({ method: &apos;GET&apos;, path: &apos;/session/:sessionId/contexts&apos; }) ], [ &apos;uploadFile&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/file&apos; }) ], [ &apos;switchToParentFrame&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/frame/parent&apos; }) ], [ &apos;fullscreen&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/window/fullscreen&apos; }) ], [ &apos;sendAppToBackground&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/app/background&apos; }) ], [ &apos;closeApp&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/app/close&apos; }) ], [ &apos;getAppStrings&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/app/strings&apos; }) ], [ &apos;launchSession&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/app/launch&apos; }) ], [ &apos;resetApp&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/app/reset&apos; }) ], [ &apos;hideSoftKeyboard&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/hide_keyboard&apos; }) ], [ &apos;getDeviceTime&apos;, Object({ method: &apos;GET&apos;, path: &apos;/session/:sessionId/appium/device/system_time&apos; }) ], [ &apos;openDeviceNotifications&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/open_notifications&apos; }) ], [ &apos;rotationGesture&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/rotate&apos; }) ], [ &apos;shakeDevice&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/shake&apos; }) ], [ &apos;sendChromiumCommand&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/chromium/send_command&apos; }) ], [ &apos;sendChromiumCommandAndGetResult&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/chromium/send_command_and_get_result&apos; }) ] ), log_: Logger({ name_: &apos;webdriver.http.Executor&apos;, level_: null, parent_: Logger({ name_: &apos;webdriver.http&apos;, level_: null, parent_: Logger({ name_: &apos;webdriver&apos;, level_: null, parent_: Logger({ name_: &apos;&apos;, level_: OFF, parent_: null, handlers_: null }), handlers_: null }), handlers_: null }), handlers_: null }) }), fileDetector_: null, onQuit_: undefined, getNetworkConnection: Function, setNetworkConnection: Function, toggleAirplaneMode: Function, toggleWiFi: Function, toggleData: Function, toggleLocationServices: Function, getGeolocation: Function, setGeolocation: Function, getCurrentDeviceActivity: Function, startDeviceActivity: Function, getAppiumSettings: Function, setAppiumSettings: Function, getCurrentContext: Function, selectContext: Function, getScreenOrientation: Function, setScreenOrientation: Function, isDeviceLocked: Function, lockDevice: Function, unlockDevice: Function, installApp: Function, isAppInstalled: Function, removeApp: Function, pullFileFromDevice: Function, pullFolderFromDevice: Function, pushFileToDevice: Function, listContexts: Function, uploadFile: Function, switchToParentFrame: Function, fullscreen: Function, sendAppToBackground: Function, closeApp: Function, getAppStrings: Function, launchSession: Function, resetApp: Function, hideSoftKeyboard: Function, getDeviceTime: Function, openDeviceNotifications: Function, rotationGesture: Function, shakeDevice: Function, sendChromiumCommand: Function, sendChromiumCommandAndGetResult: Function }), element: Function, $: Function, $$: Function, baseUrl: &apos;&apos;, getPageTimeout: 30000, params: Object({  }), resetUrl: &apos;data:text/html,&lt;html&gt;&lt;/html&gt;&apos;, debugHelper: DebugHelper({ browserUnderDebug_: &lt;circular reference: Object&gt; }), ready: ManagedPromise::17 {[[PromiseStatus]]: &quot;fulfilled&quot;}, trackOutstandingTimeouts_: true, mockModules_: [ Object({ name: &apos;protractorBaseModule_&apos;, script: Function, args: [ true ] }) ], ExpectedConditions: ProtractorExpectedConditions({ browser: &lt;circular reference: Object&gt; }), plugins_: Plugins({ setup: Function, onPrepare: Function, teardown: Function, postResults: Function, postTest: Function, onPageLoad: Function, onPageStable: Function, waitForPromise: Function, waitForCondition: Function, pluginObjs: [  ], assertions: Object({  }), resultsReported: false }), allScriptsTimeout: 11000, getProcessedConfig: Function, forkNewDriverInstance: Function, restart: Function, restartSync: Function, internalRootEl: &apos;&apos;, internalIgnoreSynchronization: true }), then: null, parentElementArrayFinder: ElementArrayFinder({ browser_: ProtractorBrowser({ controlFlow: Function, schedule: Function, setFileDetector: Function, getExecutor: Function, getSession: Function, getCapabilities: Function, quit: Function, actions: Function, touchActions: Function, executeScript: Function, executeAsyncScript: Function, call: Function, wait: Function, sleep: Function, getWindowHandle: Function, getAllWindowHandles: Function, getPageSource: Function, close: Function, getCurrentUrl: Function, getTitle: Function, findElementInternal_: Function, findElementsInternal_: Function, takeScreenshot: Function, manage: Function, switchTo: Function, driver: Driver({ flow_: ControlFlow::2533
+| TaskQueue::2474
+| | (pending) Task::2473&lt;Run it(&quot;should go up clicking &quot;Inapoi sus&quot; button&quot;) in control flow&gt;
+| | | (active) TaskQueue::2477
+| | | | Task::2480&lt;Ignore Synchronization Protractor.waitForAngular()&gt;
+| | | | Task::2482&lt;then&gt;
+| | | | Task::2484&lt;then&gt;
+| | | | Task::2486&lt;then&gt;
+| | | | Task::2488&lt;then&gt;
+| | | | Task::2490&lt;then&gt;
+| | | | Task::2492&lt;then&gt;
+| | | | Task::2494&lt;Ignore Synchronization Protractor.waitForAngular()&gt;
+| | | | Task::2496&lt;then&gt;
+| | | | Task::2498&lt;then&gt;
+| | | | Task::2500&lt;then&gt;
+| | | | Task::2502&lt;then&gt;
+| | | | Task::2504&lt;then&gt;
+| | | | Task::2506&lt;ActionSequence.perform&gt;
+| | | | Task::2508&lt;Ignore Synchronization Protractor.waitForAngular()&gt;
+| | | | Task::2510&lt;then&gt;
+| | | | Task::2512&lt;then&gt;
+| | | | Task::2514&lt;then&gt;
+| | | | Task::2516&lt;then&gt;
+| | | | Task::2518&lt;then&gt;
+| | | | Task::2520&lt;then&gt;
+| | | | Task::2522&lt;Ignore Synchronization Protractor.waitForAngular()&gt;
+| | | | Task::2524&lt;then&gt;
+| | | | Task::2526&lt;then&gt;
+| | | | Task::2528&lt;then&gt;
+| | | | Task::2530&lt;then&gt;
+| | | | Task::2532&lt;then&gt;
+| | Task::2476&lt;then&gt;, session_: ManagedPromise::4 {[[PromiseStatus]]: &quot;fulfilled&quot;}, executor_: Executor({ w3c: false, customCommands_: Map( [ &apos;launchApp&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/chromium/launch_app&apos; }) ], [ &apos;getNetworkConditions&apos;, Object({ method: &apos;GET&apos;, path: &apos;/session/:sessionId/chromium/network_conditions&apos; }) ], [ &apos;setNetworkConditions&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/chromium/network_conditions&apos; }) ], [ &apos;getNetworkConnection&apos;, Object({ method: &apos;GET&apos;, path: &apos;/session/:sessionId/network_connection&apos; }) ], [ &apos;setNetworkConnection&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/network_connection&apos; }) ], [ &apos;toggleAirplaneMode&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/toggle_airplane_mode&apos; }) ], [ &apos;toggleWiFi&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/toggle_wifi&apos; }) ], [ &apos;toggleData&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/toggle_data&apos; }) ], [ &apos;toggleLocationServices&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/toggle_location_services&apos; }) ], [ &apos;getGeolocation&apos;, Object({ method: &apos;GET&apos;, path: &apos;/session/:sessionId/location&apos; }) ], [ &apos;setGeolocation&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/location&apos; }) ], [ &apos;getCurrentDeviceActivity&apos;, Object({ method: &apos;GET&apos;, path: &apos;/session/:sessionId/appium/device/current_activity&apos; }) ], [ &apos;startDeviceActivity&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/start_activity&apos; }) ], [ &apos;getAppiumSettings&apos;, Object({ method: &apos;GET&apos;, path: &apos;/session/:sessionId/appium/settings&apos; }) ], [ &apos;setAppiumSettings&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/settings&apos; }) ], [ &apos;getCurrentContext&apos;, Object({ method: &apos;GET&apos;, path: &apos;/session/:sessionId/context&apos; }) ], [ &apos;selectContext&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/context&apos; }) ], [ &apos;getScreenOrientation&apos;, Object({ method: &apos;GET&apos;, path: &apos;/session/:sessionId/orientation&apos; }) ], [ &apos;setScreenOrientation&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/orientation&apos; }) ], [ &apos;isDeviceLocked&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/is_locked&apos; }) ], [ &apos;lockDevice&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/lock&apos; }) ], [ &apos;unlockDevice&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/unlock&apos; }) ], [ &apos;installApp&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/install_app&apos; }) ], [ &apos;isAppInstalled&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/app_installed&apos; }) ], [ &apos;removeApp&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/remove_app&apos; }) ], [ &apos;pullFileFromDevice&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/pull_file&apos; }) ], [ &apos;pullFolderFromDevice&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/pull_folder&apos; }) ], [ &apos;pushFileToDevice&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/push_file&apos; }) ], [ &apos;listContexts&apos;, Object({ method: &apos;GET&apos;, path: &apos;/session/:sessionId/contexts&apos; }) ], [ &apos;uploadFile&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/file&apos; }) ], [ &apos;switchToParentFrame&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/frame/parent&apos; }) ], [ &apos;fullscreen&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/window/fullscreen&apos; }) ], [ &apos;sendAppToBackground&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/app/background&apos; }) ], [ &apos;closeApp&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/app/close&apos; }) ], [ &apos;getAppStrings&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/app/strings&apos; }) ], [ &apos;launchSession&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/app/launch&apos; }) ], [ &apos;resetApp&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/app/reset&apos; }) ], [ &apos;hideSoftKeyboard&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/hide_keyboard&apos; }) ], [ &apos;getDeviceTime&apos;, Object({ method: &apos;GET&apos;, path: &apos;/session/:sessionId/appium/device/system_time&apos; }) ], [ &apos;openDeviceNotifications&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/open_notifications&apos; }) ], [ &apos;rotationGesture&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/rotate&apos; }) ], [ &apos;shakeDevice&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/shake&apos; }) ], [ &apos;sendChromiumCommand&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/chromium/send_command&apos; }) ], [ &apos;sendChromiumCommandAndGetResult&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/chromium/send_command_and_get_result&apos; }) ] ), log_: Logger({ name_: &apos;webdriver.http.Executor&apos;, level_: null, parent_: Logger({ name_: &apos;webdriver.http&apos;, level_: null, parent_: Logger({ name_: &apos;webdriver&apos;, level_: null, parent_: Logger({ name_: &apos;&apos;, level_: OFF, parent_: null, handlers_: null }), handlers_: null }), handlers_: null }), handlers_: null }) }), fileDetector_: null, onQuit_: undefined, getNetworkConnection: Function, setNetworkConnection: Function, toggleAirplaneMode: Function, toggleWiFi: Function, toggleData: Function, toggleLocationServices: Function, getGeolocation: Function, setGeolocation: Function, getCurrentDeviceActivity: Function, startDeviceActivity: Function, getAppiumSettings: Function, setAppiumSettings: Function, getCurrentContext: Function, selectContext: Function, getScreenOrientation: Function, setScreenOrientation: Function, isDeviceLocked: Function, lockDevice: Function, unlockDevice: Function, installApp: Function, isAppInstalled: Function, removeApp: Function, pullFileFromDevice: Function, pullFolderFromDevice: Function, pushFileToDevice: Function, listContexts: Function, uploadFile: Function, switchToParentFrame: Function, fullscreen: Function, sendAppToBackground: Function, closeApp: Function, getAppStrings: Function, launchSession: Function, resetApp: Function, hideSoftKeyboard: Function, getDeviceTime: Function, openDeviceNotifications: Function, rotationGesture: Function, shakeDevice: Function, sendChromiumCommand: Function, sendChromiumCommandAndGetResult: Function }), element: Function, $: Function, $$: Function, baseUrl: &apos;&apos;, getPageTimeout: 30000, params: Object({  }), resetUrl: &apos;data:text/html,&lt;html&gt;&lt;/html&gt;&apos;, debugHelper: DebugHelper({ browserUnderDebug_: &lt;circular reference: Object&gt; }), ready: ManagedPromise::17 {[[PromiseStatus]]: &quot;fulfilled&quot;}, trackOutstandingTimeouts_: true, mockModules_: [ Object({ name: &apos;protractorBaseModule_&apos;, script: Function, args: [ true ] }) ], ExpectedConditions: ProtractorExpectedConditions({ browser: &lt;circular reference: Object&gt; }), plugins_: Plugins({ setup: Function, onPrepare: Function, teardown: Function, postResults: Function, postTest: Function, onPageLoad: Function, onPageStable: Function, waitForPromise: Function, waitForCondition: Function, pluginObjs: [  ], assertions: Object({  }), resultsReported: false }), allScriptsTimeout: 11000, getProcessedConfig: Function, forkNewDriverInstance: Function, restart: Function, restartSync: Function, internalRootEl: &apos;&apos;, internalIgnoreSynchronization: true }), getWebElements: Function, locator_: By(css selector, #myBtn), actionResults_: null, click: Function, sendKeys: Function, getTagName: Function, getCssValue: Function, getAttribute: Function, getText: Function, getSize: Function, getLocation: Function, isEnabled: Function, isSelected: Function, submit: Function, clear: Function, isDisplayed: Function, getId: Function, takeScreenshot: Function }), elementArrayFinder_: ElementArrayFinder({ browser_: ProtractorBrowser({ controlFlow: Function, schedule: Function, setFileDetector: Function, getExecutor: Function, getSession: Function, getCapabilities: Function, quit: Function, actions: Function, touchActions: Function, executeScript: Function, executeAsyncScript: Function, call: Function, wait: Function, sleep: Function, getWindowHandle: Function, getAllWindowHandles: Function, getPageSource: Function, close: Function, getCurrentUrl: Function, getTitle: Function, findElementInternal_: Function, findElementsInternal_: Function, takeScreenshot: Function, manage: Function, switchTo: Function, driver: Driver({ flow_: ControlFlow::2533
+| TaskQueue::2474
+| | (pending) Task::2473&lt;Run it(&quot;should go up clicking &quot;Inapoi sus&quot; button&quot;) in control flow&gt;
+| | | (active) TaskQueue::2477
+| | | | Task::2480&lt;Ignore Synchronization Protractor.waitForAngular()&gt;
+| | | | Task::2482&lt;then&gt;
+| | | | Task::2484&lt;then&gt;
+| | | | Task::2486&lt;then&gt;
+| | | | Task::2488&lt;then&gt;
+| | | | Task::2490&lt;then&gt;
+| | | | Task::2492&lt;then&gt;
+| | | | Task::2494&lt;Ignore Synchronization Protractor.waitForAngular()&gt;
+| | | | Task::2496&lt;then&gt;
+| | | | Task::2498&lt;then&gt;
+| | | | Task::2500&lt;then&gt;
+| | | | Task::2502&lt;then&gt;
+| | | | Task::2504&lt;then&gt;
+| | | | Task::2506&lt;ActionSequence.perform&gt;
+| | | | Task::2508&lt;Ignore Synchronization Protractor.waitForAngular()&gt;
+| | | | Task::2510&lt;then&gt;
+| | | | Task::2512&lt;then&gt;
+| | | | Task::2514&lt;then&gt;
+| | | | Task::2516&lt;then&gt;
+| | | | Task::2518&lt;then&gt;
+| | | | Task::2520&lt;then&gt;
+| | | | Task::2522&lt;Ignore Synchronization Protractor.waitForAngular()&gt;
+| | | | Task::2524&lt;then&gt;
+| | | | Task::2526&lt;then&gt;
+| | | | Task::2528&lt;then&gt;
+| | | | Task::2530&lt;then&gt;
+| | | | Task::2532&lt;then&gt;
+| | Task::2476&lt;then&gt;, session_: ManagedPromise::4 {[[PromiseStatus]]: &quot;fulfilled&quot;}, executor_: Executor({ w3c: false, customCommands_: Map( [ &apos;launchApp&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/chromium/launch_app&apos; }) ], [ &apos;getNetworkConditions&apos;, Object({ method: &apos;GET&apos;, path: &apos;/session/:sessionId/chromium/network_conditions&apos; }) ], [ &apos;setNetworkConditions&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/chromium/network_conditions&apos; }) ], [ &apos;getNetworkConnection&apos;, Object({ method: &apos;GET&apos;, path: &apos;/session/:sessionId/network_connection&apos; }) ], [ &apos;setNetworkConnection&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/network_connection&apos; }) ], [ &apos;toggleAirplaneMode&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/toggle_airplane_mode&apos; }) ], [ &apos;toggleWiFi&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/toggle_wifi&apos; }) ], [ &apos;toggleData&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/toggle_data&apos; }) ], [ &apos;toggleLocationServices&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/toggle_location_services&apos; }) ], [ &apos;getGeolocation&apos;, Object({ method: &apos;GET&apos;, path: &apos;/session/:sessionId/location&apos; }) ], [ &apos;setGeolocation&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/location&apos; }) ], [ &apos;getCurrentDeviceActivity&apos;, Object({ method: &apos;GET&apos;, path: &apos;/session/:sessionId/appium/device/current_activity&apos; }) ], [ &apos;startDeviceActivity&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/start_activity&apos; }) ], [ &apos;getAppiumSettings&apos;, Object({ method: &apos;GET&apos;, path: &apos;/session/:sessionId/appium/settings&apos; }) ], [ &apos;setAppiumSettings&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/settings&apos; }) ], [ &apos;getCurrentContext&apos;, Object({ method: &apos;GET&apos;, path: &apos;/session/:sessionId/context&apos; }) ], [ &apos;selectContext&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/context&apos; }) ], [ &apos;getScreenOrientation&apos;, Object({ method: &apos;GET&apos;, path: &apos;/session/:sessionId/orientation&apos; }) ], [ &apos;setScreenOrientation&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/orientation&apos; }) ], [ &apos;isDeviceLocked&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/is_locked&apos; }) ], [ &apos;lockDevice&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/lock&apos; }) ], [ &apos;unlockDevice&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/unlock&apos; }) ], [ &apos;installApp&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/install_app&apos; }) ], [ &apos;isAppInstalled&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/app_installed&apos; }) ], [ &apos;removeApp&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/remove_app&apos; }) ], [ &apos;pullFileFromDevice&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/pull_file&apos; }) ], [ &apos;pullFolderFromDevice&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/pull_folder&apos; }) ], [ &apos;pushFileToDevice&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/push_file&apos; }) ], [ &apos;listContexts&apos;, Object({ method: &apos;GET&apos;, path: &apos;/session/:sessionId/contexts&apos; }) ], [ &apos;uploadFile&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/file&apos; }) ], [ &apos;switchToParentFrame&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/frame/parent&apos; }) ], [ &apos;fullscreen&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/window/fullscreen&apos; }) ], [ &apos;sendAppToBackground&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/app/background&apos; }) ], [ &apos;closeApp&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/app/close&apos; }) ], [ &apos;getAppStrings&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/app/strings&apos; }) ], [ &apos;launchSession&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/app/launch&apos; }) ], [ &apos;resetApp&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/app/reset&apos; }) ], [ &apos;hideSoftKeyboard&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/hide_keyboard&apos; }) ], [ &apos;getDeviceTime&apos;, Object({ method: &apos;GET&apos;, path: &apos;/session/:sessionId/appium/device/system_time&apos; }) ], [ &apos;openDeviceNotifications&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/open_notifications&apos; }) ], [ &apos;rotationGesture&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/rotate&apos; }) ], [ &apos;shakeDevice&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/appium/device/shake&apos; }) ], [ &apos;sendChromiumCommand&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/chromium/send_command&apos; }) ], [ &apos;sendChromiumCommandAndGetResult&apos;, Object({ method: &apos;POST&apos;, path: &apos;/session/:sessionId/chromium/send_command_and_get_result&apos; }) ] ), log_: Logger({ name_: &apos;webdriver.http.Executor&apos;, level_: null, parent_: Logger({ name_: &apos;webdriver.http&apos;, level_: null, parent_: Logger({ name_: &apos;webdriver&apos;, level_: null, parent_: Logger({ name_: &apos;&apos;, level_: OFF, parent_: null, handlers_: null }), handlers_: null }), handlers_: null }), handlers_: null }) }), fileDetector_: null, onQuit_: undefined, getNetworkConnection: Function, setNetworkConnection: Function, toggleAirplaneMode: Function, toggleWiFi: Function, toggleData: Function, toggleLocationServices: Function, getGeolocation: Function, setGeolocation: Function, getCurrentDeviceActivity: Function, startDeviceActivity: Function, getAppiumSettings: Function, setAppiumSettings: Function, getCurrentContext: Function, selectContext: Function, getScreenOrientation: Function, setScreenOrientation: Function, isDeviceLocked: Function, lockDevice: Function, unlockDevice: Function, installApp: Function, isAppInstalled: Function, removeApp: Function, pullFileFromDevice: Function, pullFolderFromDevice: Function, pushFileToDevice: Function, listContexts: Function, uploadFile: Function, switchToParentFrame: Function, fullscreen: Function, sendAppToBackground: Function, closeApp: Function, getAppStrings: Function, launchSession: Function, resetApp: Function, hideSoftKeyboard: Function, getDeviceTime: Function, openDeviceNotifications: Function, rotationGesture: Function, shakeDevice: Function, sendChromiumCommand: Function, sendChromiumCommandAndGetResult: Function }), element: Function, $: Function, $$: Function, baseUrl: &apos;&apos;, getPageTimeout: 30000, params: Object({  }), resetUrl: &apos;data:text/html,&lt;html&gt;&lt;/html&gt;&apos;, debugHelper: DebugHelper({ browserUnderDebug_: &lt;circular reference: Object&gt; }), ready: ManagedPromise::17 {[[PromiseStatus]]: &quot;fulfilled&quot;}, trackOutstandingTimeouts_: true, mockModules_: [ Object({ name: &apos;protractorBaseModule_&apos;, script: Function, args: [ true ] }) ], ExpectedConditions: ProtractorExpectedConditions({ browser: &lt;circular reference: Object&gt; }), plugins_: Plugins({ setup: Function, onPrepare: Function, teardown: Function, postResults: Function, postTest: Function, onPageLoad: Function, onPageStable: Function, waitForPromise: Function, waitForCondition: Function, pluginObjs: [  ], assertions: Object({  }), resultsReported: false }), allScriptsTimeout: 11000, getProcessedConfig: Function, forkNewDriverInstance: Function, restart: Function, restartSync: Function, internalRootEl: &apos;&apos;, internalIgnoreSynchronization: true }), getWebElements: Function, locator_: By(css selector, #myBtn), actionResults_: null, click: Function, sendKeys: Function, getTagName: Function, getCssValue: Function, getAttribute: Function, getText: Function, getSize: Function, getLocation: Function, isEnabled: Function, isSelected: Function, submit: Function, clear: Function, isDisplayed: Function, getId: Function, takeScreenshot: Function }), click: Function, sendKeys: Function, getTagName: Function, getCssValue: Function, getAttribute: Function, getText: Function, getSize: Function, getLocation: Function, isEnabled: Function, isSelected: Function, submit: Function, clear: Function, isDisplayed: Function, getId: Function, takeScreenshot: Function }).
+Usage: expect(&lt;spyObj&gt;).toHaveBeenCalled()"><![CDATA[Error: <toHaveBeenCalled> : Expected a spy, but got ElementFinder({ browser_: ProtractorBrowser({ controlFlow: Function, schedule: Function, setFileDetector: Function, getExecutor: Function, getSession: Function, getCapabilities: Function, quit: Function, actions: Function, touchActions: Function, executeScript: Function, executeAsyncScript: Function, call: Function, wait: Function, sleep: Function, getWindowHandle: Function, getAllWindowHandles: Function, getPageSource: Function, close: Function, getCurrentUrl: Function, getTitle: Function, findElementInternal_: Function, findElementsInternal_: Function, takeScreenshot: Function, manage: Function, switchTo: Function, driver: Driver({ flow_: ControlFlow::2533
+| TaskQueue::2474
+| | (pending) Task::2473<Run it("should go up clicking "Inapoi sus" button") in control flow>
+| | | (active) TaskQueue::2477
+| | | | Task::2480<Ignore Synchronization Protractor.waitForAngular()>
+| | | | Task::2482<then>
+| | | | Task::2484<then>
+| | | | Task::2486<then>
+| | | | Task::2488<then>
+| | | | Task::2490<then>
+| | | | Task::2492<then>
+| | | | Task::2494<Ignore Synchronization Protractor.waitForAngular()>
+| | | | Task::2496<then>
+| | | | Task::2498<then>
+| | | | Task::2500<then>
+| | | | Task::2502<then>
+| | | | Task::2504<then>
+| | | | Task::2506<ActionSequence.perform>
+| | | | Task::2508<Ignore Synchronization Protractor.waitForAngular()>
+| | | | Task::2510<then>
+| | | | Task::2512<then>
+| | | | Task::2514<then>
+| | | | Task::2516<then>
+| | | | Task::2518<then>
+| | | | Task::2520<then>
+| | | | Task::2522<Ignore Synchronization Protractor.waitForAngular()>
+| | | | Task::2524<then>
+| | | | Task::2526<then>
+| | | | Task::2528<then>
+| | | | Task::2530<then>
+| | | | Task::2532<then>
+| | Task::2476<then>, session_: ManagedPromise::4 {[[PromiseStatus]]: "fulfilled"}, executor_: Executor({ w3c: false, customCommands_: Map( [ 'launchApp', Object({ method: 'POST', path: '/session/:sessionId/chromium/launch_app' }) ], [ 'getNetworkConditions', Object({ method: 'GET', path: '/session/:sessionId/chromium/network_conditions' }) ], [ 'setNetworkConditions', Object({ method: 'POST', path: '/session/:sessionId/chromium/network_conditions' }) ], [ 'getNetworkConnection', Object({ method: 'GET', path: '/session/:sessionId/network_connection' }) ], [ 'setNetworkConnection', Object({ method: 'POST', path: '/session/:sessionId/network_connection' }) ], [ 'toggleAirplaneMode', Object({ method: 'POST', path: '/session/:sessionId/appium/device/toggle_airplane_mode' }) ], [ 'toggleWiFi', Object({ method: 'POST', path: '/session/:sessionId/appium/device/toggle_wifi' }) ], [ 'toggleData', Object({ method: 'POST', path: '/session/:sessionId/appium/device/toggle_data' }) ], [ 'toggleLocationServices', Object({ method: 'POST', path: '/session/:sessionId/appium/device/toggle_location_services' }) ], [ 'getGeolocation', Object({ method: 'GET', path: '/session/:sessionId/location' }) ], [ 'setGeolocation', Object({ method: 'POST', path: '/session/:sessionId/location' }) ], [ 'getCurrentDeviceActivity', Object({ method: 'GET', path: '/session/:sessionId/appium/device/current_activity' }) ], [ 'startDeviceActivity', Object({ method: 'POST', path: '/session/:sessionId/appium/device/start_activity' }) ], [ 'getAppiumSettings', Object({ method: 'GET', path: '/session/:sessionId/appium/settings' }) ], [ 'setAppiumSettings', Object({ method: 'POST', path: '/session/:sessionId/appium/settings' }) ], [ 'getCurrentContext', Object({ method: 'GET', path: '/session/:sessionId/context' }) ], [ 'selectContext', Object({ method: 'POST', path: '/session/:sessionId/context' }) ], [ 'getScreenOrientation', Object({ method: 'GET', path: '/session/:sessionId/orientation' }) ], [ 'setScreenOrientation', Object({ method: 'POST', path: '/session/:sessionId/orientation' }) ], [ 'isDeviceLocked', Object({ method: 'POST', path: '/session/:sessionId/appium/device/is_locked' }) ], [ 'lockDevice', Object({ method: 'POST', path: '/session/:sessionId/appium/device/lock' }) ], [ 'unlockDevice', Object({ method: 'POST', path: '/session/:sessionId/appium/device/unlock' }) ], [ 'installApp', Object({ method: 'POST', path: '/session/:sessionId/appium/device/install_app' }) ], [ 'isAppInstalled', Object({ method: 'POST', path: '/session/:sessionId/appium/device/app_installed' }) ], [ 'removeApp', Object({ method: 'POST', path: '/session/:sessionId/appium/device/remove_app' }) ], [ 'pullFileFromDevice', Object({ method: 'POST', path: '/session/:sessionId/appium/device/pull_file' }) ], [ 'pullFolderFromDevice', Object({ method: 'POST', path: '/session/:sessionId/appium/device/pull_folder' }) ], [ 'pushFileToDevice', Object({ method: 'POST', path: '/session/:sessionId/appium/device/push_file' }) ], [ 'listContexts', Object({ method: 'GET', path: '/session/:sessionId/contexts' }) ], [ 'uploadFile', Object({ method: 'POST', path: '/session/:sessionId/file' }) ], [ 'switchToParentFrame', Object({ method: 'POST', path: '/session/:sessionId/frame/parent' }) ], [ 'fullscreen', Object({ method: 'POST', path: '/session/:sessionId/window/fullscreen' }) ], [ 'sendAppToBackground', Object({ method: 'POST', path: '/session/:sessionId/appium/app/background' }) ], [ 'closeApp', Object({ method: 'POST', path: '/session/:sessionId/appium/app/close' }) ], [ 'getAppStrings', Object({ method: 'POST', path: '/session/:sessionId/appium/app/strings' }) ], [ 'launchSession', Object({ method: 'POST', path: '/session/:sessionId/appium/app/launch' }) ], [ 'resetApp', Object({ method: 'POST', path: '/session/:sessionId/appium/app/reset' }) ], [ 'hideSoftKeyboard', Object({ method: 'POST', path: '/session/:sessionId/appium/device/hide_keyboard' }) ], [ 'getDeviceTime', Object({ method: 'GET', path: '/session/:sessionId/appium/device/system_time' }) ], [ 'openDeviceNotifications', Object({ method: 'POST', path: '/session/:sessionId/appium/device/open_notifications' }) ], [ 'rotationGesture', Object({ method: 'POST', path: '/session/:sessionId/appium/device/rotate' }) ], [ 'shakeDevice', Object({ method: 'POST', path: '/session/:sessionId/appium/device/shake' }) ], [ 'sendChromiumCommand', Object({ method: 'POST', path: '/session/:sessionId/chromium/send_command' }) ], [ 'sendChromiumCommandAndGetResult', Object({ method: 'POST', path: '/session/:sessionId/chromium/send_command_and_get_result' }) ] ), log_: Logger({ name_: 'webdriver.http.Executor', level_: null, parent_: Logger({ name_: 'webdriver.http', level_: null, parent_: Logger({ name_: 'webdriver', level_: null, parent_: Logger({ name_: '', level_: OFF, parent_: null, handlers_: null }), handlers_: null }), handlers_: null }), handlers_: null }) }), fileDetector_: null, onQuit_: undefined, getNetworkConnection: Function, setNetworkConnection: Function, toggleAirplaneMode: Function, toggleWiFi: Function, toggleData: Function, toggleLocationServices: Function, getGeolocation: Function, setGeolocation: Function, getCurrentDeviceActivity: Function, startDeviceActivity: Function, getAppiumSettings: Function, setAppiumSettings: Function, getCurrentContext: Function, selectContext: Function, getScreenOrientation: Function, setScreenOrientation: Function, isDeviceLocked: Function, lockDevice: Function, unlockDevice: Function, installApp: Function, isAppInstalled: Function, removeApp: Function, pullFileFromDevice: Function, pullFolderFromDevice: Function, pushFileToDevice: Function, listContexts: Function, uploadFile: Function, switchToParentFrame: Function, fullscreen: Function, sendAppToBackground: Function, closeApp: Function, getAppStrings: Function, launchSession: Function, resetApp: Function, hideSoftKeyboard: Function, getDeviceTime: Function, openDeviceNotifications: Function, rotationGesture: Function, shakeDevice: Function, sendChromiumCommand: Function, sendChromiumCommandAndGetResult: Function }), element: Function, $: Function, $$: Function, baseUrl: '', getPageTimeout: 30000, params: Object({  }), resetUrl: 'data:text/html,<html></html>', debugHelper: DebugHelper({ browserUnderDebug_: <circular reference: Object> }), ready: ManagedPromise::17 {[[PromiseStatus]]: "fulfilled"}, trackOutstandingTimeouts_: true, mockModules_: [ Object({ name: 'protractorBaseModule_', script: Function, args: [ true ] }) ], ExpectedConditions: ProtractorExpectedConditions({ browser: <circular reference: Object> }), plugins_: Plugins({ setup: Function, onPrepare: Function, teardown: Function, postResults: Function, postTest: Function, onPageLoad: Function, onPageStable: Function, waitForPromise: Function, waitForCondition: Function, pluginObjs: [  ], assertions: Object({  }), resultsReported: false }), allScriptsTimeout: 11000, getProcessedConfig: Function, forkNewDriverInstance: Function, restart: Function, restartSync: Function, internalRootEl: '', internalIgnoreSynchronization: true }), then: null, parentElementArrayFinder: ElementArrayFinder({ browser_: ProtractorBrowser({ controlFlow: Function, schedule: Function, setFileDetector: Function, getExecutor: Function, getSession: Function, getCapabilities: Function, quit: Function, actions: Function, touchActions: Function, executeScript: Function, executeAsyncScript: Function, call: Function, wait: Function, sleep: Function, getWindowHandle: Function, getAllWindowHandles: Function, getPageSource: Function, close: Function, getCurrentUrl: Function, getTitle: Function, findElementInternal_: Function, findElementsInternal_: Function, takeScreenshot: Function, manage: Function, switchTo: Function, driver: Driver({ flow_: ControlFlow::2533
+| TaskQueue::2474
+| | (pending) Task::2473<Run it("should go up clicking "Inapoi sus" button") in control flow>
+| | | (active) TaskQueue::2477
+| | | | Task::2480<Ignore Synchronization Protractor.waitForAngular()>
+| | | | Task::2482<then>
+| | | | Task::2484<then>
+| | | | Task::2486<then>
+| | | | Task::2488<then>
+| | | | Task::2490<then>
+| | | | Task::2492<then>
+| | | | Task::2494<Ignore Synchronization Protractor.waitForAngular()>
+| | | | Task::2496<then>
+| | | | Task::2498<then>
+| | | | Task::2500<then>
+| | | | Task::2502<then>
+| | | | Task::2504<then>
+| | | | Task::2506<ActionSequence.perform>
+| | | | Task::2508<Ignore Synchronization Protractor.waitForAngular()>
+| | | | Task::2510<then>
+| | | | Task::2512<then>
+| | | | Task::2514<then>
+| | | | Task::2516<then>
+| | | | Task::2518<then>
+| | | | Task::2520<then>
+| | | | Task::2522<Ignore Synchronization Protractor.waitForAngular()>
+| | | | Task::2524<then>
+| | | | Task::2526<then>
+| | | | Task::2528<then>
+| | | | Task::2530<then>
+| | | | Task::2532<then>
+| | Task::2476<then>, session_: ManagedPromise::4 {[[PromiseStatus]]: "fulfilled"}, executor_: Executor({ w3c: false, customCommands_: Map( [ 'launchApp', Object({ method: 'POST', path: '/session/:sessionId/chromium/launch_app' }) ], [ 'getNetworkConditions', Object({ method: 'GET', path: '/session/:sessionId/chromium/network_conditions' }) ], [ 'setNetworkConditions', Object({ method: 'POST', path: '/session/:sessionId/chromium/network_conditions' }) ], [ 'getNetworkConnection', Object({ method: 'GET', path: '/session/:sessionId/network_connection' }) ], [ 'setNetworkConnection', Object({ method: 'POST', path: '/session/:sessionId/network_connection' }) ], [ 'toggleAirplaneMode', Object({ method: 'POST', path: '/session/:sessionId/appium/device/toggle_airplane_mode' }) ], [ 'toggleWiFi', Object({ method: 'POST', path: '/session/:sessionId/appium/device/toggle_wifi' }) ], [ 'toggleData', Object({ method: 'POST', path: '/session/:sessionId/appium/device/toggle_data' }) ], [ 'toggleLocationServices', Object({ method: 'POST', path: '/session/:sessionId/appium/device/toggle_location_services' }) ], [ 'getGeolocation', Object({ method: 'GET', path: '/session/:sessionId/location' }) ], [ 'setGeolocation', Object({ method: 'POST', path: '/session/:sessionId/location' }) ], [ 'getCurrentDeviceActivity', Object({ method: 'GET', path: '/session/:sessionId/appium/device/current_activity' }) ], [ 'startDeviceActivity', Object({ method: 'POST', path: '/session/:sessionId/appium/device/start_activity' }) ], [ 'getAppiumSettings', Object({ method: 'GET', path: '/session/:sessionId/appium/settings' }) ], [ 'setAppiumSettings', Object({ method: 'POST', path: '/session/:sessionId/appium/settings' }) ], [ 'getCurrentContext', Object({ method: 'GET', path: '/session/:sessionId/context' }) ], [ 'selectContext', Object({ method: 'POST', path: '/session/:sessionId/context' }) ], [ 'getScreenOrientation', Object({ method: 'GET', path: '/session/:sessionId/orientation' }) ], [ 'setScreenOrientation', Object({ method: 'POST', path: '/session/:sessionId/orientation' }) ], [ 'isDeviceLocked', Object({ method: 'POST', path: '/session/:sessionId/appium/device/is_locked' }) ], [ 'lockDevice', Object({ method: 'POST', path: '/session/:sessionId/appium/device/lock' }) ], [ 'unlockDevice', Object({ method: 'POST', path: '/session/:sessionId/appium/device/unlock' }) ], [ 'installApp', Object({ method: 'POST', path: '/session/:sessionId/appium/device/install_app' }) ], [ 'isAppInstalled', Object({ method: 'POST', path: '/session/:sessionId/appium/device/app_installed' }) ], [ 'removeApp', Object({ method: 'POST', path: '/session/:sessionId/appium/device/remove_app' }) ], [ 'pullFileFromDevice', Object({ method: 'POST', path: '/session/:sessionId/appium/device/pull_file' }) ], [ 'pullFolderFromDevice', Object({ method: 'POST', path: '/session/:sessionId/appium/device/pull_folder' }) ], [ 'pushFileToDevice', Object({ method: 'POST', path: '/session/:sessionId/appium/device/push_file' }) ], [ 'listContexts', Object({ method: 'GET', path: '/session/:sessionId/contexts' }) ], [ 'uploadFile', Object({ method: 'POST', path: '/session/:sessionId/file' }) ], [ 'switchToParentFrame', Object({ method: 'POST', path: '/session/:sessionId/frame/parent' }) ], [ 'fullscreen', Object({ method: 'POST', path: '/session/:sessionId/window/fullscreen' }) ], [ 'sendAppToBackground', Object({ method: 'POST', path: '/session/:sessionId/appium/app/background' }) ], [ 'closeApp', Object({ method: 'POST', path: '/session/:sessionId/appium/app/close' }) ], [ 'getAppStrings', Object({ method: 'POST', path: '/session/:sessionId/appium/app/strings' }) ], [ 'launchSession', Object({ method: 'POST', path: '/session/:sessionId/appium/app/launch' }) ], [ 'resetApp', Object({ method: 'POST', path: '/session/:sessionId/appium/app/reset' }) ], [ 'hideSoftKeyboard', Object({ method: 'POST', path: '/session/:sessionId/appium/device/hide_keyboard' }) ], [ 'getDeviceTime', Object({ method: 'GET', path: '/session/:sessionId/appium/device/system_time' }) ], [ 'openDeviceNotifications', Object({ method: 'POST', path: '/session/:sessionId/appium/device/open_notifications' }) ], [ 'rotationGesture', Object({ method: 'POST', path: '/session/:sessionId/appium/device/rotate' }) ], [ 'shakeDevice', Object({ method: 'POST', path: '/session/:sessionId/appium/device/shake' }) ], [ 'sendChromiumCommand', Object({ method: 'POST', path: '/session/:sessionId/chromium/send_command' }) ], [ 'sendChromiumCommandAndGetResult', Object({ method: 'POST', path: '/session/:sessionId/chromium/send_command_and_get_result' }) ] ), log_: Logger({ name_: 'webdriver.http.Executor', level_: null, parent_: Logger({ name_: 'webdriver.http', level_: null, parent_: Logger({ name_: 'webdriver', level_: null, parent_: Logger({ name_: '', level_: OFF, parent_: null, handlers_: null }), handlers_: null }), handlers_: null }), handlers_: null }) }), fileDetector_: null, onQuit_: undefined, getNetworkConnection: Function, setNetworkConnection: Function, toggleAirplaneMode: Function, toggleWiFi: Function, toggleData: Function, toggleLocationServices: Function, getGeolocation: Function, setGeolocation: Function, getCurrentDeviceActivity: Function, startDeviceActivity: Function, getAppiumSettings: Function, setAppiumSettings: Function, getCurrentContext: Function, selectContext: Function, getScreenOrientation: Function, setScreenOrientation: Function, isDeviceLocked: Function, lockDevice: Function, unlockDevice: Function, installApp: Function, isAppInstalled: Function, removeApp: Function, pullFileFromDevice: Function, pullFolderFromDevice: Function, pushFileToDevice: Function, listContexts: Function, uploadFile: Function, switchToParentFrame: Function, fullscreen: Function, sendAppToBackground: Function, closeApp: Function, getAppStrings: Function, launchSession: Function, resetApp: Function, hideSoftKeyboard: Function, getDeviceTime: Function, openDeviceNotifications: Function, rotationGesture: Function, shakeDevice: Function, sendChromiumCommand: Function, sendChromiumCommandAndGetResult: Function }), element: Function, $: Function, $$: Function, baseUrl: '', getPageTimeout: 30000, params: Object({  }), resetUrl: 'data:text/html,<html></html>', debugHelper: DebugHelper({ browserUnderDebug_: <circular reference: Object> }), ready: ManagedPromise::17 {[[PromiseStatus]]: "fulfilled"}, trackOutstandingTimeouts_: true, mockModules_: [ Object({ name: 'protractorBaseModule_', script: Function, args: [ true ] }) ], ExpectedConditions: ProtractorExpectedConditions({ browser: <circular reference: Object> }), plugins_: Plugins({ setup: Function, onPrepare: Function, teardown: Function, postResults: Function, postTest: Function, onPageLoad: Function, onPageStable: Function, waitForPromise: Function, waitForCondition: Function, pluginObjs: [  ], assertions: Object({  }), resultsReported: false }), allScriptsTimeout: 11000, getProcessedConfig: Function, forkNewDriverInstance: Function, restart: Function, restartSync: Function, internalRootEl: '', internalIgnoreSynchronization: true }), getWebElements: Function, locator_: By(css selector, #myBtn), actionResults_: null, click: Function, sendKeys: Function, getTagName: Function, getCssValue: Function, getAttribute: Function, getText: Function, getSize: Function, getLocation: Function, isEnabled: Function, isSelected: Function, submit: Function, clear: Function, isDisplayed: Function, getId: Function, takeScreenshot: Function }), elementArrayFinder_: ElementArrayFinder({ browser_: ProtractorBrowser({ controlFlow: Function, schedule: Function, setFileDetector: Function, getExecutor: Function, getSession: Function, getCapabilities: Function, quit: Function, actions: Function, touchActions: Function, executeScript: Function, executeAsyncScript: Function, call: Function, wait: Function, sleep: Function, getWindowHandle: Function, getAllWindowHandles: Function, getPageSource: Function, close: Function, getCurrentUrl: Function, getTitle: Function, findElementInternal_: Function, findElementsInternal_: Function, takeScreenshot: Function, manage: Function, switchTo: Function, driver: Driver({ flow_: ControlFlow::2533
+| TaskQueue::2474
+| | (pending) Task::2473<Run it("should go up clicking "Inapoi sus" button") in control flow>
+| | | (active) TaskQueue::2477
+| | | | Task::2480<Ignore Synchronization Protractor.waitForAngular()>
+| | | | Task::2482<then>
+| | | | Task::2484<then>
+| | | | Task::2486<then>
+| | | | Task::2488<then>
+| | | | Task::2490<then>
+| | | | Task::2492<then>
+| | | | Task::2494<Ignore Synchronization Protractor.waitForAngular()>
+| | | | Task::2496<then>
+| | | | Task::2498<then>
+| | | | Task::2500<then>
+| | | | Task::2502<then>
+| | | | Task::2504<then>
+| | | | Task::2506<ActionSequence.perform>
+| | | | Task::2508<Ignore Synchronization Protractor.waitForAngular()>
+| | | | Task::2510<then>
+| | | | Task::2512<then>
+| | | | Task::2514<then>
+| | | | Task::2516<then>
+| | | | Task::2518<then>
+| | | | Task::2520<then>
+| | | | Task::2522<Ignore Synchronization Protractor.waitForAngular()>
+| | | | Task::2524<then>
+| | | | Task::2526<then>
+| | | | Task::2528<then>
+| | | | Task::2530<then>
+| | | | Task::2532<then>
+| | Task::2476<then>, session_: ManagedPromise::4 {[[PromiseStatus]]: "fulfilled"}, executor_: Executor({ w3c: false, customCommands_: Map( [ 'launchApp', Object({ method: 'POST', path: '/session/:sessionId/chromium/launch_app' }) ], [ 'getNetworkConditions', Object({ method: 'GET', path: '/session/:sessionId/chromium/network_conditions' }) ], [ 'setNetworkConditions', Object({ method: 'POST', path: '/session/:sessionId/chromium/network_conditions' }) ], [ 'getNetworkConnection', Object({ method: 'GET', path: '/session/:sessionId/network_connection' }) ], [ 'setNetworkConnection', Object({ method: 'POST', path: '/session/:sessionId/network_connection' }) ], [ 'toggleAirplaneMode', Object({ method: 'POST', path: '/session/:sessionId/appium/device/toggle_airplane_mode' }) ], [ 'toggleWiFi', Object({ method: 'POST', path: '/session/:sessionId/appium/device/toggle_wifi' }) ], [ 'toggleData', Object({ method: 'POST', path: '/session/:sessionId/appium/device/toggle_data' }) ], [ 'toggleLocationServices', Object({ method: 'POST', path: '/session/:sessionId/appium/device/toggle_location_services' }) ], [ 'getGeolocation', Object({ method: 'GET', path: '/session/:sessionId/location' }) ], [ 'setGeolocation', Object({ method: 'POST', path: '/session/:sessionId/location' }) ], [ 'getCurrentDeviceActivity', Object({ method: 'GET', path: '/session/:sessionId/appium/device/current_activity' }) ], [ 'startDeviceActivity', Object({ method: 'POST', path: '/session/:sessionId/appium/device/start_activity' }) ], [ 'getAppiumSettings', Object({ method: 'GET', path: '/session/:sessionId/appium/settings' }) ], [ 'setAppiumSettings', Object({ method: 'POST', path: '/session/:sessionId/appium/settings' }) ], [ 'getCurrentContext', Object({ method: 'GET', path: '/session/:sessionId/context' }) ], [ 'selectContext', Object({ method: 'POST', path: '/session/:sessionId/context' }) ], [ 'getScreenOrientation', Object({ method: 'GET', path: '/session/:sessionId/orientation' }) ], [ 'setScreenOrientation', Object({ method: 'POST', path: '/session/:sessionId/orientation' }) ], [ 'isDeviceLocked', Object({ method: 'POST', path: '/session/:sessionId/appium/device/is_locked' }) ], [ 'lockDevice', Object({ method: 'POST', path: '/session/:sessionId/appium/device/lock' }) ], [ 'unlockDevice', Object({ method: 'POST', path: '/session/:sessionId/appium/device/unlock' }) ], [ 'installApp', Object({ method: 'POST', path: '/session/:sessionId/appium/device/install_app' }) ], [ 'isAppInstalled', Object({ method: 'POST', path: '/session/:sessionId/appium/device/app_installed' }) ], [ 'removeApp', Object({ method: 'POST', path: '/session/:sessionId/appium/device/remove_app' }) ], [ 'pullFileFromDevice', Object({ method: 'POST', path: '/session/:sessionId/appium/device/pull_file' }) ], [ 'pullFolderFromDevice', Object({ method: 'POST', path: '/session/:sessionId/appium/device/pull_folder' }) ], [ 'pushFileToDevice', Object({ method: 'POST', path: '/session/:sessionId/appium/device/push_file' }) ], [ 'listContexts', Object({ method: 'GET', path: '/session/:sessionId/contexts' }) ], [ 'uploadFile', Object({ method: 'POST', path: '/session/:sessionId/file' }) ], [ 'switchToParentFrame', Object({ method: 'POST', path: '/session/:sessionId/frame/parent' }) ], [ 'fullscreen', Object({ method: 'POST', path: '/session/:sessionId/window/fullscreen' }) ], [ 'sendAppToBackground', Object({ method: 'POST', path: '/session/:sessionId/appium/app/background' }) ], [ 'closeApp', Object({ method: 'POST', path: '/session/:sessionId/appium/app/close' }) ], [ 'getAppStrings', Object({ method: 'POST', path: '/session/:sessionId/appium/app/strings' }) ], [ 'launchSession', Object({ method: 'POST', path: '/session/:sessionId/appium/app/launch' }) ], [ 'resetApp', Object({ method: 'POST', path: '/session/:sessionId/appium/app/reset' }) ], [ 'hideSoftKeyboard', Object({ method: 'POST', path: '/session/:sessionId/appium/device/hide_keyboard' }) ], [ 'getDeviceTime', Object({ method: 'GET', path: '/session/:sessionId/appium/device/system_time' }) ], [ 'openDeviceNotifications', Object({ method: 'POST', path: '/session/:sessionId/appium/device/open_notifications' }) ], [ 'rotationGesture', Object({ method: 'POST', path: '/session/:sessionId/appium/device/rotate' }) ], [ 'shakeDevice', Object({ method: 'POST', path: '/session/:sessionId/appium/device/shake' }) ], [ 'sendChromiumCommand', Object({ method: 'POST', path: '/session/:sessionId/chromium/send_command' }) ], [ 'sendChromiumCommandAndGetResult', Object({ method: 'POST', path: '/session/:sessionId/chromium/send_command_and_get_result' }) ] ), log_: Logger({ name_: 'webdriver.http.Executor', level_: null, parent_: Logger({ name_: 'webdriver.http', level_: null, parent_: Logger({ name_: 'webdriver', level_: null, parent_: Logger({ name_: '', level_: OFF, parent_: null, handlers_: null }), handlers_: null }), handlers_: null }), handlers_: null }) }), fileDetector_: null, onQuit_: undefined, getNetworkConnection: Function, setNetworkConnection: Function, toggleAirplaneMode: Function, toggleWiFi: Function, toggleData: Function, toggleLocationServices: Function, getGeolocation: Function, setGeolocation: Function, getCurrentDeviceActivity: Function, startDeviceActivity: Function, getAppiumSettings: Function, setAppiumSettings: Function, getCurrentContext: Function, selectContext: Function, getScreenOrientation: Function, setScreenOrientation: Function, isDeviceLocked: Function, lockDevice: Function, unlockDevice: Function, installApp: Function, isAppInstalled: Function, removeApp: Function, pullFileFromDevice: Function, pullFolderFromDevice: Function, pushFileToDevice: Function, listContexts: Function, uploadFile: Function, switchToParentFrame: Function, fullscreen: Function, sendAppToBackground: Function, closeApp: Function, getAppStrings: Function, launchSession: Function, resetApp: Function, hideSoftKeyboard: Function, getDeviceTime: Function, openDeviceNotifications: Function, rotationGesture: Function, shakeDevice: Function, sendChromiumCommand: Function, sendChromiumCommandAndGetResult: Function }), element: Function, $: Function, $$: Function, baseUrl: '', getPageTimeout: 30000, params: Object({  }), resetUrl: 'data:text/html,<html></html>', debugHelper: DebugHelper({ browserUnderDebug_: <circular reference: Object> }), ready: ManagedPromise::17 {[[PromiseStatus]]: "fulfilled"}, trackOutstandingTimeouts_: true, mockModules_: [ Object({ name: 'protractorBaseModule_', script: Function, args: [ true ] }) ], ExpectedConditions: ProtractorExpectedConditions({ browser: <circular reference: Object> }), plugins_: Plugins({ setup: Function, onPrepare: Function, teardown: Function, postResults: Function, postTest: Function, onPageLoad: Function, onPageStable: Function, waitForPromise: Function, waitForCondition: Function, pluginObjs: [  ], assertions: Object({  }), resultsReported: false }), allScriptsTimeout: 11000, getProcessedConfig: Function, forkNewDriverInstance: Function, restart: Function, restartSync: Function, internalRootEl: '', internalIgnoreSynchronization: true }), getWebElements: Function, locator_: By(css selector, #myBtn), actionResults_: null, click: Function, sendKeys: Function, getTagName: Function, getCssValue: Function, getAttribute: Function, getText: Function, getSize: Function, getLocation: Function, isEnabled: Function, isSelected: Function, submit: Function, clear: Function, isDisplayed: Function, getId: Function, takeScreenshot: Function }), click: Function, sendKeys: Function, getTagName: Function, getCssValue: Function, getAttribute: Function, getText: Function, getSize: Function, getLocation: Function, isEnabled: Function, isSelected: Function, submit: Function, clear: Function, isDisplayed: Function, getId: Function, takeScreenshot: Function }).
+Usage: expect(<spyObj>).toHaveBeenCalled()
+    at compare (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:3386:17)
+    at compare (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:284:35)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:269:16
+    at resolveAt (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\maybePromise.js:62:14)
+    at Function.all (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\maybePromise.js:70:10)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:268:27
+    at maybePromise (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\maybePromise.js:43:12)
+    at Expectation.toHaveBeenCalled (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:267:12)
+    at UserContext.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:168:34)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+From: Task: Run it("should go up clicking "Inapoi sus" button") in control flow
+    at UserContext.<anonymous> (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4264:13
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4172:9
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:64:48
+    at ControlFlow.emit (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\events.js:62:21)
+    at ControlFlow.shutdown_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2674:10)
+    at shutdownTask_.MicroTask (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2599:53)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:162:3)
+    at addSpecsToSuite (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:63:1)
+    at Module._compile (internal/modules/cjs/loader.js:722:30)
+    at Module.m._compile (D:\AlexandraCiausu\Portfolio\frontend\node_modules\ts-node\src\index.ts:413:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:733:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (D:\AlexandraCiausu\Portfolio\frontend\node_modules\ts-node\src\index.ts:416:12)]]>
+   </failure>
+  </testcase>
+  <testcase classname="HomePage" name="should display second banner &amp; description &amp; desc.title &amp; motto &amp; artist phone number &amp; phoneIcon" time="1.524" />
+  <testcase classname="HomePage" name="should have footer working properly" time="13.402" />
+ </testsuite>
+ <testsuite name="GalleryPage by category" timestamp="2019-06-10T21:36:31" hostname="localhost" time="0.005" errors="0" tests="0" skipped="0" disabled="0" failures="0">
+ </testsuite>
+ <testsuite name="GalleryPage by category.DayGalleryPage" timestamp="2019-06-10T21:36:31" hostname="localhost" time="0.003" errors="0" tests="3" skipped="0" disabled="3" failures="0">
+  <testcase classname="GalleryPage by category.DayGalleryPage" name="should display title &amp; page description" time="0.001">
+   <skipped />
+  </testcase>
+  <testcase classname="GalleryPage by category.DayGalleryPage" name="should display next image clicking Next Button &amp; gallery thumbnail images" time="0.002">
+   <skipped />
+  </testcase>
+  <testcase classname="GalleryPage by category.DayGalleryPage" name="should display mat-card &amp; arrow buttons" time="0">
+   <skipped />
+  </testcase>
+ </testsuite>
+ <testsuite name="GalleryPage by category.NightGalleryPage" timestamp="2019-06-10T21:36:31" hostname="localhost" time="0" errors="0" tests="3" skipped="0" disabled="3" failures="0">
+  <testcase classname="GalleryPage by category.NightGalleryPage" name="should display title &amp; page description" time="0">
+   <skipped />
+  </testcase>
+  <testcase classname="GalleryPage by category.NightGalleryPage" name="should display mat-card and arrow buttons" time="0">
+   <skipped />
+  </testcase>
+  <testcase classname="GalleryPage by category.NightGalleryPage" name="should display next image clicking Next Button &amp; gallery thumbnail images" time="0">
+   <skipped />
+  </testcase>
+ </testsuite>
+ <testsuite name="GalleryPage by category.BridalGalleryPage" timestamp="2019-06-10T21:36:31" hostname="localhost" time="0.002" errors="0" tests="3" skipped="0" disabled="3" failures="0">
+  <testcase classname="GalleryPage by category.BridalGalleryPage" name="should display title, page description" time="0">
+   <skipped />
+  </testcase>
+  <testcase classname="GalleryPage by category.BridalGalleryPage" name="should display mat-card and arrow buttons" time="0">
+   <skipped />
+  </testcase>
+  <testcase classname="GalleryPage by category.BridalGalleryPage" name="should display next image clicking Next Button &amp; gallery thumbnail images" time="0">
+   <skipped />
+  </testcase>
+ </testsuite>
+ <testsuite name="GalleryPage by category.SpecialGalleryPage" timestamp="2019-06-10T21:36:31" hostname="localhost" time="0" errors="0" tests="3" skipped="0" disabled="3" failures="0">
+  <testcase classname="GalleryPage by category.SpecialGalleryPage" name="should display title, page description" time="0">
+   <skipped />
+  </testcase>
+  <testcase classname="GalleryPage by category.SpecialGalleryPage" name="should display mat-card and arrow buttons" time="0">
+   <skipped />
+  </testcase>
+  <testcase classname="GalleryPage by category.SpecialGalleryPage" name="should display next image clicking Next Button &amp; gallery thumbnail images" time="0">
+   <skipped />
+  </testcase>
+ </testsuite>
+ <testsuite name="ServicesPage" timestamp="2019-06-10T21:36:31" hostname="localhost" time="0" errors="0" tests="2" skipped="0" disabled="2" failures="0">
+  <testcase classname="ServicesPage" name="should display all four cards containing front elements &amp; the message" time="0">
+   <skipped />
+  </testcase>
+  <testcase classname="ServicesPage" name="each card should flip containing the right elements on back" time="0">
+   <skipped />
+  </testcase>
+ </testsuite>
+ <testsuite name="ContactPage" timestamp="2019-06-10T21:36:31" hostname="localhost" time="13.804" errors="0" tests="3" skipped="1" disabled="0" failures="0">
+  <testcase classname="ContactPage" name="should display contactForm and all its elements" time="6.963" />
+  <testcase classname="ContactPage" name="should change input values" time="6.839" />
+  <testcase classname="ContactPage" name="should send email" time="0.001">
+   <skipped message="Temporarily disabled with xit" />
+  </testcase>
+ </testsuite>
+ <testsuite name="PrivacyPolicyPage" timestamp="2019-06-10T21:36:45" hostname="localhost" time="7.198" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="PrivacyPolicyPage" name="should display all elements" time="7.197" />
+ </testsuite>
+ <testsuite name="ForgotPasswordPage" timestamp="2019-06-10T21:36:52" hostname="localhost" time="2.316" errors="0" tests="2" skipped="0" disabled="0" failures="4">
+  <testcase classname="ForgotPasswordPage" name="should contain all elements" time="2.1">
+   <failure type="exception" message="Failed: No element found using locator: By(css selector, .admin-login)"><![CDATA[NoSuchElementError: No element found using locator: By(css selector, .admin-login)
+    at elementArrayFinder.getWebElements.then (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:814:27)
+    at ManagedPromise.invokeCallback_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process.internalTickCallback (internal/process/next_tick.js:77:7)Error
+    at ElementArrayFinder.applyAction_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.(anonymous function).args [as click] (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.(anonymous function).args [as click] (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+    at UserContext.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:487:31)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+From: Task: Run beforeEach in control flow
+    at UserContext.<anonymous> (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:485:3)
+    at addSpecsToSuite (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:484:1)
+    at Module._compile (internal/modules/cjs/loader.js:722:30)
+    at Module.m._compile (D:\AlexandraCiausu\Portfolio\frontend\node_modules\ts-node\src\index.ts:413:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:733:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (D:\AlexandraCiausu\Portfolio\frontend\node_modules\ts-node\src\index.ts:416:12)]]>
+   </failure>
+   <failure type="exception" message="Failed: No element found using locator: By(css selector, .title)"><![CDATA[NoSuchElementError: No element found using locator: By(css selector, .title)
+    at elementArrayFinder.getWebElements.then (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:814:27)
+    at ManagedPromise.invokeCallback_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process.internalTickCallback (internal/process/next_tick.js:77:7)Error
+    at ElementArrayFinder.applyAction_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.(anonymous function).args [as getText] (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.(anonymous function).args [as getText] (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+    at UserContext.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:494:39)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+From: Task: Run it("should contain all elements") in control flow
+    at UserContext.<anonymous> (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4264:13
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4172:9
+    at Function.next.fail (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4274:9)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:64:48
+    at ControlFlow.emit (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\events.js:62:21)
+    at ControlFlow.shutdown_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2674:10)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:493:3)
+    at addSpecsToSuite (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:484:1)
+    at Module._compile (internal/modules/cjs/loader.js:722:30)
+    at Module.m._compile (D:\AlexandraCiausu\Portfolio\frontend\node_modules\ts-node\src\index.ts:413:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:733:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (D:\AlexandraCiausu\Portfolio\frontend\node_modules\ts-node\src\index.ts:416:12)]]>
+   </failure>
+  </testcase>
+  <testcase classname="ForgotPasswordPage" name="email input should change value" time="0.186">
+   <failure type="exception" message="Failed: No element found using locator: By(css selector, .admin-login)"><![CDATA[NoSuchElementError: No element found using locator: By(css selector, .admin-login)
+    at elementArrayFinder.getWebElements.then (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:814:27)
+    at ManagedPromise.invokeCallback_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process.internalTickCallback (internal/process/next_tick.js:77:7)Error
+    at ElementArrayFinder.applyAction_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.(anonymous function).args [as click] (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.(anonymous function).args [as click] (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+    at UserContext.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:487:31)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+From: Task: Run beforeEach in control flow
+    at UserContext.<anonymous> (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:485:3)
+    at addSpecsToSuite (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:484:1)
+    at Module._compile (internal/modules/cjs/loader.js:722:30)
+    at Module.m._compile (D:\AlexandraCiausu\Portfolio\frontend\node_modules\ts-node\src\index.ts:413:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:733:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (D:\AlexandraCiausu\Portfolio\frontend\node_modules\ts-node\src\index.ts:416:12)]]>
+   </failure>
+   <failure type="exception" message="Failed: No element found using locator: By(css selector, .email)"><![CDATA[NoSuchElementError: No element found using locator: By(css selector, .email)
+    at elementArrayFinder.getWebElements.then (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:814:27)
+    at ManagedPromise.invokeCallback_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process.internalTickCallback (internal/process/next_tick.js:77:7)Error
+    at ElementArrayFinder.applyAction_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.(anonymous function).args [as sendKeys] (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.(anonymous function).args [as sendKeys] (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+    at UserContext.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:501:37)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+From: Task: Run it("email input should change value") in control flow
+    at UserContext.<anonymous> (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4264:13
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4172:9
+    at Function.next.fail (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4274:9)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:64:48
+    at ControlFlow.emit (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\events.js:62:21)
+    at ControlFlow.shutdown_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2674:10)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:500:3)
+    at addSpecsToSuite (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:484:1)
+    at Module._compile (internal/modules/cjs/loader.js:722:30)
+    at Module.m._compile (D:\AlexandraCiausu\Portfolio\frontend\node_modules\ts-node\src\index.ts:413:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:733:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (D:\AlexandraCiausu\Portfolio\frontend\node_modules\ts-node\src\index.ts:416:12)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+ <testsuite name="AdminLogInPage" timestamp="2019-06-10T21:36:54" hostname="localhost" time="21.264" errors="0" tests="3" skipped="2" disabled="0" failures="1">
+  <testcase classname="AdminLogInPage" name="should display all elements from the left container" time="0">
+   <skipped message="Temporarily disabled with xit" />
+  </testcase>
+  <testcase classname="AdminLogInPage" name="should display all element from the right container" time="0">
+   <skipped message="Temporarily disabled with xit" />
+  </testcase>
+  <testcase classname="AdminLogInPage" name="should log in" time="21.261">
+   <failure type="toContain" message="Expected &apos;https://alexandraciausu-a6df7.firebaseapp.com/admin/meniu&apos; to contain &apos;https://alexandraciausu-a6df7.firebaseapp.com/logare/meniu&apos;."><![CDATA[Error: Failed expectation
+    at UserContext.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:549:37)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2974:25)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7]]>
+   </failure>
+  </testcase>
+ </testsuite>
+ <testsuite name="AdminMenuPage" timestamp="2019-06-10T21:37:15" hostname="localhost" time="2.27" errors="0" tests="4" skipped="1" disabled="0" failures="5">
+  <testcase classname="AdminMenuPage" name="should display all elements" time="0">
+   <skipped message="Temporarily disabled with xit" />
+  </testcase>
+  <testcase classname="AdminMenuPage" name="should log out" time="2.188">
+   <failure type="exception" message="Failed: No element found using locator: By(css selector, #email)"><![CDATA[NoSuchElementError: No element found using locator: By(css selector, #email)
+    at elementArrayFinder.getWebElements.then (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:814:27)
+    at ManagedPromise.invokeCallback_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process.internalTickCallback (internal/process/next_tick.js:77:7)Error
+    at ElementArrayFinder.applyAction_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.(anonymous function).args [as sendKeys] (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.(anonymous function).args [as sendKeys] (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+    at UserContext.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:565:29)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+From: Task: Run beforeEach in control flow
+    at UserContext.<anonymous> (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:562:3)
+    at addSpecsToSuite (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:560:1)
+    at Module._compile (internal/modules/cjs/loader.js:722:30)
+    at Module.m._compile (D:\AlexandraCiausu\Portfolio\frontend\node_modules\ts-node\src\index.ts:413:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:733:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (D:\AlexandraCiausu\Portfolio\frontend\node_modules\ts-node\src\index.ts:416:12)]]>
+   </failure>
+  </testcase>
+  <testcase classname="AdminMenuPage" name="should click on upload and get back" time="0.022">
+   <failure type="exception" message="Failed: No element found using locator: By(css selector, #email)"><![CDATA[NoSuchElementError: No element found using locator: By(css selector, #email)
+    at elementArrayFinder.getWebElements.then (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:814:27)
+    at ManagedPromise.invokeCallback_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process.internalTickCallback (internal/process/next_tick.js:77:7)Error
+    at ElementArrayFinder.applyAction_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.(anonymous function).args [as sendKeys] (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.(anonymous function).args [as sendKeys] (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+    at UserContext.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:565:29)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+From: Task: Run beforeEach in control flow
+    at UserContext.<anonymous> (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:562:3)
+    at addSpecsToSuite (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:560:1)
+    at Module._compile (internal/modules/cjs/loader.js:722:30)
+    at Module.m._compile (D:\AlexandraCiausu\Portfolio\frontend\node_modules\ts-node\src\index.ts:413:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:733:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (D:\AlexandraCiausu\Portfolio\frontend\node_modules\ts-node\src\index.ts:416:12)]]>
+   </failure>
+   <failure type="exception" message="Failed: No element found using locator: By(css selector, .hamburger-button)"><![CDATA[NoSuchElementError: No element found using locator: By(css selector, .hamburger-button)
+    at elementArrayFinder.getWebElements.then (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:814:27)
+    at ManagedPromise.invokeCallback_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process.internalTickCallback (internal/process/next_tick.js:77:7)Error
+    at ElementArrayFinder.applyAction_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.(anonymous function).args [as click] (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.(anonymous function).args [as click] (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+    at UserContext.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:607:42)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+From: Task: Run it("should click on upload and get back") in control flow
+    at UserContext.<anonymous> (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4264:13
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4172:9
+    at Function.next.fail (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4274:9)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:64:48
+    at ControlFlow.emit (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\events.js:62:21)
+    at ControlFlow.shutdown_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2674:10)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:606:3)
+    at addSpecsToSuite (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:560:1)
+    at Module._compile (internal/modules/cjs/loader.js:722:30)
+    at Module.m._compile (D:\AlexandraCiausu\Portfolio\frontend\node_modules\ts-node\src\index.ts:413:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:733:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (D:\AlexandraCiausu\Portfolio\frontend\node_modules\ts-node\src\index.ts:416:12)]]>
+   </failure>
+  </testcase>
+  <testcase classname="AdminMenuPage" name="should interact gallery and get back" time="0.021">
+   <failure type="exception" message="Failed: No element found using locator: By(css selector, #email)"><![CDATA[NoSuchElementError: No element found using locator: By(css selector, #email)
+    at elementArrayFinder.getWebElements.then (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:814:27)
+    at ManagedPromise.invokeCallback_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process.internalTickCallback (internal/process/next_tick.js:77:7)Error
+    at ElementArrayFinder.applyAction_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.(anonymous function).args [as sendKeys] (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.(anonymous function).args [as sendKeys] (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+    at UserContext.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:565:29)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+From: Task: Run beforeEach in control flow
+    at UserContext.<anonymous> (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:562:3)
+    at addSpecsToSuite (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:560:1)
+    at Module._compile (internal/modules/cjs/loader.js:722:30)
+    at Module.m._compile (D:\AlexandraCiausu\Portfolio\frontend\node_modules\ts-node\src\index.ts:413:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:733:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (D:\AlexandraCiausu\Portfolio\frontend\node_modules\ts-node\src\index.ts:416:12)]]>
+   </failure>
+   <failure type="exception" message="Failed: No element found using locator: By(css selector, .hamburger-button)"><![CDATA[NoSuchElementError: No element found using locator: By(css selector, .hamburger-button)
+    at elementArrayFinder.getWebElements.then (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:814:27)
+    at ManagedPromise.invokeCallback_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process.internalTickCallback (internal/process/next_tick.js:77:7)Error
+    at ElementArrayFinder.applyAction_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.(anonymous function).args [as click] (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.(anonymous function).args [as click] (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+    at UserContext.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:620:42)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+From: Task: Run it("should interact gallery and get back") in control flow
+    at UserContext.<anonymous> (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4264:13
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4172:9
+    at Function.next.fail (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4274:9)
+    at C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:64:48
+    at ControlFlow.emit (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\events.js:62:21)
+    at ControlFlow.shutdown_ (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2674:10)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:619:3)
+    at addSpecsToSuite (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\Andrei\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (D:\AlexandraCiausu\Portfolio\frontend\e2e\src\app.e2e-spec.ts:560:1)
+    at Module._compile (internal/modules/cjs/loader.js:722:30)
+    at Module.m._compile (D:\AlexandraCiausu\Portfolio\frontend\node_modules\ts-node\src\index.ts:413:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:733:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (D:\AlexandraCiausu\Portfolio\frontend\node_modules\ts-node\src\index.ts:416:12)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+</testsuites>

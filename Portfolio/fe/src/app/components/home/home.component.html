@@ -1,0 +1,478 @@
+<div
+  class="containerX"
+  fxFlex
+  fxLayout="column"
+>
+  <div
+    class="container"
+    fxLayout="column"
+    fxFlexFill
+  >
+    <div class="firstImg">
+      <img
+        fxHide
+        fxHide.xs="true"
+        fxHide.sm="true"
+        fxHide.md="true"
+        fxHide.lg="false"
+        fxHide.xl="false"
+        src='{{lgXLImg}}'
+        alt="{{ 'shared.imageAltMsg' | translate }}"
+        width="100%"
+        height="800px"
+        class="firstImage"
+      />
+
+      <img
+        fxHide
+        fxHide.xs="true"
+        fxHide.sm="true"
+        fxHide.md="false"
+        fxHide.lg="true"
+        fxHide.xl="true"
+        src='{{mdImg}}'
+        alt="{{ 'shared.imageAltMsg' | translate }}"
+        width="100%"
+        height="550px"
+      />
+
+      <img
+        fxHide
+        fxHide.xs="true"
+        fxHide.sm="false"
+        fxHide.md="true"
+        fxHide.lg="true"
+        fxHide.xl="true"
+        src='{{smImg}}'
+        alt="{{ 'shared.imageAltMsg' | translate }}"
+        width="100%"
+        height="640px"
+      />
+
+      <img
+        fxHide
+        fxHide.xs="false"
+        fxHide.sm="true"
+        fxHide.md="true"
+        fxHide.lg="true"
+        fxHide.xl="true"
+        src='{{xsImg}}'
+        alt="{{ 'shared.imageAltMsg' | translate }}"
+        width="100%"
+        height="250px"
+      />
+    </div>
+  </div>
+  <div
+    class="container"
+    fxLayout="column"
+    gdAlignColumns="start"
+  >
+    <p
+      class="home-proverb"
+      [translate]="'home.proverb'"
+      ngStyle.xs="left: 20px; width: 64%; top: 96px; font-size: 17px;"
+      ngStyle.sm="left: 40px; width: 53%; top: 130px"
+      ngStyle.md="left: 40px; width: 60%; top: 130px; "
+      ngStyle.lg="left: 40px; top: 180px"
+      ngStyle.xl="left: 5.5%; font-size: 29px; top: 200px"
+    ></p>
+  </div>
+  <div
+    class="container"
+    fxLayout="column"
+    gdAlignColumns="start"
+  >
+    <p
+      class="home-desc"
+      [translate]="'home.firstDescription'"
+      ngStyle.xs="left: 15%; right: -15%; width: 64%; top: 290px; font-size: 22px;"
+      ngStyle.sm="left: 3%; width: 53%; font-size: 18.7px; top: 250px;"
+      ngStyle.md="left : 4%; width: 55%; font-size: 20px; top: 240px;"
+      ngStyle.lg="left : 40px; width: 55%; font-size: 27px; top: 280px;"
+      ngStyle.xl="left : 40px; width: 60%;font-size: 27px;top: 280px;"
+    ></p>
+  </div>
+  <div
+    class="container"
+    fxLayout="column"
+    gdAlignColumns="start"
+  >
+    <img
+      fxHide
+      fxHide.xs="true"
+      fxHide.sm="true"
+      fxHide.md="false"
+      fxHide.lg="false"
+      fxHide.xl="false"
+      ngStyle.md="top: 440px;"
+      ngStyle.lg="top: 530px;"
+      ngStyle.xl="top:530px;"
+      src='{{mapImg}}'
+      class="map-img"
+      alt="{{ 'shared.imageAltMsg' | translate }}"
+    />
+  </div>
+  <div
+    class="container"
+    fxLayout="column"
+    gdAlignColumns="start"
+  >
+    <p
+      class="invite"
+      [translate]="'home.mapTitle'"
+      ngStyle.xs="top: 1150px; left: 20%;"
+      ngStyle.sm="top: 720px; left: 26%;"
+      ngStyle.md="top: 640px; left: 34%;"
+      ngStyle.lg="top: 715px; left: 39%;"
+      ngStyle.xl="top: 715px; left: 43%;"
+    ></p>
+  </div>
+  <div
+    class="container"
+    fxLayout="column"
+    gdAlignColumns="start"
+    ngStyle.xs="width: 80%"
+  >
+    <agm-map
+      ngStyle.xs="width: 100%; top: 1400px;"
+      ngStyle.sm="width: 100%; top: 980px;"
+      ngStyle.md="top: 933px;"
+      ngStyle.lg="top: 975px;"
+      ngStyle.xl="top: 975px;"
+      id="map"
+      [latitude]="lat"
+      [longitude]="lng"
+      [zoom]="zoom"
+    >
+      <agm-marker
+        [latitude]="lat"
+        [longitude]="lng"
+        (markerClick)="markerClicked(lat, lng)"
+        [agmFitBounds]="true"
+      >
+      </agm-marker>
+      <app-core-map-content (onMapLoad)="loadAPIWrapper($event)">
+      </app-core-map-content>
+    </agm-map>
+  </div>
+  <div
+    class="container"
+    fxLayout="column"
+    gdAlignColumns="start"
+  >
+    <img
+      class="secondImg"
+      src='{{secondImglgXL}}'
+      fxHide
+      fxHide.xs="true"
+      fxHide.sm="true"
+      fxHide.md="true"
+      fxHide.lg="false"
+      fxHide.xl="false"
+      width="100%"
+      height="500px"
+      ngStyle.lg="top: 1300px;"
+      ngStyle.xl="top: 1300px;"
+      alt="{{ 'shared.imageAltMsg' | translate }}"
+    />
+
+    <img
+      class="secondImg"
+      src='{{secondImgMd}}'
+      fxHide
+      fxHide.xs="true"
+      fxHide.sm="true"
+      fxHide.md="false"
+      fxHide.lg="true"
+      fxHide.xl="true"
+      width="100%"
+      height="550px"
+      ngStyle.md="top: 1280px;"
+      alt="{{ 'shared.imageAltMsg' | translate }}"
+    />
+
+    <img
+      class="secondImg"
+      src='{{secondImgSm}}'
+      fxHide
+      fxHide.xs="true"
+      fxHide.sm="false"
+      fxHide.md="true"
+      fxHide.lg="true"
+      fxHide.xl="true"
+      width="100%"
+      height="640px"
+      ngStyle.sm="top: 1270px;"
+      alt="{{ 'shared.imageAltMsg' | translate }}"
+    />
+
+    <img
+      class="secondImg"
+      src='{{secondImgxs}}'
+      fxHide
+      fxHide.xs="false"
+      fxHide.sm="true"
+      fxHide.md="true"
+      fxHide.lg="true"
+      fxHide.xl="true"
+      ngStyle.xs="top: 1680px;"
+      width="100%"
+      height="250px"
+      alt="{{ 'shared.imageAltMsg' | translate }}"
+    />
+  </div>
+  <div class="container" fxLayout="column" gdAlignColumns="start">
+    <p
+      class="display-4 desc1p"
+      [translate]="'home.motto'"
+      ngStyle.xs="top: 1740px; left: 25%; right: -25%; font-size: 28px;
+  width: 75%;"
+      ngStyle.sm="top: 1300px; left: 29%; right: -29%; font-size: 28px;
+  width: 70%;"
+      ngStyle.md="top:1330px; left:21%;right:-21%; font-size: 29px;
+  width: 78%;"
+      ngStyle.lg="top:1330px; left:23%;right:-23%; font-size: 29px;
+  width:75%;"
+      ngStyle.xl="top:1350px; left:17%; font-size: 33px;
+  width: 85%;"
+    ></p>
+  </div>
+
+  <div class="container" fxLayout="column" gdAlignColumns="start">
+    <p
+      class="desc2p"
+      [translate]="'home.descriptionOne'"
+      ngStyle.xs="top: 2000px; left: 7%; right: -7%; font-size: 28px;
+  width: 85%; color: black; text-align: center; -moz-text-align-last: center; 
+  text-align-last: center"
+      ngStyle.sm="top: 1450px; left: 29%; right: -29%; font-size: 21px;
+  width: 70%; color: white; text-align: center; -moz-text-align-last: center;
+  text-align-last: center"
+      ngStyle.md="top: 1430px; left: 24%; right: -23%; font-size: 22px;
+  width: 75%; color: white; text-align: left; -moz-text-align-last: left; text-align-last: left"
+      ngStyle.lg="top: 1430px; left: 24%;right: -23%;font-size: 25px;
+  width: 75%; color: white; text-align: left; -moz-text-align-last: left; text-align-last: left"
+      ngStyle.xl="top: 1430px; left: 24%; right: -22%; font-size: 25px;
+  width: 73%; color: white; text-align: left; -moz-text-align-last: left; text-align-last: left"
+    ></p>
+  </div>
+  <div class="container" fxLayout="column" gdAlignColumns="start">
+    <p
+      class="firstb"
+      [translate]="'home.descriptionTwo'"
+      ngStyle.xs="top: 2230px; left: 6%; right: -6%; font-size: 21px;
+  width: 85%; text-align: center; -moz-text-align-last: center; text-align-last: center"
+      ngStyle.sm="top: 1550px; left: 28%; right: -28%; font-size: 18px; color: white;
+  width: 68%; text-align: center; -moz-text-align-last: center; text-align-last: center"
+      ngStyle.md="top: 1519px; left: 24%; right: -23%; font-size: 21px; color: white;
+width: 70%; text-align: left; -moz-text-align-last: left; text-align-last: left"
+      ngStyle.lg="top: 1500px; left: 24%;right: -24%; font-size: 23px; color: white;
+width: 70%; text-align: left;-moz-text-align-last: left; text-align-last: left"
+      ngStyle.xl="top: 1500px; left: 24%; right: -24%; font-size: 23px; color: white;
+width: 70%; text-align: left; -moz-text-align-last: left; text-align-last: left"
+    ></p>
+  </div>
+  <div class="container" fxLayout="column" gdAlignColumns="start">
+      <i class="material-icons" id="phone-icon"
+      ngStyle.xs ="top: 2700px; left: 3%;
+      width: 20%; height: 15%;"
+      ngStyle.sm = "top: 2000px; left: 14%;
+      width: 20%; height: 15%;"
+      ngStyle.md = "top: 1985px; left: 25%;
+      width: 40%; height: 20%;"
+      ngStyle.lg = "top: 1975px; left: 29%;
+      width: 50%; height: 20%;"
+      ngStyle.xl = "top: 1975px; left: 38%;
+      width: 50%; height: 20%;"
+      > contact_phone </i>
+     
+  </div>
+  <div class="container" fxLayout="column" gdAlignColumns="start">
+    <span class="ph-number" [translate]="'home.phoneNumber'"
+      ngStyle.xs="top: 2680px; left: 22%;right:- 6%; width: 20%; height: 100px;"
+      ngStyle.sm = "top: 1980px; left: 28%; width: 20%; height: 15%;"
+      ngStyle.md = "top: 1965px; left: 34%; width: 20%;height: 15%;"
+      ngStyle.lg = "top: 1955px; left: 36%; width: 50%; height: 20%;"
+      ngStyle.xl = "top: 1955px; left: 43%; width: 50%; height: 20%;"
+    ></span>
+  </div>
+  <div class="container space" fxLayout="column">&nbsp;</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+              <agm-marker
+                [latitude]="lat"
+                [longitude]="lng"
+                (markerClick)="markerClicked(lat, lng)"
+              >
+              </agm-marker>
+              <app-core-map-content (onMapLoad)="loadAPIWrapper($event)">
+              </app-core-map-content>
+            </agm-map> -->
+
+<!-- <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+                <agm-marker
+                  [latitude]="lat"
+                  [longitude]="lng"
+                  (markerClick)="markerClicked(lat, lng)"
+                >
+                </agm-marker>
+                <app-core-map-content (onMapLoad)="loadAPIWrapper($event)">
+                </app-core-map-content>
+              </agm-map> -->
+
+<!-- <div class="map">
+    <img
+    src="https://firebasestorage.googleapis.com/v0/b/alexandraciausu-a6df7.appspot.com/o/assets%2Fbucharest.png?alt=media"
+    class="map-img"
+    alt={{ "shared.imageAltMsg" | translate }}
+  />
+<p class="invite" [translate]="home.mapTitle'"></p>
+<p class="inviteP2" [translate]="'home.mapTitleP2'"></p>
+<agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+  <agm-marker
+    [latitude]="lat"
+    [longitude]="lng"
+    (markerClick)="markerClicked(lat, lng)"
+  >
+  </agm-marker>
+  <app-core-map-content (onMapLoad)="loadAPIWrapper($event)">
+  </app-core-map-content>
+</agm-map>
+<div class="map" id="map"></div>
+
+<agm-map >
+    <agm-marker [latitude]="44.421026" [longitude]="26.122668" [agmFitBounds]="true"></agm-marker>
+  </agm-map>
+  </div> -->
+
+<!-- <div class="container" fxLayout="column" >
+    <p class="home-proverb" [translate]="'home.proverb'"></p>
+</div> -->
+
+<!-- <div class="container">
+
+<div class="main">
+  <div class="firstImg"></div>
+  <img
+    src="https://firebasestorage.googleapis.com/v0/b/alexandraciausu-a6df7.appspot.com/o/assets%2Fportrait-of-a-girl-1344647.png?alt=media"
+    alt='{{ "shared.imageAltMsg" | translate }}'
+    width="100%"
+    height="100%"
+  /> -->
+
+<!-- <img src="https://firebasestorage.googleapis.com/v0/b/alexandraciausu-a6df7.appspot.com/o/assets%2FfirstImg.jpg?alt=media" 
+  class="firstMobileImg"
+  alt='{{ "shared.imageAltMsg" | translate }}'
+  width="100%"
+  height="100%"/>
+
+  <img src="https://firebasestorage.googleapis.com/v0/b/alexandraciausu-a6df7.appspot.com/o/assets%2FfirstImg.jpg?" 
+  class="mobile-img-description"
+  alt='{{ "shared.imageAltMsg" | translate }}'
+  width="100%"
+  height="100%"/> -->
+
+<!-- <p class="home-proverb" [translate]="'home.proverb'"></p>
+  <p id="home-desc" [translate]="'home.firstDescription'"></p>
+
+  <img
+    src="https://firebasestorage.googleapis.com/v0/b/alexandraciausu-a6df7.appspot.com/o/assets%2Fsign.png?alt=media"
+    alt='{{ "shared.imageAltMsg" | translate }}'
+    class="sign"
+  />
+</div>
+<br /><br /><br />
+<div class="map">
+    <img
+    src="https://firebasestorage.googleapis.com/v0/b/alexandraciausu-a6df7.appspot.com/o/assets%2Fbucharest.png?alt=media"
+    class="map-img"
+    alt='{{ "shared.imageAltMsg" | translate }}'
+  />
+<p class="invite" [translate]="'home.mapTitle'"></p>
+<p class="inviteP2" [translate]="'home.mapTitleP2'"></p>
+<agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+  <agm-marker
+    [latitude]="lat"
+    [longitude]="lng"
+    (markerClick)="markerClicked(lat, lng)"
+  >
+  </agm-marker>
+  <app-core-map-content (onMapLoad)="loadAPIWrapper($event)">
+  </app-core-map-content>
+</agm-map>
+<div class="map" id="map"></div>
+
+<agm-map >
+    <agm-marker [latitude]="44.421026" [longitude]="26.122668" [agmFitBounds]="true"></agm-marker>
+  </agm-map>
+  </div>
+<br /><br /><br />
+<div class="about-me">
+<img
+    class="secondImg"
+    src="https://firebasestorage.googleapis.com/v0/b/alexandraciausu-a6df7.appspot.com/o/assets%2Fmystical-portrait-of-a-girl-1344632.png?alt=media"
+    width="100%"
+    height="100%"
+    alt='{{ "shared.imageAltMsg" | translate }}'
+  />
+  <div class="about-me-desc">
+    <h2 id="artistName" [translate]="'home.introductionMsg'"></h2>
+    <p class="desc1p" [translate]="'home.motto'"></p>
+    <p class="desc2p" [translate]="'home.descriptionOne'"></p>
+   
+  </div> -->
+<!-- <button
+      (load)="topFunction()"
+      id="myBtn"
+      class="btn"
+      title="Go to top"
+      [translate]="'home.goToTopButton'"
+    ></button> -->
+<!-- <a id="back-to-top" href="#" class="btn btn-primary btn-lg" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left" (click)="scrollFunction"><span class="glyphicon glyphicon-chevron-up"></span></a> -->
+<!-- <a id="button"></a> -->
+<!-- 
+
+
+  <div class="jumbotron jumbotron-fluid secondDesc"> -->
+
+<!-- <h2 id=" display-3 artistName" [3ranslate]="'home.introductionMsg'"></h2> -->
+
+<!-- <div class="about-me-descV2">
+      <p class="display-4 desc1p" [translate]="'home.motto'"></p>
+    <p class="lead desc2p" [translate]="'home.descriptionOne'"></p><br>
+    <p>
+      <b class=" lead firstb" [translate]="'home.descriptionTwo'"></b>
+    </p>
+  </div>
+  </div>
+</div>
+
+</div> -->
+
+<!-- appHighlight -->

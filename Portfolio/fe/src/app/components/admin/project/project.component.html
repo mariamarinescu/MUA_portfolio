@@ -1,0 +1,145 @@
+<div class="containerX" fxFlex fxLayout="column">
+  <div class="container" fxFlex fxLayout="column">
+    <div
+      class="jumbotron jumbotron-fluid"
+      id="admin-menu"
+      fxFlex
+      ngStyle.xs="top : 85px; width : 100%;"
+      ngStyle.sm="top : 100px; width : 100%;"
+      ngStyle.md="top : 100px; left : 66px; right : 66px; width : 90%;"
+      ngStyle.lg="top : 150px; left : 230px; right : 230px; width : 70%; font-size : 34px;"
+      ngStyle.xl="top : 150px; left : 420px; right : 420px; width : 60%; font-size : 34px;"
+    >
+      <h1
+        class="display-4"
+        [translate]="'adminMenu.gretting'"
+        ngStyle.xs="font-size : 31px;"
+        ngStyle.sm="font-size : 33px;"
+        ngStyle.md="font-size : 33px;"
+        ngStyle.lg="font-size : 25px;"
+        ngStyle.xl="font-size : 25px;"
+      ></h1>
+      <h1
+      class="email-greeting"
+        ngStyle.xs="font-size : 28px;"
+        ngStyle.sm="font-size : 24px;"
+        ngStyle.md="font-size : 33px;"
+        ngStyle.lg="font-size : 25px;"
+        ngStyle.xl="font-size : 25px;"
+      >
+        {{ adminEmail }}!
+      </h1>
+      <hr class="my-4" [translate]="''" />
+      <nav class="navbar navbar-light light-blue lighten-4">
+        <a
+          class="admin-menu-message"
+          class="navbar-brand menuMessage"
+          href="#"
+          [translate]="'adminMenu.message'"
+        ></a>
+        <button
+          class="navbar-toggler hamburger-button"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon hamburger-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link upload" routerLink="/admin/upload"
+                ><span
+                  [translate]="'adminMenu.uploadButton'"
+                  ngStyle.xs="font-size : 20px;"
+                  ngStyle.sm="font-size : 24px;"
+                  ngStyle.md="font-size : 23px;"
+                  ngStyle.lg="font-size : 22px;"
+                  ngStyle.xl="font-size : 22px;"
+                ></span
+                ><span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <span
+                class="inside"
+                [translate]="'adminMenu.insideMenuMsg'"
+                ngStyle.xs="font-size : 18px;"
+                ngStyle.sm="font-size : 22px;"
+                ngStyle.md="font-size : 23px;"
+                ngStyle.lg="font-size : 22px;"
+                ngStyle.xl="font-size : 22px;"
+              ></span>
+              <a
+                class="nav-link"
+                id="firstChoice"
+                [routerLink]="['/admin/galerie', 'machiaj-de-zi']"
+                [translate]="'adminMenu.firstCategButton'"
+                ngStyle.xs="font-size : 20px;"
+                ngStyle.sm="font-size : 22px;"
+                ngStyle.md="font-size : 23px;"
+                ngStyle.lg="font-size : 22px;"
+                ngStyle.xl="font-size : 22px;"
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="secondChoice"
+                [routerLink]="['/admin/galerie', 'machiaj-de-seara']"
+                [translate]="'adminMenu.secondCategButton'"
+                ngStyle.xs="font-size : 20px;"
+                ngStyle.sm="font-size : 22px;"
+                ngStyle.md="font-size : 23px;"
+                ngStyle.lg="font-size : 22px;"
+                ngStyle.xl="font-size : 22px;"
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="thirdChoice"
+                [routerLink]="['/admin/galerie', 'machiaj-de-mireasa']"
+                [translate]="'adminMenu.thirdCategButton'"
+                ngStyle.xs="font-size : 20px;"
+                ngStyle.sm="font-size : 22px;"
+                ngStyle.md="font-size : 23px;"
+                ngStyle.lg="font-size : 22px;"
+                ngStyle.xl="font-size : 22px;"
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="fourthChoice"
+                [routerLink]="['/admin/galerie', 'machiaj-special']"
+                [translate]="'adminMenu.fourthCategButton'"
+                ngStyle.xs="font-size : 20px;"
+                ngStyle.sm="font-size : 22px;"
+                ngStyle.md="font-size : 23px;"
+                ngStyle.lg="font-size : 22px;"
+                ngStyle.xl="font-size : 22px;"
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container" fxFlex fxLayout="column">
+      <button
+        class="btn btn-outline-secondary signout"
+        (click)="onSignOut()"
+        [translate]="'adminMenu.logoutButton'"
+        ngStyle.xs="top : 87px; height : 40px; right : 30px;"
+        ngStyle.sm="top : 120px; right : 40px;"
+        ngStyle.md="top : 120px; right : 50px;"
+        ngStyle.lg="top : 60px; right : 40px;"
+        ngStyle.xl="top : 60px; right : 40px;"
+      ></button>
+    </div>
+  </div>
+  <!-- <img width="800px" height="800px" class = "hand-img" src={{handImgSrc}}' alt='{{ "shared.imageAltMsg" | translate }}'> -->
+</div>

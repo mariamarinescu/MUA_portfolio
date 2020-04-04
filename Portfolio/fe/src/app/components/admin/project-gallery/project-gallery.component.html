@@ -1,0 +1,170 @@
+<div class="containerX">
+      <h1 class="title">{{title}}</h1> 
+        <div 
+        fxLayout="row wrap" 
+        class="card-group"
+        ngStyle.xs="left : 24%;"
+        ngStyle.sm="left : 14%;"
+        ngStyle.md="left : 14%;"
+        ngStyle.lg="left : 5%;"
+        ngStyle.xl="left : 5%;">
+        <div class="main" style="width: 18rem;" *ngFor="let image of images">
+            <div class="card">
+            <img class="card-img-top" id="images" [src]="image.url" alt="Card image cap" width="150px" height="200px">
+            <button class="btn btn-outline-secondary delete" (click)="deleteImg(image.url)"
+            [translate]='"adminGallery.deleteButton"'>Sterge</button>
+            </div>
+          </div>
+        </div>
+      <div class="container">
+          <button type="button" (click)="takeMeBack()" 
+          class="btn btn-outline-secondary backToMenu"
+          [translate]='"adminGallery.backToMenuButton"'>Inapoi la meniu</button>
+       <button type="button"  
+       class="btn btn-outline-secondary logout" routerLink="/home" role="button"
+      >Log-Out</button>
+      </div>
+      </div>
+
+
+
+        
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div
+  class="containerX"
+  ngStyle.lg="'left':'37%';'top':'3%';'width':'1000px';"
+  ngStyle.xl="'left':'37%';'top':'3%';'width':'1300px';"
+>
+  <div class="container" fxFlex fxLayout="column" style="margin:0;padding:0;width:100%;">
+    <h1
+      class="title"
+      ngStyle.xs="'left':'36%';'top':'7%';'font-size':'29px';"
+      ngStyle.sm="'left':'41%';'top':'7%';'font-size':'29px';"
+      ngStyle.md="'left':'41%';'top':'7%';'font-size':'29px';"
+      ngStyle.lg="'left':'41%';'top':'7%';'font-size':'29px';"
+      ngStyle.xl="'left':'41%';'top':'7%';'font-size':'29px';"
+    >
+      {{ title }}
+    </h1>
+    <div class="container" fxFlex 
+
+    fxLayout = "column"
+    fxLayoutWrap="wrap"
+    fxLayoutGap.lg="20px"
+    fxLayoutGap.xl="20px"
+    style="margin:0;padding:0;"
+
+ 
+
+    >
+      <div
+        id="portfolio"
+       fxFlex.md="50%" 
+        class="card"
+        fxFlex.lg="55%"
+        fxFlex.xl="100%"
+        fxLayout.sm="column"
+        fxLayout.md="column"
+        fxLayout.lg="row wrap"
+        fxLayout.xl="row wrap"
+        fxLayoutWrap="wrap"
+        *ngFor="let image of images"
+        ngStyle.xs="'left':'20%';'top':'3%';'width':'300px';'height':'400px';"
+        ngStyle.sm="'left':'28%';'top':'3%';'width':'300px';'height':'400px'"
+        ngStyle.md="'left':'28%';'top':'3%';'width':'300px';'height':'400px'"
+        ngStyle.lg="'top':'3%';'left':'15%';"
+        ngStyle.xl="top:3%;left:15%;width:0%;height:10%;"
+      >
+      <div class="container" 
+      fxLayout="column"
+              fxLayout.sm="column"
+        fxLayout.md="column"
+        fxLayout.lg="row wrap"
+        fxLayout.xl="row wrap"
+        fxLayoutWrap="wrap"
+    >
+        <img
+       
+        [src]="image.url"
+        alt="{{ 'shared.imageAltMsg' | translate }}"
+        ngStyle.xs="'width':'300px';'height':'350px';"
+        ngStyle.sm="'width':'300px';'height':'350px';"
+        ngStyle.md="'width':'300px';'height':'350px';"
+        ngStyle.lg="'width':'100px';'height':'150px';display: inline-block;"
+        ngStyle.xl="'width':'200px';'height':'250px';"
+      />
+      <button
+        class="btn btn-outline-secondary delete"
+        (click)="deleteImg(image.url)"
+        [translate]="'adminGallery.deleteButton'"
+        ngStyle.xs="'width':'300px';'height':'50px';"
+        ngStyle.sm="'width':'300px';'height':'50px';"
+        ngStyle.md="'width':'300px';'height':'50px';"
+        ngStyle.lg="'width':'300px';'height':'50px';'top':'20%'"
+        ngStyle.xl="'width':'300px';'height':'50px';'top':'20%'"
+      ></button>
+      </div>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="outer">
+  <div class="inner">
+    <button
+      type="button"
+      (click)="takeMeBack()"
+      class="btn btn-outline-secondary backToMenu"
+      [translate]="'adminGallery.backToMenuButton'"
+      ngStyle.xs="'top':'6%';'left':'5%';"
+      ngStyle.sm="'top':'6%';'left':'5%';"
+      ngStyle.md="'top':'6%';'left':'5%';"
+      ngStyle.lg="'top':'6%';'left':'5%';"
+      ngStyle.xl="'top':'6%';'left':'5%';"
+    ></button>
+  </div>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <div class="inner">
+    <button
+      type="button"
+      class="btn btn-outline-secondary logout"
+      (click)="signOut()"
+      role="button"
+      [translate]="'adminGallery.logoutButton'"
+      ngStyle.xs="'top':'6%';'right':'5%';"
+      ngStyle.sm="'top':'6%';'right':'5%';"
+      ngStyle.md="'top':'6%';'right':'5%';"
+      ngStyle.lg="'top':'6%';'right':'5%';"
+      ngStyle.xl="'top':'6%';'right':'5%';"
+    ></button>
+  </div>
+</div>
+
+<div id="modal-success">
+  <div id="modal-success-content">
+    <span id="close-modal">&times;</span>
+    <p [translate]="'adminGallery.successModelMsg'"></p>
+  </div>
+</div>
+
+<div id="modal-failure">
+  <div id="modal-failure-content">
+    <span id="close-modal">&times;</span>
+    <p [translate]="'adminGallery.failureModalMsg'"></p>
+  </div>
+</div> -->

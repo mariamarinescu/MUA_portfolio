@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Handlee")
+@import "../../../../sass/sizing-mixin.sass"
+@import "../../../../sass/aspect-mixin.sass"
+@import "../../../../sass/positioning-mixin.sass"
+    
+$Handlee: "Handlee", cursive
+$abs: absolute
+$rel: relative
+
+
+
+// &.hovering
+//     border: 2px solid #f16624
+//     color: #dadada !important
+
+
+.file-label
+    font-size: 1.2em
+
+.containerX
+    @include sizingCombo($m: 0, $pad: 0)
+    .container
+        @include sizingCombo($m: 0, $pad: 0)
+        .chosen-category 
+            position: absolute
+            top: 80px
+            font-family: $Handlee
+        .dropzone
+            position: absolute
+            display: flex
+            align-items: center
+            justify-content:center
+            flex-direction: column
+            font-weight: 200
+            height: 300px
+            background: transparent
+            margin: 10px 0
+            border: 2px dashed #f16624
+            border-radius: 5px
+            .dropzone-title
+                @include positioningCombo($pos: $abs, $t: 15px)
+            .dropzone-message
+                position: absolute
+                @include sizingCombo($w: 100%, $h: 100%)
+            .file
+                @include sizingCombo($m: 0, $pad: 0, $w: 100%, $h: 100%)
+                .file-label
+                    position: absolute
+                    .file-input
+        #task
+            position: relative
+            left: 100px
+            margin-bottom: 400px white
+        .success-message
+            position: absolute
+
+
+
+progress::-webkit-progress-value
+    transition: width 0.1s ease

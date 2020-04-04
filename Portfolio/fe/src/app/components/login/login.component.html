@@ -1,0 +1,152 @@
+
+
+<div class="containerX"
+fxFlex
+fxLayout="column"
+style="margin:0;padding:0;">
+  <div class="container"
+  ngStyle.xs="'left':'22%';"
+  ngStyle.sm="'left':'11%';"
+  ngStyle.md="'left':'22%';"
+  ngStyle.lg="'left':'30%';"
+  ngStyle.xl="'left':'32%';"
+  >
+    <div class="left">
+      <div class="login"[translate]='"login.title"'></div>
+      <div class="eula" [translate]='"login.message"'></div>
+    </div>
+    <div class="right">
+      <svg viewBox="0 0 320 300">
+        <defs>
+          <linearGradient
+                          inkscape:collect="always"
+                          id="linearGradient"
+                          x1="13"
+                          y1="193.49992"
+                          x2="307"
+                          y2="193.49992"
+                          gradientUnits="userSpaceOnUse">
+            <stop
+                  style="stop-color:#ff00ff;"
+                  offset="0"
+                  id="stop876" />
+            <stop
+                  style="stop-color:#ff0000;"
+                  offset="1"
+                  id="stop878" />
+          </linearGradient>
+        </defs>
+        <path d="m 40,120.00016 239.99984,-3.2e-4 c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35 h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215 c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25 h 168.57143" />
+      </svg>
+      <form class="form">
+        <label for="email" class="email" [translate]='"login.emailInput"'></label>
+        <input type="text" id="email" class="form-control mb-2" placeholder='{{ "login.emailInput" | translate }}' #userEmail required autofocus>
+        <label for="password" class="password"[translate]='"login.passwordInput"'></label>
+        <input type="password" id="password" class="form-control mb-2" placeholder='{{ "login.emailInput" | translate }}' #userPassword required>
+
+        <button type="submit" class="btn btn-lg btn-primary btn-block mb-1" id="submit" (click)="authService.SignIn(userEmail.value, userPassword.value || async)" [translate]='"login.loginButton"'></button>       
+
+          <button type="button" value="forgot-password" class="btn btn-lg btn-primary btn-block mb-1 forgot-password" routerLink="/parola-uitata" [translate]='"login.forgotPassButton"'></button>
+        
+      </form>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- <div class="displayTable">
+  <div class="displayTableCell">
+  <div class="authBlock">
+  <h3>Sign In</h3>
+  <div class="formGroup">
+  <input type="text" class="formControl" placeholder="Username" #userName required>
+  </div>
+  <div class="formGroup">
+  <input type="password" class="formControl" placeholder="Password" #userPassword required>
+  </div>
+  <div class="formGroup">
+  <input type="button" class="btn btnPrimary" value="Log in" (click)="authService.SignIn(userName.value, userPassword.value)">
+  </div>
+  
+  </div>
+  </div>
+  </div> --> 
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container pt-3">
+  <div class="row justify-content-sm-center">
+    <div class="col-sm-10 col-md-6">
+      <div class="card border-info">
+        <div class="card-header">Login</div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <img src="https://placeimg.com/128/128/nature">
+            </div>
+            <div class="col-md-8">
+
+                <input type="text" class="form-control mb-2" placeholder="Email" #userEmail required autofocus>
+                <input type="password" class="form-control mb-2" placeholder="Password" #userPassword required>
+                <button  class="btn btn-lg btn-primary btn-block mb-1"  (click)="authService.login(userEmail.value, userPassword.value)">Login</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+{
+    "/portofoliu": {
+      "target": "https://firebasestorage.googleapis.com/v0/b",
+      "secure": true,
+      "pathRewrite": {
+      "^/portofoliu": ""
+    },
+      "changeOrigin": true
+    }
+  }
