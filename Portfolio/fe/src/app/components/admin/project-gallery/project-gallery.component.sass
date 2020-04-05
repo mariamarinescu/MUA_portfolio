@@ -11,17 +11,18 @@ $imgs-around: 15px white
 .containerX
     .container
         .backToMenu
-            @include positioningCombo($pos:  $abs, $l: 270px, $t:1100px)
+            @include positioningCombo($pos:  relative, $l: 270px)
             @include sizingCombo($w: 175px, $h: 45px)
+            margin: 90px
         .logout
-            @include positioningCombo($pos: $abs, $t: 1100px, $l: 150px)
+            @include positioningCombo($pos: relative, $l: 220px)
             @include sizingCombo($w: 100px, $h: 45px)
     .title
         @include aspectCombo($t-align: center, $family: $Handlee,)
-        @include positioningCombo($t: 11%, $pos: $abs, $l: 100px)
+        @include positioningCombo($t: 100px, $pos: relative, $l: 100px)
         @include sizingCombo($w: 100%, $h: 100%)
     .card-group
-        @include positioningCombo($pos:$abs, $t: 15%, $oflow-y: scroll)
+        @include positioningCombo($pos:relative, $t: 15%, $oflow-y: scroll)
         // @include sizingCombo($w: 90%, $h: 650px, $pad: 0,$m: 0,)
         .main
             display: flex
